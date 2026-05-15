@@ -21,7 +21,7 @@
         <div class="flex flex-col gap-4">
             <h4 class="text-[.8rem] font-bold tracking-[.15em] uppercase text-white">Company</h4>
             <nav class="flex flex-col gap-3">
-                <a href="./#about" aria-label="Jump to About section on home page" class="text-[.7rem] tracking-[.1em] uppercase text-white/45 hover:text-white/90 transition-colors no-underline">About</a>
+                <a href="./#about" aria-label="Jump to About section on home page" class="text-[.7rem] tracking-[.1em] uppercase text-white/45 hover:text-white/90 transition-colors no-underline">About Us</a>
                 <a href="./#team" aria-label="Jump to Leadership section on home page" class="text-[.7rem] tracking-[.1em] uppercase text-white/45 hover:text-white/90 transition-colors no-underline">Leadership</a>
                 <a href="./#services" aria-label="Jump to Service section on home page" class="text-[.7rem] tracking-[.1em] uppercase text-white/45 hover:text-white/90 transition-colors no-underline">Services</a>
                 <a href="./#projects" aria-label="Jump to Project section on home page" class="text-[.7rem] tracking-[.1em] uppercase text-white/45 hover:text-white/90 transition-colors no-underline">Projects</a>
