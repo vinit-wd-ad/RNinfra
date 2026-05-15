@@ -495,6 +495,7 @@ body {
 .vip-select:focus,
 .vip-textarea:focus {
   border-color: rgba(232, 201, 122, 0.55);
+  background:  rgb(27 40 73)
 }
 
 /* ============================================================
