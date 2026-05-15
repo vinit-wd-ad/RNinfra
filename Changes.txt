@@ -1,0 +1,16 @@
+// 1. Apply Same Header & Footer on every pages. 
+// 2. Dholera page =>
+	// a. update map according building name in 
+	// b. Update 'Where to Invest' section
+		// 36 , price => 72 lack on words
+		// 260 onwords, price from -40lack
+		// near airport, size 178X2462, price =>from 50lack 
+		// plan/Industrial • Warehouse, 10thound sq yard +, price on request
+
+3. barog page =>
+	//a. change banner image like pineforest
+	///b. Lungs deserve section - change right image like pineforest 
+	// c. update google map base on citys durations 
+	d. Choose Your Residence - image parto convert to in a layout of two images, with block color 
+
+// 4. add social links in to site, and check all is working is properly 

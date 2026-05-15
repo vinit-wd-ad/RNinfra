@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en" x-data="site()" x-init="init()">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rising Nexus Infra | Where Infra Connects Future &amp; Growth</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"/>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0D1B3E',
+                        navy2: '#162248',
+                        rblue: '#1A4DB3',
+                        rmid: '#2563EB',
+                        rlt: '#DBEAFE',
+                        gold: '#B08840',
+                        goldlt: '#E8C97A',
+                        goldpal: '#FBF5E6',
+                        rg: '#F5F6FA',
+                        rs2: '#F0F2F8',
+                        rbdr: '#E2E6F0',
+                        rbds: '#C5CCE0',
+                        rtxt: '#1A1F36',
+                        rtxt2: '#3D4566',
+                        rmuted: '#7B83A0',
+                        rgreen: '#16A34A',
+                        rgnpal: '#F0FDF4',
+                        ramber: '#D97706',
+                        rambpal: '#FFFBEB',
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"DM Sans"', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Alpine.js -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body class="font-sans" @click="handleOutsideClick($event)">
+
+    <!-- ══════════════════════════════════════════════════════════ NAV ══ -->
+    <nav
+        class="fixed top-0 left-0 right-0 z-[200] bg-white/95 backdrop-blur-md border-b border-rbdr shadow-[0_1px_24px_rgba(13,27,62,.06)]">
+        <div class="flex items-center justify-between px-14 py-[1rem]">
+
+            <!-- Logo -->
+            <a href="#home" class="flex flex-col no-underline">
+                <span class="font-serif text-[1.4rem] font-semibold tracking-[.07em] text-navy uppercase">Rising Nexus
+                    Infra</span>
+                <span class="text-[.5rem] tracking-[.22em] text-rmuted uppercase mt-[1px]">Infrastructure • Investment •
+                    Innovation</span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <ul class="desktop-nav flex items-center gap-[.1rem] list-none" id="desktopNav">
+
+                <!-- About -->
+                <li class="relative" x-data="{open:false, timeout:null}" @mouseenter="clearTimeout(timeout); open=true"
+                    @mouseleave="timeout=setTimeout(()=>open=false, 200)">
+                    <button @click="open=!open;closeOtherDropdowns('about')"
+                        class="flex items-center gap-1 text-[.7rem] tracking-[.13em] uppercase text-rtxt2 hover:text-rmid px-[.9rem] py-2 bg-transparent border-none cursor-pointer font-sans transition-colors duration-200">
+                        About
+                        <svg class="w-2 h-2 transition-transform duration-200" :class="open?'rotate-180':''"
+                            viewBox="0 0 8 5" fill="currentColor">
+                            <path d="M0 0l4 5 4-5z" />
+                        </svg>
+                    </button>
+                    <div class="dropdown-panel" x-show="open" x-cloak
+                        x-transition:enter="transition ease-out duration-150"
+                        x-transition:enter-start="opacity-0 -translate-y-1"
+                        x-transition:enter-end="opacity-100 translate-y-0">
+                        <a href="#about"
+                            class="flex items-center gap-3 px-5 py-3 text-[.68rem] tracking-[.1em] uppercase text-rtxt2 border-b border-rbdr hover:bg-rlt hover:text-rblue no-underline transition-colors">
+                            <span>🏛</span>Our Story</a>
+                        <a href="#team"
+                            class="flex items-center gap-3 px-5 py-3 text-[.68rem] tracking-[.1em] uppercase text-rtxt2 border-b border-rbdr hover:bg-rlt hover:text-rblue no-underline transition-colors">
+                            <span>👥</span>Our Leadership</a>
+                        <a href="#about"
+                            class="flex items-center gap-3 px-5 py-3 text-[.68rem] tracking-[.1em] uppercase text-rtxt2 border-b border-rbdr hover:bg-rlt hover:text-rblue no-underline transition-colors">
+                            <span>🎯</span>Vision &amp; Mission</a>
+                        <a href="#contact"
+                            class="flex items-center gap-3 px-5 py-3 text-[.68rem] tracking-[.1em] uppercase text-rtxt2 hover:bg-rlt hover:text-rblue no-underline transition-colors">
+                            <span>📍</span>Office &amp; Location</a>
+                    </div>
+                </li>
+
+                <!-- Services -->
+                <li class="relative" x-data="{open:false, timeout:null}" @mouseenter="clearTimeout(timeout); open=true"
+                    @mouseleave="timeout=setTimeout(()=>open=false, 200)">
+                    <button @click="open=!open;closeOtherDropdowns('services')"
+                        class="flex items-center gap-1 text-[.7rem] tracking-[.13em] uppercase text-rtxt2 hover:text-rmid px-[.9rem] py-2 bg-transparent border-none cursor-pointer font-sans transition-colors duration-200">
+                        Services
+                        <svg class="w-2 h-2 transition-transform duration-200" :class="open?'rotate-180':''"
+                            viewBox="0 0 8 5" fill="currentColor">
+                            <path d="M0 0l4 5 4-5z" />
+                        </svg>
+                    </button>
+                    <div class="dropdown-panel" x-show="open" x-cloak
+                        x-transition:enter="transition ease-out duration-150"
+                        x-transition:enter-start="opacity-0 -translate-y-1"
+                        x-transition:enter-end="opacity-100 translate-y-0">
+                        <a href="#services"
+                            class="flex items-center gap-3 px-5 py-3 text-[.68rem] tracking-[.1em] uppercase text-rtxt2 border-b border-rbdr hover:bg-rlt hover:text-rblue no-underline transition-colors">
+                            <span>🏗</span>Real Estate</a>
+                        <a href="#services"
+                            class="flex items-center gap-3 px-5 py-3 text-[.68rem] tracking-[.1em] uppercase text-rtxt2 border-b border-rbdr hover:bg-rlt hover:text-rblue no-underline transition-colors">
+                            <span>⚡</span>Energy Sector</a>
+                        <a href="#services"
+                            class="flex items-center gap-3 px-5 py-3 text-[.68rem] tracking-[.1em] uppercase text-rtxt2 border-b border-rbdr hover:bg-rlt hover:text-rblue no-underline transition-colors">
+                            <span>🖥</span>Data Centers</a>
+                        <a href="#contact"
+                            class="flex items-center gap-3 px-5 py-3 text-[.68rem] tracking-[.1em] uppercase text-rtxt2 hover:bg-rlt hover:text-rblue no-underline transition-colors">
+                            <span>🤝</span>Investment Opportunities</a>
+                    </div>
+                </li>
+
+                <!-- Projects -->
+                <li class="relative" x-data="{open:false, timeout:null}" @mouseenter="clearTimeout(timeout); open=true"
+                    @mouseleave="timeout=setTimeout(()=>open=false, 200)">
+                    <button @click="open=!open;closeOtherDropdowns('projects')"
+                        class="flex items-center gap-1 text-[.7rem] tracking-[.13em] uppercase text-rtxt2 hover:text-rmid px-[.9rem] py-2 bg-transparent border-none cursor-pointer font-sans transition-colors duration-200">
+                        Projects
+                        <svg class="w-2 h-2 transition-transform duration-200" :class="open?'rotate-180':''"
+                            viewBox="0 0 8 5" fill="currentColor">
+                            <path d="M0 0l4 5 4-5z" />
+                        </svg>
+                    </button>
+                    <div class="dropdown-panel" x-show="open" x-cloak
+                        x-transition:enter="transition ease-out duration-150"
+                        x-transition:enter-start="opacity-0 -translate-y-1"
+                        x-transition:enter-end="opacity-100 translate-y-0">
+                        <a href="#dholera.html"
+                            class="flex items-center gap-3 px-5 py-3 text-[.68rem] tracking-[.1em] uppercase text-rtxt2 border-b border-rbdr hover:bg-rlt hover:text-rblue no-underline transition-colors">
+                            <span>🌿</span>Dholera Smart City</a>
+                        <button @click="openModal('barog');open=false"
+                            class="flex items-center gap-3 w-full px-5 py-3 text-[.68rem] tracking-[.1em] uppercase text-rtxt2 border-b border-rbdr hover:bg-rlt hover:text-rblue bg-transparent border-l-0 border-r-0 border-t-0 cursor-pointer font-sans text-left transition-colors">
+                            <span>🏔</span>Barog, Himachal Pradesh</button>
+                        <button @click="openModal('dubai');open=false"
+                            class="flex items-center gap-3 w-full px-5 py-3 text-[.68rem] tracking-[.1em] uppercase text-rtxt2 border-b border-rbdr hover:bg-rlt hover:text-rblue bg-transparent border-l-0 border-r-0 border-t-0 cursor-pointer font-sans text-left transition-colors">
+                            <span>🏙</span>Dubai Real Estate</button>
+                        <button @click="openModal('future');open=false"
+                            class="flex items-center gap-3 w-full px-5 py-3 text-[.68rem] tracking-[.1em] uppercase text-rtxt2 border-b border-rbdr hover:bg-rlt hover:text-rblue bg-transparent border-l-0 border-r-0 border-t-0 cursor-pointer font-sans text-left transition-colors">
+                            <span>🔮</span>Energy &amp; Data (Upcoming)</button>
+                        <a href="#projects"
+                            class="flex items-center gap-3 px-5 py-3 text-[.68rem] tracking-[.1em] uppercase text-rtxt2 hover:bg-rlt hover:text-rblue no-underline transition-colors">
+                            <span>📂</span>All Projects</a>
+                    </div>
+                </li>
+
+                <!-- Contact -->
+                <li class="relative" x-data="{open:false, timeout:null}" @mouseenter="clearTimeout(timeout); open=true"
+                    @mouseleave="timeout=setTimeout(()=>open=false, 200)">
+                    <button @click="open=!open;closeOtherDropdowns('contact')"
+                        class="flex items-center gap-1 text-[.7rem] tracking-[.13em] uppercase text-rtxt2 hover:text-rmid px-[.9rem] py-2 bg-transparent border-none cursor-pointer font-sans transition-colors duration-200">
+                        Contact
+                        <svg class="w-2 h-2 transition-transform duration-200" :class="open?'rotate-180':''"
+                            viewBox="0 0 8 5" fill="currentColor">
+                            <path d="M0 0l4 5 4-5z" />
+                        </svg>
+                    </button>
+                    <div class="dropdown-panel" x-show="open" x-cloak
+                        x-transition:enter="transition ease-out duration-150"
+                        x-transition:enter-start="opacity-0 -translate-y-1"
+                        x-transition:enter-end="opacity-100 translate-y-0">
+                        <a href="#contact"
+                            class="flex items-center gap-3 px-5 py-3 text-[.68rem] tracking-[.1em] uppercase text-rtxt2 border-b border-rbdr hover:bg-rlt hover:text-rblue no-underline transition-colors">
+                            <span>✉️</span>Send an Enquiry</a>
+                        <a href="#contact"
+                            class="flex items-center gap-3 px-5 py-3 text-[.68rem] tracking-[.1em] uppercase text-rtxt2 border-b border-rbdr hover:bg-rlt hover:text-rblue no-underline transition-colors">
+                            <span>📞</span>Schedule a Call</a>
+                        <a href="#contact"
+                            class="flex items-center gap-3 px-5 py-3 text-[.68rem] tracking-[.1em] uppercase text-rtxt2 hover:bg-rlt hover:text-rblue no-underline transition-colors">
+                            <span>🤝</span>Partner With Us</a>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- Right side -->
+            <div class="flex items-center gap-4">
+                <!-- CTA -->
+                <a href="#contact"
+                    class="text-[.65rem] tracking-[.16em] uppercase text-navy bg-navy text-white px-[1.3rem] py-[.58rem] no-underline hover:bg-rblue transition-colors duration-200 font-medium">
+                    Enquire Now
+                </a>
+
+                <!-- 3-dot menu -->
+                <div class="relative" id="dotsWrapper">
+                    <button @click="dotsOpen=!dotsOpen"
+                        class="w-9 h-9 flex flex-col items-center justify-center gap-[4px] border border-rbds bg-transparent cursor-pointer hover:border-navy transition-colors">
+                        <span class="w-1 h-1 rounded-full bg-rmuted transition-colors"
+                            :class="dotsOpen?'bg-navy':''"></span>
+                        <span class="w-1 h-1 rounded-full bg-rmuted transition-colors"
+                            :class="dotsOpen?'bg-navy':''"></span>
+                        <span class="w-1 h-1 rounded-full bg-rmuted transition-colors"
+                            :class="dotsOpen?'bg-navy':''"></span>
+                    </button>
+                    <div class="dots-panel" x-show="dotsOpen" x-cloak
+                        x-transition:enter="transition ease-out duration-150"
+                        x-transition:enter-start="opacity-0 -translate-y-1"
+                        x-transition:enter-end="opacity-100 translate-y-0">
+                        <div
+                            class="px-5 py-[.6rem] text-[.52rem] tracking-[.28em] uppercase text-rblue border-b border-rbdr font-semibold">
+                            Quick Links</div>
+                        <a href="#home" @click="dotsOpen=false"
+                            class="flex items-center gap-3 px-5 py-[.7rem] text-[.65rem] tracking-[.08em] uppercase text-rtxt2 border-b border-rbdr hover:bg-rlt hover:text-rblue no-underline transition-colors">
+                            <span class="w-[18px] text-center text-[.9rem]">🏠</span>Home</a>
+                        <a href="#contact" @click="dotsOpen=false"
+                            class="flex items-center gap-3 px-5 py-[.7rem] text-[.65rem] tracking-[.08em] uppercase text-rtxt2 border-b border-rbdr hover:bg-rlt hover:text-rblue no-underline transition-colors">
+                            <span class="w-[18px] text-center text-[.9rem]">✉️</span>Contact Us</a>
+                        <a href="https://www.risingnexusinfra.com" target="_blank"
+                            class="flex items-center gap-3 px-5 py-[.7rem] text-[.65rem] tracking-[.08em] uppercase text-rtxt2 border-b border-rbdr hover:bg-rlt hover:text-rblue no-underline transition-colors">
+                            <span class="w-[18px] text-center text-[.9rem]">🌐</span>Our Website</a>
+                        <div class="text-[.47rem] tracking-[.24em] uppercase text-rmuted bg-rs2 px-5 py-[.42rem]">
+                            Connect With Us</div>
+                        <a href="https://wa.me/?text=Hello%20Rising%20Nexus%20Infra" target="_blank"
+                            class="flex items-center gap-3 px-5 py-[.7rem] text-[.65rem] tracking-[.08em] uppercase text-rtxt2 border-b border-rbdr hover:bg-rlt hover:text-rblue no-underline transition-colors">
+                            <span class="w-[18px] text-center text-[.9rem]">💬</span>WhatsApp Us</a>
+                        <a href="https://linkedin.com" target="_blank"
+                            class="flex items-center gap-3 px-5 py-[.7rem] text-[.65rem] tracking-[.08em] uppercase text-rtxt2 border-b border-rbdr hover:bg-rlt hover:text-rblue no-underline transition-colors">
+                            <span class="w-[18px] text-center text-[.9rem]">🔗</span>LinkedIn</a>
+                        <div class="text-[.47rem] tracking-[.24em] uppercase text-rmuted bg-rs2 px-5 py-[.42rem]">
+                            Resources</div>
+                        <button @click="downloadBrochure()"
+                            class="flex items-center gap-3 w-full px-5 py-[.7rem] text-[.65rem] tracking-[.08em] uppercase text-rtxt2 border-b border-rbdr hover:bg-rlt hover:text-rblue bg-transparent border-l-0 border-r-0 border-t-0 cursor-pointer font-sans text-left transition-colors">
+                            <span class="w-[18px] text-center text-[.9rem]">📄</span>Download Brochure</button>
+                        <button @click="sharePage()"
+                            class="flex items-center gap-3 w-full px-5 py-[.7rem] text-[.65rem] tracking-[.08em] uppercase text-rtxt2 hover:bg-rlt hover:text-rblue bg-transparent border-none cursor-pointer font-sans text-left transition-colors">
+                            <span class="w-[18px] text-center text-[.9rem]">↗</span>Share This Page</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ══════════════════════════════════════════════════════════ HERO ══ -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden bg-white pt-20">
+
+        <!-- Background gradient -->
+        <div class="absolute inset-0 pointer-events-none"
+            style="background:linear-gradient(135deg,#EDF2FF 0%,#fff 50%,#FBF7EE 100%)"></div>
+
+        <!-- Grid overlay -->
+        <div class="absolute inset-0 grid-overlay opacity-[.04] pointer-events-none"></div>
+
+        <!-- Glows -->
+        <div class="absolute top-[-60px] right-[-60px] w-[600px] h-[600px] rounded-full pointer-events-none"
+            style="background:radial-gradient(circle,rgba(26,77,179,.07) 0%,transparent 65%)"></div>
+        <div class="absolute bottom-[-80px] left-[-80px] w-[480px] h-[480px] rounded-full pointer-events-none"
+            style="background:radial-gradient(circle,rgba(176,136,64,.06) 0%,transparent 65%)"></div>
+
+        <!-- Content -->
+        <div class="relative z-10 max-w-[980px] px-8 text-center" style="animation:fadeUpIn 1.1s ease both">
+            <!-- Eyebrow -->
+            <div class="flex items-center justify-center gap-5 mb-8">
+                <span class="block w-10 h-px bg-goldlt"></span>
+                <span class="text-[.7rem] tracking-[.38em] uppercase text-gold font-sans">Infrastructure • Investment •
+                    Innovation</span>
+                <span class="block w-10 h-px bg-goldlt"></span>
+            </div>
+
+            <!-- Headline -->
+            <h1 class="font-serif font-light leading-[1.04] tracking-[.01em] text-navy mb-6"
+                style="font-size:clamp(3.2rem,7.5vw,6.5rem)">
+                Building the <em class="not-italic text-rmid">Infrastructure</em><br>of Tomorrow
+            </h1>
+
+            <!-- Tagline -->
+            <p class="text-[.88rem] tracking-[.22em] uppercase text-rmuted mb-5 font-sans">Where Infra Connects Future
+                &amp; Growth</p>
+
+            <!-- Accent rule -->
+            <div class="w-20 h-[3px] accent-rule mx-auto mb-10"></div>
+
+            <!-- CTAs -->
+            <div class="flex gap-4 justify-center flex-wrap">
+                <a href="#projects"
+                    class="text-[.7rem] tracking-[.18em] uppercase bg-navy text-white px-10 py-4 font-medium hover:bg-rblue transition-colors duration-200 no-underline">
+                    Explore Projects
+                </a>
+                <a href="#contact"
+                    class="text-[.7rem] tracking-[.18em] uppercase border-[1.5px] border-navy text-navy px-10 py-4 hover:bg-navy hover:text-white transition-all duration-200 no-underline">
+                    Get in Touch
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+            <div class="w-px h-14 scroll-pulse" style="background:linear-gradient(to bottom,#0D1B3E,transparent)"></div>
+            <span class="text-[.55rem] tracking-[.2em] uppercase text-rmuted">Scroll</span>
+        </div>
+    </section>
+
+    <style>
+        @keyframes fadeUpIn {
+            from {
+                opacity: 0;
+                transform: translateY(28px)
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+    </style>
+
+    <!-- ══════════════════════════════════════════════════════════ ABOUT ══ -->
+    <section id="about" class="bg-white py-[7rem] px-16">
+        <div class="max-w-[1240px] mx-auto grid grid-cols-2 gap-[6rem] items-center">
+
+            <!-- Left: Text -->
+            <div class="about-text">
+                <!-- Section label -->
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="sec-label-line"></span>
+                    <span class="text-[.65rem] tracking-[.35em] uppercase text-rblue font-semibold">About Us</span>
+                </div>
+                <h2 class="font-serif font-light leading-[1.08] text-navy mb-7"
+                    style="font-size:clamp(2.4rem,4vw,3.6rem)">
+                    A Vision Built on<br><em class="not-italic text-rmid">Enduring Foundations</em>
+                </h2>
+                <div class="w-14 h-[2px] accent-rule mb-10"></div>
+
+                <div class="space-y-5 text-[1.02rem] leading-[1.95] text-rtxt2">
+                    <p><strong class="text-navy font-semibold">Rising Nexus Infra</strong> is a forward-thinking
+                        infrastructure development firm operating across India's most strategically significant growth
+                        corridors, with an active international presence in Dubai's real estate market.</p>
+                    <p>From transformative real estate in Dholera's greenfield smart city and the scenic highlands of
+                        Himachal Pradesh, to a thriving Dubai property portfolio, and future ambitions in energy and
+                        data center infrastructure — we build where it matters most.</p>
+                    <p>Our leadership team's collective expertise spans decades across real estate, logistics, energy,
+                        sales, and global consulting — giving Rising Nexus Infra a uniquely multi-dimensional edge. Over
+                        the years, we have cultivated a quiet but far-reaching network of relationships across
+                        industries, institutions, and geographies that few organisations of our size can claim.</p>
+                    <!-- Subtle co-investment note -->
+                    <p class="text-[.92rem] text-rmuted leading-[1.9] border-l-2 border-rbds pl-5 mt-4">
+                        We are equally open to growing alongside the right people — whether through co-investment,
+                        strategic partnership, or backing new ideas that align with our long-term vision. If you see an
+                        opportunity where our combined strengths can create something exceptional, we would like to hear
+                        about it.
+                    </p>
+                </div>
+
+                <!-- Address block -->
+                <div class="mt-8 pl-5 py-5 pr-5 border-l-[3px] border-gold bg-goldpal">
+                    <p class="text-[.92rem] leading-[1.85] text-rtxt2 m-0">
+                        <strong class="text-navy font-semibold block mb-1">Corporate Office</strong>
+                        B-743, Tower B, IThum<br>
+                        Sector 62, Noida, Uttar Pradesh, India
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right: Stats grid -->
+            <div class="grid grid-cols-2 gap-6">
+                <div class="stat-card border border-rbdr bg-white p-8 relative overflow-hidden cursor-default fade-up">
+                    <div class="stat-top absolute top-0 left-0 right-0 h-[3px]"></div>
+                    <div class="font-serif font-light text-[3rem] text-navy leading-[1] mb-2">3+</div>
+                    <div class="text-[.65rem] tracking-[.2em] uppercase text-rmuted">Active Sectors</div>
+                </div>
+                <div class="stat-card border border-rbdr bg-white p-8 relative overflow-hidden cursor-default fade-up">
+                    <div class="stat-top absolute top-0 left-0 right-0 h-[3px]"></div>
+                    <div class="font-serif font-light text-[3rem] text-navy leading-[1] mb-2">2</div>
+                    <div class="text-[.65rem] tracking-[.2em] uppercase text-rmuted">Markets — India &amp; Dubai</div>
+                </div>
+                <div class="stat-card border border-rbdr bg-white p-8 relative overflow-hidden cursor-default fade-up">
+                    <div class="stat-top absolute top-0 left-0 right-0 h-[3px]"></div>
+                    <div class="font-serif font-light text-[3rem] text-navy leading-[1] mb-2">10+</div>
+                    <div class="text-[.65rem] tracking-[.2em] uppercase text-rmuted">Years in Real Estate</div>
+                </div>
+                <div class="stat-card border border-rbdr bg-white p-8 relative overflow-hidden cursor-default fade-up">
+                    <div class="stat-top absolute top-0 left-0 right-0 h-[3px]"></div>
+                    <div class="font-serif font-light text-[3rem] text-navy leading-[1] mb-2">60+</div>
+                    <div class="text-[.65rem] tracking-[.2em] uppercase text-rmuted">Combined Years of Expertise</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════ LEADERSHIP ══ -->
+    <section id="team" class="bg-rs2 py-[7rem] px-16">
+        <div class="max-w-[1100px] mx-auto">
+
+            <!-- Header -->
+            <div class="mb-8">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="sec-label-line"></span>
+                    <span class="text-[.65rem] tracking-[.35em] uppercase text-rblue font-semibold">Our People</span>
+                </div>
+                <h2 class="font-sans font-light leading-[1.08] text-navy" style="font-size:clamp(2.4rem,4vw,3.6rem)">
+                    Leadership &amp; <em class="not-italic text-rmid">Expertise</em>
+                </h2>
+                <div class="w-14 h-[2px] accent-rule mt-6"></div>
+            </div>
+
+            <!-- Unified narrative block -->
+            <div class="bg-white border border-rbdr border-t-[3px] border-t-navy fade-up">
+
+                <!-- Narrative text -->
+                <div class="p-12 border-b border-rbdr space-y-6 text-[1rem] leading-[1.95] text-rtxt2">
+                    <p>Rising Nexus Infra is led by a founding team whose combined professional experience spans well
+                        over six decades — across real estate, logistics, sales, energy, and global consulting. Rather
+                        than operate as specialists in silos, our leadership functions as a unified force: each domain
+                        of expertise informing and amplifying the others, creating a firm that is genuinely capable
+                        across the full spectrum of infrastructure investment and development.</p>
+                    <p>In real estate, our active presence in India's growth corridors dates to 2014, with an additional
+                        five-plus years of direct market experience in Dubai — including working relationships with
+                        every significant developer in the UAE. In logistics and operations, our leadership brings more
+                        than two decades of understanding how physical networks are built, how they move, and how they
+                        create lasting asset value. In sales and business development, twenty-plus years of high-level
+                        commercial engagement has resulted in an unusually broad reach across industries, institutions,
+                        and decision-makers. And in energy and global strategy, our consulting expertise — earned
+                        advising large corporations on cross-border transactions and high-value mergers and acquisitions
+                        — anchors our ambitions in the sectors that will define the next generation of infrastructure.
+                    </p>
+                    <p>What unifies this team, beyond credentials, is a network that has been carefully built over many
+                        years across multiple industries and geographies. Our relationships extend to senior business
+                        leaders, institutional decision-makers, sovereign-level stakeholders, and a wider community of
+                        high-net-worth individuals who trust us with their interests across markets. This network is not
+                        incidental to what we do — it is integral to how we identify opportunity, structure deals, and
+                        deliver outcomes that most firms simply cannot.</p>
+                    <p class="text-rmuted text-[.93rem] leading-[1.9] italic">
+                        Collectively, the team is equipped not just to develop infrastructure assets — but to connect
+                        people, capital, and opportunity in ways that create compounding value over time.
+                    </p>
+                </div>
+
+                <!-- Domain pillars strip -->
+                <div class="grid grid-cols-4">
+                    <div class="team-pillar flex items-start gap-3 p-6 border-r border-rbdr cursor-default">
+                        <span class="text-[1.4rem] mt-[2px] flex-shrink-0">🏙️</span>
+                        <div>
+                            <div class="text-[.78rem] font-semibold text-navy leading-[1.4]">Real Estate</div>
+                            <div class="text-[.62rem] text-rmuted mt-[3px]">India &amp; Dubai • 10+ Yrs</div>
+                        </div>
+                    </div>
+                    <div class="team-pillar flex items-start gap-3 p-6 border-r border-rbdr cursor-default">
+                        <span class="text-[1.4rem] mt-[2px] flex-shrink-0">🚚</span>
+                        <div>
+                            <div class="text-[.78rem] font-semibold text-navy leading-[1.4]">Logistics &amp; Ops</div>
+                            <div class="text-[.62rem] text-rmuted mt-[3px]">20+ Years</div>
+                        </div>
+                    </div>
+                    <div class="team-pillar flex items-start gap-3 p-6 border-r border-rbdr cursor-default">
+                        <span class="text-[1.4rem] mt-[2px] flex-shrink-0">📈</span>
+                        <div>
+                            <div class="text-[.78rem] font-semibold text-navy leading-[1.4]">Sales &amp; Growth</div>
+                            <div class="text-[.62rem] text-rmuted mt-[3px]">20+ Years</div>
+                        </div>
+                    </div>
+                    <div class="team-pillar flex items-start gap-3 p-6 cursor-default">
+                        <span class="text-[1.4rem] mt-[2px] flex-shrink-0">⚡</span>
+                        <div>
+                            <div class="text-[.78rem] font-semibold text-navy leading-[1.4]">Energy &amp; Global
+                                Strategy</div>
+                            <div class="text-[.62rem] text-rmuted mt-[3px]">Billion-Dollar M&amp;A</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════ SERVICES ══ -->
+    <section id="services" class="bg-white py-[7rem] px-16">
+        <div class="max-w-[1240px] mx-auto">
+
+            <!-- Header -->
+            <div class="text-center mb-16">
+                <div class="flex items-center justify-center gap-3 mb-4">
+                    <span class="sec-label-line"></span>
+                    <span class="text-[.65rem] tracking-[.35em] uppercase text-rblue font-semibold">What We Do</span>
+                    <span class="sec-label-line"></span>
+                </div>
+                <h2 class="font-serif font-light leading-[1.08] text-navy" style="font-size:clamp(2.4rem,4vw,3.6rem)">
+                    Our Core <em class="not-italic text-rmid">Sectors</em>
+                </h2>
+            </div>
+
+            <!-- 3-col grid -->
+            <div class="grid grid-cols-3 gap-[2px] bg-rbdr">
+
+                <!-- Card 01 -->
+                <div
+                    class="svc-card bg-white p-12 relative overflow-hidden hover:bg-[#fafbff] transition-colors duration-300 fade-up">
+                    <div class="svc-bar absolute bottom-0 left-0 right-0 h-[2px]"></div>
+                    <div
+                        class="absolute top-5 right-7 font-serif text-[4.5rem] font-light leading-[1] text-navy/[.05] select-none">
+                        01</div>
+                    <div class="text-[1.9rem] mb-5">🏛️</div>
+                    <h3 class="font-serif text-[1.82rem] font-normal text-navy leading-[1.2] mb-4">Real Estate
+                        Development</h3>
+                    <p class="text-[.95rem] leading-[1.9] text-rtxt2">Strategic land and property development across
+                        India's fastest-growing investment corridors and Dubai's world-class real estate market. From
+                        Dholera's greenfield smart city to Himachal Pradesh's hills — and across Dubai's skyline — we
+                        identify and develop premium assets positioned at the forefront of the next growth wave.</p>
+                    <span
+                        class="inline-block mt-6 text-[.6rem] tracking-[.22em] uppercase text-rblue border border-rblue/25 bg-rlt px-[.85rem] py-[.34rem]">India
+                        • Dubai • Residential • Commercial</span>
+                </div>
+
+                <!-- Card 02 -->
+                <div
+                    class="svc-card bg-white p-12 relative overflow-hidden hover:bg-[#fafbff] transition-colors duration-300 fade-up">
+                    <div class="svc-bar absolute bottom-0 left-0 right-0 h-[2px]"></div>
+                    <div
+                        class="absolute top-5 right-7 font-serif text-[4.5rem] font-light leading-[1] text-navy/[.05] select-none">
+                        02</div>
+                    <div class="text-[1.9rem] mb-5">⚡</div>
+                    <h3 class="font-serif text-[1.82rem] font-normal text-navy leading-[1.2] mb-4">Energy Sector</h3>
+                    <p class="text-[.95rem] leading-[1.9] text-rtxt2">Building India's energy future. Our energy
+                        vertical — anchored by world-class consulting and deal-making experience — focuses on
+                        sustainable power infrastructure, renewable integration, and energy-efficient assets aligned
+                        with India's net-zero commitments and surging power demand.</p>
+                    <span
+                        class="inline-block mt-6 text-[.6rem] tracking-[.22em] uppercase text-rblue border border-rblue/25 bg-rlt px-[.85rem] py-[.34rem]">Renewable
+                        • Sustainable • Future-ready</span>
+                </div>
+
+                <!-- Card 03 -->
+                <div
+                    class="svc-card bg-white p-12 relative overflow-hidden hover:bg-[#fafbff] transition-colors duration-300 fade-up">
+                    <div class="svc-bar absolute bottom-0 left-0 right-0 h-[2px]"></div>
+                    <div
+                        class="absolute top-5 right-7 font-serif text-[4.5rem] font-light leading-[1] text-navy/[.05] select-none">
+                        03</div>
+                    <div class="text-[1.9rem] mb-5">🖥️</div>
+                    <h3 class="font-serif text-[1.82rem] font-normal text-navy leading-[1.2] mb-4">Data Centers</h3>
+                    <p class="text-[.95rem] leading-[1.9] text-rtxt2">Engineering the digital backbone of tomorrow. As
+                        demand for cloud computing, AI infrastructure, and data sovereignty surges across India, Rising
+                        Nexus Infra is positioning itself at the heart of this revolution — with scalable,
+                        energy-efficient, and high-availability data center facilities.</p>
+                    <span
+                        class="inline-block mt-6 text-[.6rem] tracking-[.22em] uppercase text-rblue border border-rblue/25 bg-rlt px-[.85rem] py-[.34rem]">Cloud
+                        • Colocation • AI-Ready</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════ PROJECTS ══ -->
+    <section id="projects" class="py-[7rem] px-16" style="background:#252836">
+        <div class="max-w-[1240px] mx-auto">
+
+            <!-- Header -->
+            <div class="mb-16">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="sec-label-line"></span>
+                    <span class="text-[.65rem] tracking-[.35em] uppercase text-rlt/70 font-semibold">Portfolio</span>
+                </div>
+                <h2 class="font-serif font-light leading-[1.08] text-white" style="font-size:clamp(2.4rem,4vw,3.6rem)">
+                    Featured <em class="not-italic text-rlt">Projects</em>
+                </h2>
+            </div>
+
+            <!-- Projects grid -->
+            <div class="grid grid-cols-2 gap-7">
+
+                <!-- Dubai — WIDE -->
+                <div class="col-span-2 grid grid-cols-2 proj-card bg-white border border-rbdr cursor-pointer"
+                    @click="openModal('dubai')">
+                    <div class="relative overflow-hidden min-h-[240px]"
+                        style="background:linear-gradient(145deg,#fdf3e3 0%,#f0d49a 55%,#d4a843 100%)">
+                        <div class="geo-grid"></div>
+                        <span
+                            class="absolute top-4 left-4 z-10 text-[.57rem] tracking-[.18em] uppercase bg-white/88 text-navy border border-rbdr px-3 py-[5px]">Real
+                            Estate • Dubai, UAE</span>
+                        <span
+                            class="absolute bottom-4 right-4 z-10 text-[.57rem] tracking-[.15em] uppercase bg-white/70 text-rtxt2 px-2 py-1">Dubai,
+                            UAE</span>
+                    </div>
+                    <div class="p-9 flex flex-col justify-center">
+                        <h3 class="font-serif text-[1.65rem] font-normal text-navy mb-3">Dubai Real Estate</h3>
+                        <p class="text-[.94rem] leading-[1.85] text-rtxt2 mb-4">Through our exclusive Dubai partnership
+                            with HOD Real Estate, we offer direct access to all of the UAE's most prominent developers.
+                            A gateway for Indian and global investors seeking to participate in one of the world's most
+                            dynamic property markets — from luxury off-plan to prime commercial.</p>
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="w-[7px] h-[7px] rounded-full bg-rmid"
+                                style="box-shadow:0 0 7px rgba(37,99,235,.4)"></span>
+                            <span class="text-[.63rem] tracking-[.15em] uppercase text-rmid">Active • Partnership Office
+                                in Dubai</span>
+                        </div>
+                        <div class="flex items-center gap-2 py-[.7rem] px-3 bg-goldpal border border-goldlt/60">
+                            <span class="text-[.72rem] text-rtxt2">🤝 In association with <strong class="text-gold">HOD
+                                    Real Estate, Dubai</strong> — connected to every leading UAE developer</span>
+                        </div>
+                        <button
+                            class="mt-4 flex items-center gap-2 text-[.6rem] tracking-[.18em] uppercase text-rblue bg-transparent border-none p-0 cursor-pointer font-sans hover:gap-4 transition-all duration-200">View
+                            Project Details →</button>
+                    </div>
+                </div>
+
+                <!-- Dholera -->
+                <div class="proj-card bg-white border border-rbdr overflow-hidden cursor-pointer fade-up"
+                    @click="window.location='#dholera.html'">
+                    <div class="relative h-[200px] overflow-hidden"
+                        style="background:linear-gradient(145deg,#e8f4e8 0%,#c5dfc5 55%,#9ec49e 100%)">
+                        <div class="geo-grid"></div>
+                        <span
+                            class="absolute top-4 left-4 z-10 text-[.57rem] tracking-[.18em] uppercase bg-white/88 text-navy border border-rbdr px-3 py-[5px]">Real
+                            Estate • India</span>
+                        <span
+                            class="absolute bottom-4 right-4 z-10 text-[.57rem] tracking-[.15em] uppercase bg-white/70 text-rtxt2 px-2 py-1">Gujarat,
+                            India</span>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-serif text-[1.6rem] font-normal text-navy mb-3">Dholera Smart City</h3>
+                        <p class="text-[.93rem] leading-[1.85] text-rtxt2 mb-4">A landmark development within India's
+                            first greenfield smart city and Special Investment Region, along the Delhi-Mumbai Industrial
+                            Corridor.</p>
+                        <div class="flex items-center gap-2">
+                            <span class="w-[7px] h-[7px] rounded-full bg-rgreen status-pulse-dot"></span>
+                            <span class="text-[.63rem] tracking-[.15em] uppercase text-rgreen">Active Development</span>
+                        </div>
+                        <button
+                            class="mt-3 flex items-center gap-2 text-[.6rem] tracking-[.18em] uppercase text-rblue bg-transparent border-none p-0 cursor-pointer font-sans hover:gap-4 transition-all duration-200">View
+                            Project Details →</button>
+                    </div>
+                </div>
+
+                <!-- Barog -->
+                <div class="proj-card bg-white border border-rbdr overflow-hidden cursor-pointer fade-up"
+                    @click="openModal('barog')">
+                    <div class="relative h-[200px] overflow-hidden"
+                        style="background:linear-gradient(145deg,#e8eaf6 0%,#b8bde8 55%,#8892d8 100%)">
+                        <div class="geo-grid"></div>
+                        <span
+                            class="absolute top-4 left-4 z-10 text-[.57rem] tracking-[.18em] uppercase bg-white/88 text-navy border border-rbdr px-3 py-[5px]">Real
+                            Estate • India</span>
+                        <span
+                            class="absolute bottom-4 right-4 z-10 text-[.57rem] tracking-[.15em] uppercase bg-white/70 text-rtxt2 px-2 py-1">Himachal
+                            Pradesh, India</span>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-serif text-[1.6rem] font-normal text-navy mb-3">Barog, Near Solan</h3>
+                        <p class="text-[.93rem] leading-[1.85] text-rtxt2 mb-4">Premium development in the serene hills
+                            of Barog, near Solan — combining Himalayan natural beauty with modern infrastructure for
+                            residential and hospitality use.</p>
+                        <div class="flex items-center gap-2">
+                            <span class="w-[7px] h-[7px] rounded-full bg-rgreen status-pulse-dot"></span>
+                            <span class="text-[.63rem] tracking-[.15em] uppercase text-rgreen">Active Development</span>
+                        </div>
+                        <button
+                            class="mt-3 flex items-center gap-2 text-[.6rem] tracking-[.18em] uppercase text-rblue bg-transparent border-none p-0 cursor-pointer font-sans hover:gap-4 transition-all duration-200">View
+                            Project Details →</button>
+                    </div>
+                </div>
+
+                <!-- Energy & Data — WIDE -->
+                <div class="col-span-2 grid grid-cols-2 proj-card bg-white border border-rbdr cursor-pointer fade-up"
+                    @click="openModal('future')">
+                    <div class="relative overflow-hidden min-h-[200px]"
+                        style="background:linear-gradient(145deg,#e3eeff 0%,#a8c0f0 55%,#6890e0 100%)">
+                        <div class="geo-grid"></div>
+                        <span
+                            class="absolute top-4 left-4 z-10 text-[.57rem] tracking-[.18em] uppercase bg-white/88 text-navy border border-rbdr px-3 py-[5px]">Energy
+                            • Data Centers</span>
+                        <span
+                            class="absolute bottom-4 right-4 z-10 text-[.57rem] tracking-[.15em] uppercase bg-white/70 text-rtxt2 px-2 py-1">Pan
+                            India</span>
+                    </div>
+                    <div class="p-9 flex flex-col justify-center">
+                        <h3 class="font-serif text-[1.65rem] font-normal text-navy mb-3">Energy &amp; Data
+                            Infrastructure</h3>
+                        <p class="text-[.94rem] leading-[1.85] text-rtxt2 mb-4">Our upcoming pipeline in renewable
+                            energy and data center development — the next frontier of Rising Nexus Infra's expansion,
+                            anchored by world-class expertise, powerful industry networks, and strategic site selection
+                            across India.</p>
+                        <div class="flex items-center gap-2">
+                            <span class="w-[7px] h-[7px] rounded-full bg-ramber"
+                                style="box-shadow:0 0 7px rgba(217,119,6,.4)"></span>
+                            <span class="text-[.63rem] tracking-[.15em] uppercase text-ramber">Coming Soon — Register
+                                Interest</span>
+                        </div>
+                        <button
+                            class="mt-3 flex items-center gap-2 text-[.6rem] tracking-[.18em] uppercase text-rblue bg-transparent border-none p-0 cursor-pointer font-sans hover:gap-4 transition-all duration-200">View
+                            Project Details →</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════ CONTACT ══ -->
+    <section id="contact" class="bg-white py-[7rem] px-16">
+        <div class="max-w-[1100px] mx-auto grid grid-cols-[1fr_1.6fr] gap-[5.5rem] items-start">
+
+            <!-- Left: Info -->
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="sec-label-line"></span>
+                    <span class="text-[.65rem] tracking-[.35em] uppercase text-rblue font-semibold">Get in Touch</span>
+                </div>
+                <h2 class="font-serif font-light leading-[1.08] text-navy mb-5"
+                    style="font-size:clamp(2.2rem,3.8vw,3.4rem)">
+                    Let's Build<br><em class="not-italic text-rmid">Together</em>
+                </h2>
+                <div class="w-14 h-[2px] accent-rule mb-8"></div>
+                <p class="text-[1rem] leading-[1.9] text-rmuted mb-5">Whether you're an investor seeking high-growth
+                    opportunities, a partner with a complementary vision, or a buyer looking for premium assets in India
+                    or Dubai — we'd like to hear from you.</p>
+                <p class="text-[.88rem] leading-[1.9] text-rmuted border-l-2 border-rbds pl-4 mb-8 italic">We are also
+                    open to co-investment and joint ventures — in new ventures or existing businesses where the right
+                    partnership can accelerate growth for everyone involved. If you believe there's a fit, the
+                    conversation starts here.</p>
+
+                <!-- Office chips -->
+                <div class="flex flex-col gap-3">
+                    <div class="flex items-center gap-3 p-[.82rem] border border-rbdr bg-rs2">
+                        <span class="text-[1.1rem] flex-shrink-0">🇮🇳</span>
+                        <div>
+                            <span class="block text-[.52rem] tracking-[.2em] uppercase text-rblue mb-[2px]">Corporate
+                                Office</span>
+                            <span class="text-[.82rem] text-rtxt2">B-743, Tower B, IThum, Sector 62, Noida</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3 p-[.82rem] border border-rbdr bg-rs2">
+                        <span class="text-[1.1rem] flex-shrink-0">🇦🇪</span>
+                        <div>
+                            <span class="block text-[.52rem] tracking-[.2em] uppercase text-rblue mb-[2px]">Dubai
+                                Office</span>
+                            <span class="text-[.82rem] text-rtxt2">Dubai, UAE — Real Estate &amp; Investments</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Form -->
+            <form @submit.prevent="handleSubmit" class="flex flex-col gap-5">
+                <div class="grid grid-cols-2 gap-5">
+                    <div class="flex flex-col gap-2">
+                        <label class="text-[.6rem] tracking-[.2em] uppercase text-rmuted font-semibold">Full
+                            Name</label>
+                        <input type="text" placeholder="Your name" required
+                            class="bg-rg border border-rbdr text-rtxt text-[.95rem] px-4 py-[.9rem] outline-none focus:border-rmid focus:bg-white transition-colors duration-200 placeholder-rmuted/60" />
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label class="text-[.6rem] tracking-[.2em] uppercase text-rmuted font-semibold">Email
+                            Address</label>
+                        <input type="email" placeholder="your@email.com" required
+                            class="bg-rg border border-rbdr text-rtxt text-[.95rem] px-4 py-[.9rem] outline-none focus:border-rmid focus:bg-white transition-colors duration-200 placeholder-rmuted/60" />
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-5">
+                    <div class="flex flex-col gap-2">
+                        <label class="text-[.6rem] tracking-[.2em] uppercase text-rmuted font-semibold">Phone
+                            Number</label>
+                        <input type="tel" placeholder="+91 / +971 XXXXX XXXXX"
+                            class="bg-rg border border-rbdr text-rtxt text-[.95rem] px-4 py-[.9rem] outline-none focus:border-rmid focus:bg-white transition-colors duration-200 placeholder-rmuted/60" />
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label class="text-[.6rem] tracking-[.2em] uppercase text-rmuted font-semibold">Area of
+                            Interest</label>
+                        <select
+                            class="bg-rg border border-rbdr text-rtxt2 text-[.93rem] px-4 py-[.9rem] outline-none focus:border-rmid focus:bg-white transition-colors duration-200 appearance-none cursor-pointer">
+                            <option value="">Select sector / purpose</option>
+                            <option>Real Estate — Dholera, India</option>
+                            <option>Real Estate — Barog, Himachal Pradesh</option>
+                            <option>Real Estate — Dubai, UAE</option>
+                            <option>Energy Sector</option>
+                            <option>Data Centers</option>
+                            <option>Investment Partnership</option>
+                            <option>Co-Investment / Joint Venture</option>
+                            <option>General Enquiry</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label class="text-[.6rem] tracking-[.2em] uppercase text-rmuted font-semibold">Message</label>
+                    <textarea rows="5" placeholder="Tell us about your interest or requirement…"
+                        class="bg-rg border border-rbdr text-rtxt text-[.95rem] px-4 py-[.9rem] outline-none focus:border-rmid focus:bg-white transition-colors duration-200 resize-y placeholder-rmuted/60"></textarea>
+                </div>
+                <div>
+                    <button type="submit"
+                        class="text-[.7rem] tracking-[.2em] uppercase bg-navy text-white px-11 py-4 font-medium hover:bg-rblue transition-colors duration-200 border-none cursor-pointer font-sans">
+                        Send Enquiry →
+                    </button>
+                    <p x-show="formSent" x-cloak class="mt-3 text-[.85rem] text-rgreen tracking-[.06em]">✓ Thank you.
+                        We'll be in touch shortly.</p>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════ FOOTER ══ -->
+    <footer class="bg-navy py-[3.2rem] px-16">
+        <div class="max-w-[1240px] mx-auto flex items-center justify-between flex-wrap gap-6">
+            <div class="flex flex-col gap-1">
+                <span class="font-serif text-[1.3rem] text-white/90 tracking-[.08em] uppercase">Rising Nexus
+                    Infra</span>
+                <span class="text-[.63rem] text-white/35 tracking-[.1em]">© 2025 Rising Nexus Infra. All rights
+                    reserved.</span>
+            </div>
+            <nav class="flex gap-7">
+                <a href="#about"
+                    class="text-[.63rem] tracking-[.12em] uppercase text-white/45 hover:text-white/90 no-underline transition-colors">About</a>
+                <a href="#team"
+                    class="text-[.63rem] tracking-[.12em] uppercase text-white/45 hover:text-white/90 no-underline transition-colors">Leadership</a>
+                <a href="#services"
+                    class="text-[.63rem] tracking-[.12em] uppercase text-white/45 hover:text-white/90 no-underline transition-colors">Services</a>
+                <a href="#projects"
+                    class="text-[.63rem] tracking-[.12em] uppercase text-white/45 hover:text-white/90 no-underline transition-colors">Projects</a>
+                <a href="#contact"
+                    class="text-[.63rem] tracking-[.12em] uppercase text-white/45 hover:text-white/90 no-underline transition-colors">Contact</a>
+            </nav>
+            <a href="https://www.risingnexusinfra.com"
+                class="text-[.72rem] text-gold no-underline hover:text-goldlt transition-colors">www.risingnexusinfra.com</a>
+        </div>
+    </footer>
+
+
+    <!-- ══════════════════════════════════════════════════════════ MODALS ══ -->
+
+    <!-- Modal: Dubai -->
+    <div x-show="activeModal==='dubai'" x-cloak class="modal-overlay" @click.self="closeModal()"
+        @keydown.escape.window="closeModal()">
+        <div class="modal-box" :class="activeModal==='dubai'?'shown':''">
+            <!-- Header -->
+            <div class="relative h-[220px] flex items-end p-9"
+                style="background:linear-gradient(145deg,#fdf3e3 0%,#f0d49a 55%,#d4a843 100%)">
+                <div class="geo-grid"></div>
+                <span
+                    class="absolute top-5 left-9 text-[.53rem] tracking-[.2em] uppercase bg-white/88 text-navy border border-rbdr px-3 py-[5px] z-10">Real
+                    Estate • Dubai, UAE • Active</span>
+                <button @click="closeModal()"
+                    class="absolute top-4 right-4 w-9 h-9 flex items-center justify-center bg-white/80 border border-rbdr text-rtxt2 text-[1rem] hover:bg-navy hover:text-white transition-all cursor-pointer z-10">✕</button>
+                <div class="relative z-10">
+                    <div class="text-[.6rem] tracking-[.22em] uppercase text-rblue mb-1">Dubai, United Arab Emirates
+                    </div>
+                    <h2 class="font-serif font-light text-[2.2rem] text-navy leading-[1.1]">Dubai Real Estate</h2>
+                </div>
+            </div>
+            <!-- Body -->
+            <div class="p-11">
+                <div class="text-[.6rem] tracking-[.28em] uppercase text-rblue border-b border-rbdr pb-2 mb-4">
+                    Partnership Overview</div>
+                <p class="text-[.97rem] leading-[1.95] text-rtxt2 mb-8">Rising Nexus Infra maintains a strategic
+                    partnership office in Dubai through HOD Real Estate — one of the UAE's most connected and respected
+                    property agencies. Through this partnership, our clients gain direct access to Dubai's entire
+                    developer ecosystem, with the guidance of a team that brings over five years of hands-on Dubai
+                    market experience backed by deep developer relationships across the emirate.</p>
+                <!-- Specs -->
+                <div class="grid grid-cols-2 gap-3 mb-8">
+                    <div class="bg-rs2 border border-rbdr p-4">
+                        <div class="text-[.52rem] tracking-[.22em] uppercase text-rmuted mb-1">Location</div>
+                        <div class="text-[.88rem] text-navy font-medium">Dubai, UAE</div>
+                    </div>
+                    <div class="bg-rs2 border border-rbdr p-4">
+                        <div class="text-[.52rem] tracking-[.22em] uppercase text-rmuted mb-1">Partner Agency</div>
+                        <div class="text-[.88rem] text-navy font-medium">HOD Real Estate, Dubai</div>
+                    </div>
+                    <div class="bg-rs2 border border-rbdr p-4">
+                        <div class="text-[.52rem] tracking-[.22em] uppercase text-rmuted mb-1">Developer Access</div>
+                        <div class="text-[.88rem] text-navy font-medium">All Prominent UAE Developers</div>
+                    </div>
+                    <div class="bg-rs2 border border-rbdr p-4">
+                        <div class="text-[.52rem] tracking-[.22em] uppercase text-rmuted mb-1">Status</div>
+                        <div class="text-[.88rem] font-medium text-rmid">Active — Partnership Office</div>
+                    </div>
+                </div>
+                <div class="text-[.6rem] tracking-[.28em] uppercase text-rblue border-b border-rbdr pb-2 mb-4">What We
+                    Offer</div>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-start gap-3 text-[.93rem] text-rtxt2 leading-[1.7]"><span
+                            class="w-[7px] h-[7px] rounded-full bg-rmid mt-[.45rem] flex-shrink-0"></span>Direct access
+                        to all major Dubai developers — Emaar, DAMAC, Sobha, Nakheel, Aldar and more — through our
+                        on-ground Dubai partnership</li>
+                    <li class="flex items-start gap-3 text-[.93rem] text-rtxt2 leading-[1.7]"><span
+                            class="w-[7px] h-[7px] rounded-full bg-rmid mt-[.45rem] flex-shrink-0"></span>Over five
+                        years of direct Dubai real estate experience within our leadership, with deep market
+                        intelligence and trusted developer relationships</li>
+                    <li class="flex items-start gap-3 text-[.93rem] text-rtxt2 leading-[1.7]"><span
+                            class="w-[7px] h-[7px] rounded-full bg-rmid mt-[.45rem] flex-shrink-0"></span>End-to-end
+                        advisory for Indian and NRI investors entering the Dubai property market — from property
+                        selection to transaction completion</li>
+                    <li class="flex items-start gap-3 text-[.93rem] text-rtxt2 leading-[1.7]"><span
+                            class="w-[7px] h-[7px] rounded-full bg-rmid mt-[.45rem] flex-shrink-0"></span>Access to
+                        Dubai's most sought-after off-plan opportunities, offering strong rental yields and long-term
+                        capital appreciation</li>
+                    <li class="flex items-start gap-3 text-[.93rem] text-rtxt2 leading-[1.7]"><span
+                            class="w-[7px] h-[7px] rounded-full bg-rmid mt-[.45rem] flex-shrink-0"></span>Cross-border
+                        investment expertise spanning both Indian and UAE financial and regulatory landscapes</li>
+                    <li class="flex items-start gap-3 text-[.93rem] text-rtxt2 leading-[1.7]"><span
+                            class="w-[7px] h-[7px] rounded-full bg-rmid mt-[.45rem] flex-shrink-0"></span>Commercial and
+                        mixed-use opportunities for businesses and investors seeking a UAE footprint</li>
+                </ul>
+                <a href="#contact" @click="closeModal()"
+                    class="inline-block text-[.66rem] tracking-[.18em] uppercase bg-navy text-white px-9 py-4 font-medium hover:bg-rblue transition-colors duration-200 no-underline">Enquire
+                    About Dubai Properties →</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Barog -->
+    <div x-show="activeModal==='barog'" x-cloak class="modal-overlay" @click.self="closeModal()"
+        @keydown.escape.window="closeModal()">
+        <div class="modal-box" :class="activeModal==='barog'?'shown':''">
+            <div class="relative h-[220px] flex items-end p-9"
+                style="background:linear-gradient(145deg,#e8eaf6 0%,#b8bde8 55%,#8892d8 100%)">
+                <div class="geo-grid"></div>
+                <span
+                    class="absolute top-5 left-9 text-[.53rem] tracking-[.2em] uppercase bg-white/88 text-navy border border-rbdr px-3 py-[5px] z-10">Real
+                    Estate • India • Active Development</span>
+                <button @click="closeModal()"
+                    class="absolute top-4 right-4 w-9 h-9 flex items-center justify-center bg-white/80 border border-rbdr text-rtxt2 text-[1rem] hover:bg-navy hover:text-white transition-all cursor-pointer z-10">✕</button>
+                <div class="relative z-10">
+                    <div class="text-[.6rem] tracking-[.22em] uppercase text-rblue mb-1">Himachal Pradesh, India</div>
+                    <h2 class="font-serif font-light text-[2.2rem] text-navy leading-[1.1]">Barog, Near Solan</h2>
+                </div>
+            </div>
+            <div class="p-11">
+                <div class="text-[.6rem] tracking-[.28em] uppercase text-rblue border-b border-rbdr pb-2 mb-4">Project
+                    Overview</div>
+                <p class="text-[.97rem] leading-[1.95] text-rtxt2 mb-8">Nestled in the picturesque hills of Barog near
+                    Solan, Himachal Pradesh, this Rising Nexus Infra development is positioned in one of North India's
+                    most coveted real estate destinations. Known for its cool climate, sweeping mountain views, and
+                    strong connectivity, Barog offers premium land value within a pristine natural setting ideal for
+                    discerning investors and lifestyle buyers alike.</p>
+                <div class="grid grid-cols-2 gap-3 mb-8">
+                    <div class="bg-rs2 border border-rbdr p-4">
+                        <div class="text-[.52rem] tracking-[.22em] uppercase text-rmuted mb-1">Location</div>
+                        <div class="text-[.88rem] text-navy font-medium">Barog, Near Solan, HP</div>
+                    </div>
+                    <div class="bg-rs2 border border-rbdr p-4">
+                        <div class="text-[.52rem] tracking-[.22em] uppercase text-rmuted mb-1">Altitude</div>
+                        <div class="text-[.88rem] text-navy font-medium">~1,600m above sea level</div>
+                    </div>
+                    <div class="bg-rs2 border border-rbdr p-4">
+                        <div class="text-[.52rem] tracking-[.22em] uppercase text-rmuted mb-1">Sector</div>
+                        <div class="text-[.88rem] text-navy font-medium">Real Estate Development</div>
+                    </div>
+                    <div class="bg-rs2 border border-rbdr p-4">
+                        <div class="text-[.52rem] tracking-[.22em] uppercase text-rmuted mb-1">Status</div>
+                        <div class="text-[.88rem] font-medium text-rgreen">Active Development</div>
+                    </div>
+                </div>
+                <div class="text-[.6rem] tracking-[.28em] uppercase text-rblue border-b border-rbdr pb-2 mb-4">Key
+                    Highlights</div>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-start gap-3 text-[.93rem] text-rtxt2 leading-[1.7]"><span
+                            class="w-[7px] h-[7px] rounded-full bg-rmid mt-[.45rem] flex-shrink-0"></span>Located on the
+                        historic Kalka-Shimla UNESCO Heritage Railway route — a major tourism, culture, and lifestyle
+                        draw</li>
+                    <li class="flex items-start gap-3 text-[.93rem] text-rtxt2 leading-[1.7]"><span
+                            class="w-[7px] h-[7px] rounded-full bg-rmid mt-[.45rem] flex-shrink-0"></span>Strong road
+                        connectivity via NH-5, approximately 30 km from Chandigarh</li>
+                    <li class="flex items-start gap-3 text-[.93rem] text-rtxt2 leading-[1.7]"><span
+                            class="w-[7px] h-[7px] rounded-full bg-rmid mt-[.45rem] flex-shrink-0"></span>Ideal for
+                        residential villas, weekend retreats, boutique hospitality, and eco-tourism development</li>
+                    <li class="flex items-start gap-3 text-[.93rem] text-rtxt2 leading-[1.7]"><span
+                            class="w-[7px] h-[7px] rounded-full bg-rmid mt-[.45rem] flex-shrink-0"></span>Growing demand
+                        from Delhi NCR and Chandigarh buyers seeking hill station investments</li>
+                    <li class="flex items-start gap-3 text-[.93rem] text-rtxt2 leading-[1.7]"><span
+                            class="w-[7px] h-[7px] rounded-full bg-rmid mt-[.45rem] flex-shrink-0"></span>Clean air,
+                        temperate year-round climate, and a natural setting with strong lifestyle and rental appeal</li>
+                </ul>
+                <a href="#contact" @click="closeModal()"
+                    class="inline-block text-[.66rem] tracking-[.18em] uppercase bg-navy text-white px-9 py-4 font-medium hover:bg-rblue transition-colors duration-200 no-underline">Enquire
+                    About This Project →</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Future -->
+    <div x-show="activeModal==='future'" x-cloak class="modal-overlay" @click.self="closeModal()"
+        @keydown.escape.window="closeModal()">
+        <div class="modal-box" :class="activeModal==='future'?'shown':''">
+            <div class="relative h-[220px] flex items-end p-9"
+                style="background:linear-gradient(145deg,#e3eeff 0%,#a8c0f0 55%,#6890e0 100%)">
+                <div class="geo-grid"></div>
+                <span
+                    class="absolute top-5 left-9 text-[.53rem] tracking-[.2em] uppercase bg-white/88 text-navy border border-rbdr px-3 py-[5px] z-10">Energy
+                    • Data Centers • Upcoming</span>
+                <button @click="closeModal()"
+                    class="absolute top-4 right-4 w-9 h-9 flex items-center justify-center bg-white/80 border border-rbdr text-rtxt2 text-[1rem] hover:bg-navy hover:text-white transition-all cursor-pointer z-10">✕</button>
+                <div class="relative z-10">
+                    <div class="text-[.6rem] tracking-[.22em] uppercase text-rblue mb-1">Pan India</div>
+                    <h2 class="font-serif font-light text-[2.2rem] text-navy leading-[1.1]">Energy &amp; Data
+                        Infrastructure</h2>
+                </div>
+            </div>
+            <div class="p-11">
+                <div class="text-[.6rem] tracking-[.28em] uppercase text-rblue border-b border-rbdr pb-2 mb-4">Future
+                    Pipeline</div>
+                <p class="text-[.97rem] leading-[1.95] text-rtxt2 mb-8">Rising Nexus Infra is expanding into two of
+                    India's fastest-growing infrastructure sectors: renewable energy and data center development. Our
+                    energy and consulting expertise — spanning global advisory for some of the world's largest
+                    corporations and billion-dollar transactions — gives us a unique edge in identifying, structuring,
+                    and executing high-value infrastructure opportunities in this space.</p>
+                <div class="grid grid-cols-2 gap-3 mb-8">
+                    <div class="bg-rs2 border border-rbdr p-4">
+                        <div class="text-[.52rem] tracking-[.22em] uppercase text-rmuted mb-1">Sectors</div>
+                        <div class="text-[.88rem] text-navy font-medium">Energy + Data Centers</div>
+                    </div>
+                    <div class="bg-rs2 border border-rbdr p-4">
+                        <div class="text-[.52rem] tracking-[.22em] uppercase text-rmuted mb-1">Geography</div>
+                        <div class="text-[.88rem] text-navy font-medium">Pan India</div>
+                    </div>
+                    <div class="bg-rs2 border border-rbdr p-4">
+                        <div class="text-[.52rem] tracking-[.22em] uppercase text-rmuted mb-1">Advisory Depth</div>
+                        <div class="text-[.88rem] text-navy font-medium">Global • Billion-Dollar M&amp;A</div>
+                    </div>
+                    <div class="bg-rs2 border border-rbdr p-4">
+                        <div class="text-[.52rem] tracking-[.22em] uppercase text-rmuted mb-1">Status</div>
+                        <div class="text-[.88rem] font-medium text-gold">Upcoming Announcement</div>
+                    </div>
+                </div>
+                <div class="text-[.6rem] tracking-[.28em] uppercase text-rblue border-b border-rbdr pb-2 mb-4">Planned
+                    Focus Areas</div>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-start gap-3 text-[.93rem] text-rtxt2 leading-[1.7]"><span
+                            class="w-[7px] h-[7px] rounded-full bg-rmid mt-[.45rem] flex-shrink-0"></span>Renewable
+                        energy infrastructure — solar, wind, and hybrid power generation across India's fastest-growing
+                        energy corridors</li>
+                    <li class="flex items-start gap-3 text-[.93rem] text-rtxt2 leading-[1.7]"><span
+                            class="w-[7px] h-[7px] rounded-full bg-rmid mt-[.45rem] flex-shrink-0"></span>Hyperscale and
+                        edge data center development for India's surging cloud, AI, and digital sovereignty demand</li>
+                    <li class="flex items-start gap-3 text-[.93rem] text-rtxt2 leading-[1.7]"><span
+                            class="w-[7px] h-[7px] rounded-full bg-rmid mt-[.45rem] flex-shrink-0"></span>Energy-efficient,
+                        green-certified facilities aligned with India's 2030 net-zero commitments</li>
+                    <li class="flex items-start gap-3 text-[.93rem] text-rtxt2 leading-[1.7]"><span
+                            class="w-[7px] h-[7px] rounded-full bg-rmid mt-[.45rem] flex-shrink-0"></span>Strategic
+                        partnerships with global technology companies, cloud providers, energy utilities, and government
+                        bodies</li>
+                    <li class="flex items-start gap-3 text-[.93rem] text-rtxt2 leading-[1.7]"><span
+                            class="w-[7px] h-[7px] rounded-full bg-rmid mt-[.45rem] flex-shrink-0"></span>World-class
+                        advisory experience in international energy transactions informing every investment decision
+                    </li>
+                </ul>
+                <a href="#contact" @click="closeModal()"
+                    class="inline-block text-[.66rem] tracking-[.18em] uppercase bg-navy text-white px-9 py-4 font-medium hover:bg-rblue transition-colors duration-200 no-underline">Register
+                    Your Interest →</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════════ ALPINE + JS ══ -->
+    <script>
+        function site() {
+            return {
+                activeModal: null,
+                dotsOpen: false,
+                formSent: false,
+
+                init() {
+                    // Scroll-reveal
+                    const obs = new IntersectionObserver(entries => {
+                        entries.forEach(e => {
+                            if (e.isIntersecting) e.target.classList.add('visible');
+                        });
+                    }, { threshold: 0.07 });
+                    document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+
+                    // ESC closes modal
+                    document.addEventListener('keydown', e => {
+                        if (e.key === 'Escape') this.closeModal();
+                    });
+                },
+
+                openModal(key) {
+                    this.dotsOpen = false;
+                    this.activeModal = key;
+                    document.body.style.overflow = 'hidden';
+                },
+
+                closeModal() {
+                    this.activeModal = null;
+                    document.body.style.overflow = '';
+                },
+
+                closeOtherDropdowns(current) {
+                    // Alpine handles each dropdown's own open state independently
+                    // This is a no-op hook for future use
+                },
+
+                handleOutsideClick(e) {
+                    if (!e.target.closest('#dotsWrapper')) {
+                        this.dotsOpen = false;
+                    }
+                },
+
+                handleSubmit() {
+                    this.formSent = true;
+                    setTimeout(() => { this.formSent = false; }, 5000);
+                },
+
+                downloadBrochure() {
+                    this.dotsOpen = false;
+                    alert('Brochure download coming soon.\nPlease visit www.risingnexusinfra.com for the latest materials.');
+                },
+
+                sharePage() {
+                    this.dotsOpen = false;
+                    if (navigator.share) {
+                        navigator.share({
+                            title: 'Rising Nexus Infra',
+                            text: 'Where Infra Connects Future & Growth',
+                            url: 'https://www.risingnexusinfra.com'
+                        });
+                    } else {
+                        navigator.clipboard.writeText('https://www.risingnexusinfra.com')
+                            .then(() => alert('Link copied to clipboard!'));
+                    }
+                }
+            };
+        }
+    </script>
+
+</body>
+
+</html>

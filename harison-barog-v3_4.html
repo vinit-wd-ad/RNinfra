@@ -1,0 +1,2964 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harison Group Residences · Barog, H.P. | Soft Launch | Rising Nexus Infra</title>
+  <meta name="description"
+    content="Premium 1-BHK Residences by Harison Group in Barog, H.P. Starting from ₹81 Lakh. SBI & HDFC Approved. Exclusively by Rising Nexus Infra. RERA: HPRERASOL 2024119/P" />
+
+  <!-- ── FONTS ── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+
+  <style>
+    /* ══════════════════════════════════════════════════════════════════════════
+   TOKENS
+   ══════════════════════════════════════════════════════════════════════════ */
+    :root {
+      --navy: #0D1B3E;
+      --navy2: #152250;
+      --blue: #1A4DB3;
+      --gold: #B08840;
+      --glt: #E8C97A;
+      --gdk: #8B6914;
+      --gpal: #FBF5E6;
+      --bg: #F4F6FA;
+      --srf: #FFFFFF;
+      --s2: #EFF1F7;
+      --bdr: #DDE1EF;
+      --bds: #BBC3D9;
+      --txt: #1A1F36;
+      --txt2: #3A4165;
+      --muted: #6E779A;
+      --green: #15803D;
+      --gpal2: #DCFCE7;
+      --red: #B91C1C;
+    }
+
+    /* ══════════════════════════════════════════════════════════════════════════
+   RESET & BASE  (font-size: 18px baseline for luxury legibility)
+   ══════════════════════════════════════════════════════════════════════════ */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 18px
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--txt);
+      line-height: 1.75;
+      overflow-x: hidden
+    }
+
+    img {
+      display: block;
+      max-width: 100%
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    button {
+      cursor: pointer;
+      font-family: 'DM Sans', sans-serif
+    }
+
+    /* ── Typography scale ── */
+    .serif {
+      font-family: 'Cormorant Garamond', serif
+    }
+
+    .t-hero {
+      font-size: clamp(4rem, 10vw, 8rem);
+      font-weight: 300;
+      line-height: 1.0;
+      letter-spacing: -.01em
+    }
+
+    .t-h1 {
+      font-size: clamp(2.8rem, 5vw, 4.4rem);
+      font-weight: 300;
+      line-height: 1.06;
+      letter-spacing: -.005em
+    }
+
+    .t-h2 {
+      font-size: clamp(2.1rem, 3.8vw, 3.2rem);
+      font-weight: 300;
+      line-height: 1.1
+    }
+
+    .t-h3 {
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 1.2
+    }
+
+    .t-xl {
+      font-size: 1.25rem;
+      line-height: 1.8
+    }
+
+    .t-lg {
+      font-size: 1.1rem;
+      line-height: 1.85
+    }
+
+    .t-base {
+      font-size: 1rem;
+      line-height: 1.85
+    }
+
+    .t-sm {
+      font-size: .88rem;
+      line-height: 1.7
+    }
+
+    .t-label {
+      font-size: .75rem;
+      letter-spacing: .28em;
+      text-transform: uppercase;
+      font-weight: 600
+    }
+
+    .t-micro {
+      font-size: .67rem;
+      letter-spacing: .2em;
+      text-transform: uppercase
+    }
+
+    /* ── Utilities ── */
+    .sec {
+      padding: 7rem 4rem
+    }
+
+    @media(max-width:860px) {
+      .sec {
+        padding: 4.5rem 1.4rem
+      }
+    }
+
+    .wrap {
+      max-width: 1240px;
+      margin: 0 auto
+    }
+
+    .accent-bar {
+      display: block;
+      width: 56px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--blue), var(--gold))
+    }
+
+    .gold-bar {
+      display: block;
+      width: 100px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--gdk), var(--glt), var(--gdk));
+      margin: 0 auto
+    }
+
+    .navy {
+      color: var(--navy)
+    }
+
+    .gold {
+      color: var(--gold)
+    }
+
+    .muted {
+      color: var(--muted)
+    }
+
+    .white {
+      color: #fff
+    }
+
+    .fade-up {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .72s ease, transform .72s ease
+    }
+
+    .fade-up.in {
+      opacity: 1;
+      transform: none
+    }
+
+    /* ══════════════════════════════════════════════════════════════════════════
+   NAV
+   ══════════════════════════════════════════════════════════════════════════ */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 400;
+      background: rgba(255, 255, 255, .96);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--bdr);
+      padding: .85rem 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 1px 28px rgba(13, 27, 62, .07);
+    }
+
+    .nav-logo {
+      display: flex;
+      flex-direction: column
+    }
+
+    .nav-logo-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.45rem;
+      font-weight: 600;
+      letter-spacing: .07em;
+      color: var(--navy);
+      text-transform: uppercase;
+      line-height: 1
+    }
+
+    .nav-logo-tag {
+      font-size: .52rem;
+      letter-spacing: .22em;
+      color: var(--muted);
+      text-transform: uppercase;
+      margin-top: 2px
+    }
+
+    .nav-mid {
+      text-align: center;
+      display: none
+    }
+
+    @media(min-width:700px) {
+      .nav-mid {
+        display: block
+      }
+    }
+
+    .nav-mid-lbl {
+      font-size: .62rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--muted)
+    }
+
+    .nav-mid-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      color: var(--navy);
+      font-weight: 500
+    }
+
+    .nav-btn {
+      font-size: .72rem;
+      letter-spacing: .17em;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding: .62rem 1.6rem;
+      background: var(--navy);
+      color: #fff;
+      border: none;
+      transition: background .22s;
+    }
+
+    .nav-btn:hover {
+      background: var(--blue)
+    }
+
+    /* ══════════════════════════════════════════════════════════════════════════
+   FLOATING ACTION BUTTONS  (WhatsApp + Call, always visible)
+   ══════════════════════════════════════════════════════════════════════════ */
+    .fab-group {
+      position: fixed;
+      bottom: 1.8rem;
+      right: 1.6rem;
+      z-index: 600;
+      display: flex;
+      flex-direction: column;
+      gap: .7rem;
+      align-items: flex-end;
+    }
+
+    .fab {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      padding: .7rem 1.25rem;
+      border: none;
+      font-family: 'DM Sans', sans-serif;
+      font-size: .8rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 4px 22px rgba(0, 0, 0, .22);
+      transition: transform .22s, box-shadow .22s;
+    }
+
+    .fab:hover {
+      transform: translateX(-4px);
+      box-shadow: 0 6px 28px rgba(0, 0, 0, .28)
+    }
+
+    .fab-wa {
+      background: #25D366;
+      color: #fff
+    }
+
+    .fab-visit {
+      background: linear-gradient(135deg, var(--gold), var(--glt));
+      color: var(--navy)
+    }
+
+    .fab svg {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+      fill: currentColor
+    }
+
+    @keyframes waPulse {
+
+      0%,
+      100% {
+        box-shadow: 0 4px 22px rgba(0, 0, 0, .22), 0 0 0 0 rgba(37, 211, 102, .4)
+      }
+
+      50% {
+        box-shadow: 0 4px 22px rgba(0, 0, 0, .22), 0 0 0 9px rgba(37, 211, 102, 0)
+      }
+    }
+
+    .fab-wa {
+      animation: waPulse 2.5s ease-in-out infinite
+    }
+
+    /* ══════════════════════════════════════════════════════════════════════════
+   HERO
+   ══════════════════════════════════════════════════════════════════════════ */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      padding-top: 74px;
+    }
+
+    /* ── Hero background ──
+   Developer: swap .hero-img src with your official Harison building photo.
+   Described as: "6-floor modern luxury building integrated into pine wood mountains, Barog HP."
+   Current src: Unsplash royalty-free placeholder (luxury mountain building).
+─────────────────────────────────────────────────────────────────────────── */
+    .hero-img {
+      position: absolute;
+      inset: -10%;
+      /*
+    DEVELOPER: Replace with official Harison Group building photo.
+    Described as: "3-building, 6-7 floor luxury residential community
+    nestled surreally into misty Himalayan pine forest, Barog HP"
+    Current: Unsplash royalty-free — tall luxury towers in lush mountain forest
+  */
+      background-image: url('https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1600&q=85');
+      background-size: cover;
+      background-position: center 30%;
+      will-change: transform;
+    }
+
+    /* Extra depth layers to make it look surreal — pine mist, depth gradient */
+    .hero-forest-vignette {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(ellipse 120% 60% at 50% 100%, rgba(5, 18, 10, .65) 0%, transparent 70%),
+        radial-gradient(ellipse 80% 40% at 20% 50%, rgba(10, 25, 15, .3) 0%, transparent 60%),
+        radial-gradient(ellipse 80% 40% at 80% 50%, rgba(13, 27, 62, .2) 0%, transparent 60%);
+    }
+
+    /* Floating particles — pine spores / dust motes */
+    @keyframes moteFloat {
+      0% {
+        transform: translateY(0) translateX(0) scale(1);
+        opacity: 0
+      }
+
+      20% {
+        opacity: .6
+      }
+
+      80% {
+        opacity: .3
+      }
+
+      100% {
+        transform: translateY(-120px) translateX(30px) scale(.4);
+        opacity: 0
+      }
+    }
+
+    .hero-motes {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none
+    }
+
+    .mote {
+      position: absolute;
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background: rgba(232, 201, 122, .7);
+      animation: moteFloat linear infinite;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom,
+          rgba(8, 15, 32, .68) 0%,
+          rgba(8, 15, 32, .44) 55%,
+          rgba(8, 15, 32, .82) 100%);
+    }
+
+    /* Mist drift animation */
+    @keyframes mist {
+      0% {
+        opacity: .12;
+        transform: translateX(-3%)
+      }
+
+      50% {
+        opacity: .2;
+        transform: translateX(3%)
+      }
+
+      100% {
+        opacity: .12;
+        transform: translateX(-3%)
+      }
+    }
+
+    .hero-mist {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: linear-gradient(90deg, transparent, rgba(120, 155, 180, .1) 45%, rgba(120, 155, 180, .16) 60%, transparent);
+      animation: mist 15s ease-in-out infinite
+    }
+
+    /* Scroll cue */
+    @keyframes scrollPulse {
+
+      0%,
+      100% {
+        opacity: .15
+      }
+
+      50% {
+        opacity: .75
+      }
+    }
+
+    .scroll-cue {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: .35rem
+    }
+
+    .scroll-line {
+      width: 1px;
+      height: 54px;
+      background: linear-gradient(to bottom, rgba(232, 201, 122, .7), transparent);
+      animation: scrollPulse 2.2s infinite
+    }
+
+    /* Hero enter animations */
+    @keyframes hIn {
+      from {
+        opacity: 0;
+        transform: translateY(36px)
+      }
+
+      to {
+        opacity: 1;
+        transform: none
+      }
+    }
+
+    .h1 {
+      animation: hIn 1s ease both
+    }
+
+    .h2 {
+      animation: hIn 1.15s ease both
+    }
+
+    .h3 {
+      animation: hIn 1.3s ease both
+    }
+
+    .h4 {
+      animation: hIn 1.45s ease both
+    }
+
+    .h5 {
+      animation: hIn 1.6s ease both
+    }
+
+    /* Badges */
+    .hbadge {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      background: rgba(255, 255, 255, .1);
+      border: 1px solid rgba(255, 255, 255, .22);
+      backdrop-filter: blur(6px);
+      padding: .48rem 1.1rem;
+      font-size: .75rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: rgba(255, 255, 255, .92);
+    }
+
+    .hbadge-soft {
+      background: linear-gradient(135deg, rgba(176, 136, 64, .75), rgba(139, 105, 20, .75));
+      border-color: rgba(232, 201, 122, .45);
+    }
+
+    .hbadge-price {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      font-weight: 500;
+      letter-spacing: .04em;
+      color: var(--glt);
+      background: rgba(176, 136, 64, .18);
+      border-color: rgba(232, 201, 122, .4);
+      padding: .5rem 1.4rem;
+    }
+
+    .hbadge-icon {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--glt), var(--gold));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .75rem;
+      color: var(--navy);
+      font-weight: 700;
+      flex-shrink: 0
+    }
+
+    /* Hero CTAs */
+    .btn-gold {
+      display: inline-block;
+      padding: 1.05rem 2.8rem;
+      background: linear-gradient(135deg, var(--gold), var(--glt));
+      color: var(--navy);
+      font-size: .82rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      font-weight: 700;
+      border: none;
+      transition: filter .25s;
+      cursor: pointer;
+    }
+
+    .btn-gold:hover {
+      filter: brightness(1.08)
+    }
+
+    .btn-ghost {
+      display: inline-block;
+      padding: 1.05rem 2.6rem;
+      border: 1.5px solid rgba(255, 255, 255, .38);
+      color: #fff;
+      font-size: .82rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      font-weight: 500;
+      transition: background .25s;
+    }
+
+    .btn-ghost:hover {
+      background: rgba(255, 255, 255, .1)
+    }
+
+    /* ═══ HERO HEADLINE DOTS ═══ */
+    .hero-hl-dot {
+      display: inline-block;
+      color: var(--glt);
+      font-size: .65em;
+      vertical-align: middle;
+      letter-spacing: -.05em;
+      margin-left: .04em;
+      opacity: .7;
+    }
+
+    /* ═══ STORY / NARRATIVE SECTION ═══ */
+    .story-sec {
+      background: #06100A;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .story-bg-img {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1400&q=70');
+      background-size: cover;
+      background-position: center;
+      opacity: .18;
+    }
+
+    .story-bg-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, #06100A 0%, transparent 25%, transparent 75%, #06100A 100%);
+    }
+
+    .story-inner {
+      position: relative;
+      z-index: 2;
+      padding: 6rem 4rem 5rem
+    }
+
+    @media(max-width:860px) {
+      .story-inner {
+        padding: 4rem 1.4rem 3.5rem
+      }
+    }
+
+    /* Animated counter / stat in story */
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2rem;
+      margin: 3.5rem 0;
+    }
+
+    @media(max-width:760px) {
+      .story-grid {
+        grid-template-columns: 1fr
+      }
+    }
+
+    .story-card {
+      padding: 2rem 1.8rem;
+      border: 1px solid rgba(232, 201, 122, .15);
+      background: rgba(255, 255, 255, .03);
+      position: relative;
+      overflow: hidden;
+      transition: border-color .3s, background .3s;
+    }
+
+    .story-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--glt), transparent);
+      transform: scaleX(0);
+      transition: transform .5s ease;
+    }
+
+    .story-card:hover {
+      border-color: rgba(232, 201, 122, .35);
+      background: rgba(255, 255, 255, .05)
+    }
+
+    .story-card:hover::before {
+      transform: scaleX(1)
+    }
+
+    .story-card-icon {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      display: block
+    }
+
+    .story-card-stat {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.8rem;
+      font-weight: 300;
+      color: var(--glt);
+      line-height: 1;
+      margin-bottom: .4rem;
+    }
+
+    .story-card-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: .5rem
+    }
+
+    .story-card-body {
+      font-size: .95rem;
+      color: rgba(255, 255, 255, .5);
+      line-height: 1.75
+    }
+
+    /* Timeline / journey line */
+    .journey-line {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      max-width: 720px;
+      margin: 3.5rem auto 0;
+    }
+
+    .journey-step {
+      display: grid;
+      grid-template-columns: 60px 1fr;
+      gap: 1.5rem;
+      padding-bottom: 2.5rem;
+      position: relative;
+    }
+
+    .journey-step:last-child {
+      padding-bottom: 0
+    }
+
+    .journey-step::after {
+      content: '';
+      position: absolute;
+      left: 29px;
+      top: 52px;
+      bottom: 0;
+      width: 1px;
+      background: linear-gradient(to bottom, rgba(232, 201, 122, .3), rgba(232, 201, 122, 0));
+    }
+
+    .journey-step:last-child::after {
+      display: none
+    }
+
+    .journey-node {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: 1.5px solid rgba(232, 201, 122, .4);
+      background: rgba(232, 201, 122, .08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+      margin-top: .2rem;
+      transition: border-color .3s, background .3s;
+    }
+
+    .journey-step:hover .journey-node {
+      border-color: var(--glt);
+      background: rgba(232, 201, 122, .15)
+    }
+
+    .journey-text-head {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: .3rem
+    }
+
+    .journey-text-body {
+      font-size: .95rem;
+      color: rgba(255, 255, 255, .48);
+      line-height: 1.75
+    }
+
+    /* Pull quote */
+    .story-quote {
+      text-align: center;
+      max-width: 680px;
+      margin: 3.5rem auto 0;
+      padding: 2.5rem;
+      border: 1px solid rgba(232, 201, 122, .15);
+      position: relative;
+    }
+
+    .story-quote::before {
+      content: '"';
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 6rem;
+      font-weight: 300;
+      color: rgba(232, 201, 122, .15);
+      position: absolute;
+      top: -.5rem;
+      left: 1.5rem;
+      line-height: 1;
+    }
+
+    .story-quote-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.7rem;
+      font-weight: 300;
+      font-style: italic;
+      color: #fff;
+      line-height: 1.55;
+    }
+
+    .story-quote-author {
+      font-size: .72rem;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: rgba(232, 201, 122, .6);
+      margin-top: 1.2rem;
+      display: block;
+    }
+
+    .strip {
+      background: var(--navy);
+      display: grid;
+      grid-template-columns: repeat(4, 1fr)
+    }
+
+    .strip-cell {
+      padding: 1.6rem 2rem;
+      text-align: center;
+      border-right: 1px solid rgba(255, 255, 255, .08)
+    }
+
+    .strip-cell:last-child {
+      border-right: none
+    }
+
+    .strip-n {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.4rem;
+      font-weight: 300;
+      color: var(--glt);
+      line-height: 1;
+      margin-bottom: .3rem
+    }
+
+    .strip-l {
+      font-size: .68rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, .4)
+    }
+
+    @media(max-width:700px) {
+      .strip {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .strip-cell {
+        border-bottom: 1px solid rgba(255, 255, 255, .08)
+      }
+    }
+
+    /* ══════════════════════════════════════════════════════════════════════════
+   AQI SLIDER
+   ══════════════════════════════════════════════════════════════════════════ */
+    .aqi-sec {
+      background: var(--bg)
+    }
+
+    /* Slider container */
+    .aqi-wrap {
+      position: relative;
+      overflow: hidden;
+      height: 480px;
+      border: 1px solid var(--bdr);
+      cursor: ew-resize;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    /* LEFT panel — smoggy Delhi */
+    .aqi-left {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      /* Delhi NCR iconic landmark in heavy smog — India Gate covered in pollution haze */
+      background-image: url('https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1200&q=70');
+      background-size: cover;
+      background-position: center;
+      clip-path: inset(0 50% 0 0);
+      /* controlled by JS */
+    }
+
+    .aqi-left-haze {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(80, 80, 80, .55) 0%, rgba(100, 100, 100, .35) 60%, transparent 100%);
+    }
+
+    /* RIGHT panel — Barog valley */
+    .aqi-right {
+      position: absolute;
+      inset: 0;
+      /* Barog valley — misty Himalayan pine forest with clouds rolling through trees */
+      background-image: url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=1200&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* AQI info cards */
+    .aqi-card {
+      position: absolute;
+      z-index: 5;
+      padding: .8rem 1.2rem;
+      background: rgba(13, 27, 62, .82);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, .15);
+    }
+
+    .aqi-left-card {
+      bottom: 2rem;
+      left: 2rem
+    }
+
+    .aqi-right-card {
+      bottom: 2rem;
+      right: 2rem;
+      text-align: right
+    }
+
+    .aqi-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.2rem;
+      font-weight: 500;
+      line-height: 1;
+      display: block;
+      margin-bottom: .2rem
+    }
+
+    .aqi-bad {
+      color: #ff5f5f
+    }
+
+    .aqi-good {
+      color: #4ade80
+    }
+
+    .aqi-place {
+      font-size: .98rem;
+      font-weight: 600;
+      color: #fff;
+      display: block;
+      margin-bottom: .1rem
+    }
+
+    .aqi-status {
+      font-size: .72rem;
+      letter-spacing: .1em;
+      text-transform: uppercase
+    }
+
+    /* Divider */
+    .aqi-div {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      z-index: 20;
+      background: linear-gradient(to bottom, var(--glt), var(--gold), var(--glt));
+      box-shadow: 0 0 16px rgba(176, 136, 64, .55);
+      cursor: ew-resize;
+    }
+
+    .aqi-handle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--glt), var(--gold));
+      border: 3px solid #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--navy);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, .3);
+    }
+
+    .aqi-hint {
+      position: absolute;
+      top: 1.1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 25;
+      pointer-events: none;
+      font-size: .72rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, .65);
+      background: rgba(0, 0, 0, .38);
+      padding: .35rem 1rem;
+      transition: opacity .6s ease;
+    }
+
+    /* ══════════════════════════════════════════════════════════════════════════
+   SECTION 3 — PROXIMITY MAP WIDGET
+   ══════════════════════════════════════════════════════════════════════════ */
+    .map-sec {
+      background: var(--srf)
+    }
+
+    .map-layout {
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      gap: 0;
+      border: 1px solid var(--bdr);
+      min-height: 600px
+    }
+
+    @media(max-width:960px) {
+      .map-layout {
+        grid-template-columns: 1fr;
+        min-height: auto
+      }
+    }
+
+    /* Sidebar */
+    .map-sidebar {
+      background: var(--navy);
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column
+    }
+
+    .map-sb-header {
+      padding: 1.4rem 1.5rem;
+      border-bottom: 1px solid rgba(255, 255, 255, .1)
+    }
+
+    .map-sb-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.35rem;
+      font-weight: 400;
+      color: #fff;
+      margin-bottom: .2rem
+    }
+
+    .map-sb-sub {
+      font-size: .72rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, .4)
+    }
+
+    .map-sb-group {
+      padding: .7rem 1.5rem .4rem
+    }
+
+    .map-sb-glabel {
+      font-size: .62rem;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: rgba(232, 201, 122, .65);
+      padding-bottom: .5rem;
+      border-bottom: 1px solid rgba(255, 255, 255, .08);
+      margin-bottom: .3rem;
+      display: block
+    }
+
+    /* Location button */
+    .loc-btn {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      padding: .68rem .5rem;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid rgba(255, 255, 255, .06);
+      text-align: left;
+      color: rgba(255, 255, 255, .72);
+      transition: background .18s, padding-left .18s, color .18s;
+      cursor: pointer;
+    }
+
+    .loc-btn:hover,
+    .loc-btn.active {
+      background: rgba(176, 136, 64, .12);
+      padding-left: .9rem;
+      color: #fff
+    }
+
+    .loc-btn.active {
+      border-left: 3px solid var(--gold)
+    }
+
+    .loc-btn-icon {
+      font-size: 1.1rem;
+      flex-shrink: 0;
+      width: 26px;
+      text-align: center
+    }
+
+    .loc-btn-text {}
+
+    .loc-btn-name {
+      font-size: .95rem;
+      font-weight: 500;
+      display: block;
+      line-height: 1.3
+    }
+
+    .loc-btn-dist {
+      font-size: .72rem;
+      letter-spacing: .06em;
+      color: rgba(232, 201, 122, .8);
+      display: block;
+      margin-top: .1rem
+    }
+
+    /* Map right area */
+    .map-right {
+      position: relative;
+      display: flex;
+      flex-direction: column
+    }
+
+    .map-right iframe {
+      flex: 1;
+      border: 0;
+      min-height: 480px;
+      display: block
+    }
+
+    @media(max-width:960px) {
+      .map-right iframe {
+        min-height: 340px
+      }
+    }
+
+    /* Distance toast */
+    .dist-toast {
+      position: absolute;
+      top: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+      background: var(--navy);
+      border: 1px solid var(--gold);
+      padding: 1rem 1.4rem;
+      min-width: 280px;
+      max-width: 360px;
+      box-shadow: 0 8px 32px rgba(13, 27, 62, .22);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .3s ease, transform .3s ease;
+      transform: translateX(-50%) translateY(-6px);
+    }
+
+    .dist-toast.show {
+      opacity: 1;
+      pointer-events: all;
+      transform: translateX(-50%) translateY(0)
+    }
+
+    .toast-from {
+      font-size: .62rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--glt);
+      margin-bottom: .3rem;
+      display: block
+    }
+
+    .toast-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: #fff;
+      margin-bottom: .2rem
+    }
+
+    .toast-dist {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, .7);
+      margin-bottom: .8rem
+    }
+
+    .toast-dist strong {
+      color: var(--glt);
+      font-size: 1.3rem;
+      font-family: 'Cormorant Garamond', serif
+    }
+
+    .toast-route {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      font-size: .72rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding: .55rem 1.2rem;
+      background: linear-gradient(135deg, var(--gold), var(--glt));
+      color: var(--navy);
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: filter .22s;
+    }
+
+    .toast-route:hover {
+      filter: brightness(1.08)
+    }
+
+    .toast-close {
+      position: absolute;
+      top: .6rem;
+      right: .7rem;
+      background: none;
+      border: none;
+      color: rgba(255, 255, 255, .4);
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: color .2s;
+      padding: .1rem .3rem;
+    }
+
+    .toast-close:hover {
+      color: #fff
+    }
+
+    /* ══════════════════════════════════════════════════════════════════════════
+   SECTION 4 — FLOOR PLANS
+   ══════════════════════════════════════════════════════════════════════════ */
+    .inv-sec {
+      background: var(--s2)
+    }
+
+    /* Tabs row */
+    .plan-tabs {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      border: 1px solid var(--bdr);
+      background: var(--srf);
+      margin-bottom: 2.5rem
+    }
+
+    .p-tab {
+      padding: 1.5rem 1.2rem;
+      text-align: left;
+      background: var(--srf);
+      border-right: 1px solid var(--bdr);
+      border-top: 3px solid transparent;
+      cursor: pointer;
+      transition: background .22s, border-top-color .22s;
+      position: relative;
+    }
+
+    .p-tab:last-child {
+      border-right: none
+    }
+
+    .p-tab.active {
+      background: var(--navy);
+      border-top-color: var(--gold)
+    }
+
+    .p-tab.locked {
+      cursor: not-allowed;
+      opacity: .6
+    }
+
+    .pt-lbl {
+      font-size: .65rem;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      margin-bottom: .3rem
+    }
+
+    .p-tab.active .pt-lbl {
+      color: rgba(255, 255, 255, .5)
+    }
+
+    .p-tab:not(.active) .pt-lbl {
+      color: var(--muted)
+    }
+
+    .pt-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.45rem;
+      font-weight: 400;
+      line-height: 1.2;
+      margin-bottom: .3rem
+    }
+
+    .p-tab.active .pt-name {
+      color: #fff
+    }
+
+    .p-tab:not(.active) .pt-name {
+      color: var(--navy)
+    }
+
+    .pt-grade {
+      font-size: .82rem;
+      font-weight: 600
+    }
+
+    .p-tab.active .pt-grade {
+      color: var(--glt)
+    }
+
+    .p-tab:not(.active):not(.locked) .pt-grade {
+      color: var(--gold)
+    }
+
+    .pt-badge {
+      position: absolute;
+      top: .6rem;
+      right: .7rem;
+      font-size: .58rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: .24rem .65rem;
+      background: var(--s2);
+      color: var(--muted);
+      border: 1px solid var(--bds);
+    }
+
+    /* Plan panels */
+    .plan-panel {
+      display: none
+    }
+
+    .plan-panel.active {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 2.5rem;
+      align-items: start
+    }
+
+    @media(max-width:860px) {
+      .plan-panel.active {
+        grid-template-columns: 1fr
+      }
+    }
+
+    /* Plan image wrapper */
+    .plan-img-box {
+      position: relative;
+      border: 1px solid var(--bdr);
+      background: var(--srf);
+      overflow: hidden
+    }
+
+    .plan-img-box img {
+      width: 100%;
+      display: block;
+      min-height: 340px;
+      object-fit: cover
+    }
+
+    /* ── LOCKED overlay (Block 1) ── */
+    .plan-locked {
+      position: absolute;
+      inset: 0;
+      z-index: 10;
+      background: rgba(13, 27, 62, .96);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .plan-locked-word {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: var(--navy);
+      background: var(--glt);
+      padding: .4rem 2rem;
+      display: inline-block;
+      letter-spacing: .06em;
+      line-height: 1.1;
+    }
+
+    .plan-locked-sub {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, .65);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-weight: 500
+    }
+
+    .plan-locked-note {
+      font-size: .9rem;
+      color: rgba(255, 255, 255, .45);
+      max-width: 240px;
+      line-height: 1.65
+    }
+
+    /* Plan detail side */
+    .plan-detail-header {
+      margin-bottom: 1.5rem
+    }
+
+    .plan-spec-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: .8rem;
+      margin-bottom: 1.8rem
+    }
+
+    .spec-box {
+      background: var(--srf);
+      border: 1px solid var(--bdr);
+      padding: 1rem 1.2rem
+    }
+
+    .spec-lbl {
+      font-size: .58rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: .3rem
+    }
+
+    .spec-val {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--navy)
+    }
+
+    .spec-val.gold {
+      color: var(--gold);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem
+    }
+
+    .feature-list {
+      list-style: none;
+      margin-bottom: 2rem
+    }
+
+    .feature-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: .65rem;
+      padding: .46rem 0;
+      border-bottom: 1px solid rgba(221, 225, 239, .7);
+      font-size: .97rem;
+      color: var(--txt2)
+    }
+
+    .feature-list li:last-child {
+      border-bottom: none
+    }
+
+    .feature-list li::before {
+      content: '';
+      display: block;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--gold);
+      flex-shrink: 0;
+      margin-top: .48rem
+    }
+
+    .plan-cta-row {
+      display: flex;
+      gap: .8rem;
+      flex-wrap: wrap
+    }
+
+    /* Buttons */
+    .btn-navy {
+      display: inline-block;
+      padding: 1rem 2.4rem;
+      background: var(--navy);
+      color: #fff;
+      border: none;
+      font-size: .78rem;
+      letter-spacing: .17em;
+      text-transform: uppercase;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background .22s;
+    }
+
+    .btn-navy:hover {
+      background: var(--blue)
+    }
+
+    .btn-outline-navy {
+      display: inline-block;
+      padding: 1rem 2rem;
+      border: 1.5px solid var(--bds);
+      color: var(--txt2);
+      background: var(--srf);
+      font-size: .78rem;
+      letter-spacing: .17em;
+      text-transform: uppercase;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background .22s, border-color .22s;
+    }
+
+    .btn-outline-navy:hover {
+      background: var(--s2);
+      border-color: var(--navy)
+    }
+
+    .plan-note {
+      font-size: .78rem;
+      color: var(--muted);
+      margin-top: .8rem;
+      line-height: 1.6
+    }
+
+    /* ══════════════════════════════════════════════════════════════════════════
+   PARTNER BANNER
+   ══════════════════════════════════════════════════════════════════════════ */
+    .partner {
+      padding: 4.5rem 4rem;
+      background: linear-gradient(135deg, var(--gdk) 0%, var(--gold) 28%, var(--glt) 50%, var(--gold) 72%, var(--gdk) 100%);
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .partner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: repeating-linear-gradient(45deg, rgba(255, 255, 255, .04) 0, rgba(255, 255, 255, .04) 1px, transparent 1px, transparent 9px)
+    }
+
+    .partner-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 820px;
+      margin: 0 auto
+    }
+
+    /* RNI logo placeholder */
+    .rni-logo {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1.8rem
+    }
+
+    /* Developer: replace the .rni-logo block with <img src="rni-logo.svg" alt="Rising Nexus Infra" style="height:52px"/> */
+    .rni-logo-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      color: var(--navy);
+      text-transform: uppercase
+    }
+
+    .rni-logo-sub {
+      font-size: .52rem;
+      letter-spacing: .22em;
+      color: rgba(13, 27, 62, .5);
+      text-transform: uppercase;
+      margin-top: 2px
+    }
+
+    .trust-chips {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: .65rem;
+      margin: 1.4rem 0
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: .35rem;
+      padding: .44rem 1rem;
+      background: rgba(13, 27, 62, .1);
+      border: 1px solid rgba(13, 27, 62, .2);
+      font-size: .72rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: var(--navy)
+    }
+
+    .rera-text {
+      font-size: .78rem;
+      color: rgba(13, 27, 62, .5);
+      line-height: 1.75;
+      margin-top: 1.3rem
+    }
+
+    /* ══════════════════════════════════════════════════════════════════════════
+   FOOTER / VIP FORM
+   ══════════════════════════════════════════════════════════════════════════ */
+    .footer-sec {
+      background: var(--navy);
+      position: relative;
+      overflow: hidden
+    }
+
+    .footer-sec::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background-image: linear-gradient(rgba(255, 255, 255, .025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, .025) 1px, transparent 1px);
+      background-size: 54px 54px
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 5rem;
+      align-items: start;
+      position: relative;
+      z-index: 2
+    }
+
+    @media(max-width:860px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem
+      }
+    }
+
+    /* Info col */
+    .ft-lbl {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      margin-bottom: 1.1rem
+    }
+
+    .ft-lbl::before {
+      content: '';
+      width: 26px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--gdk), var(--glt));
+      flex-shrink: 0
+    }
+
+    .ft-contact {
+      list-style: none;
+      margin-top: 1.4rem
+    }
+
+    .ft-contact li {
+      display: flex;
+      align-items: flex-start;
+      gap: .8rem;
+      padding: .8rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, .07);
+      font-size: .97rem
+    }
+
+    .ft-contact li:last-child {
+      border-bottom: none
+    }
+
+    .fti {
+      font-size: 1.1rem;
+      flex-shrink: 0;
+      margin-top: .08rem
+    }
+
+    .ftl {
+      font-size: .6rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--glt);
+      display: block;
+      margin-bottom: .15rem
+    }
+
+    .ftv {
+      color: rgba(255, 255, 255, .72)
+    }
+
+    /* Action buttons */
+    .ft-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: .7rem;
+      margin-top: 1.4rem
+    }
+
+    .ft-wa {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .55rem;
+      padding: 1rem;
+      background: #25D366;
+      color: #fff;
+      font-size: .82rem;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: filter .22s
+    }
+
+    .ft-wa:hover {
+      filter: brightness(1.1)
+    }
+
+    .ft-call {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .55rem;
+      padding: 1rem;
+      background: linear-gradient(135deg, var(--gold), var(--glt));
+      color: var(--navy);
+      font-size: .82rem;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: filter .22s
+    }
+
+    .ft-call:hover {
+      filter: brightness(1.08)
+    }
+
+    /* Quick facts */
+    .quick-box {
+      border: 1px solid rgba(255, 255, 255, .1);
+      padding: 1.4rem;
+      margin-top: 1.4rem
+    }
+
+    .qb-lbl {
+      font-size: .6rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: rgba(232, 201, 122, .6);
+      margin-bottom: .8rem
+    }
+
+    .qb-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: .4rem
+    }
+
+    .qb-item {
+      font-size: .88rem;
+      color: rgba(255, 255, 255, .5)
+    }
+
+    /* Form */
+    .vip-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem
+    }
+
+    .vip-form label {
+      display: block;
+      font-size: .65rem;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, .38);
+      margin-bottom: .45rem;
+      font-weight: 600
+    }
+
+    .vip-input,
+    .vip-select,
+    .vip-textarea {
+      width: 100%;
+      background: rgba(255, 255, 255, .06);
+      border: 1px solid rgba(255, 255, 255, .12);
+      color: #fff;
+      font-size: 1rem;
+      padding: .95rem 1.1rem;
+      outline: none;
+      font-family: 'DM Sans', sans-serif;
+      transition: border-color .22s, background .22s;
+    }
+
+    .vip-input:focus,
+    .vip-select:focus,
+    .vip-textarea:focus {
+      border-color: rgba(232, 201, 122, .55);
+      background: rgba(255, 255, 255, .1)
+    }
+
+    .vip-input::placeholder,
+    .vip-textarea::placeholder {
+      color: rgba(255, 255, 255, .25)
+    }
+
+    .vip-select option {
+      background: #0D1B3E;
+      color: #fff
+    }
+
+    .vip-textarea {
+      resize: vertical;
+      min-height: 96px
+    }
+
+    .vip-submit {
+      padding: 1.1rem;
+      background: linear-gradient(135deg, var(--gold), var(--glt));
+      color: var(--navy);
+      font-size: .85rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+      transition: filter .22s;
+      font-family: 'DM Sans', sans-serif;
+      width: 100%;
+    }
+
+    .vip-submit:hover {
+      filter: brightness(1.07)
+    }
+
+    .vip-disclaimer {
+      font-size: .72rem;
+      color: rgba(255, 255, 255, .28);
+      line-height: 1.6;
+      margin-top: .4rem
+    }
+
+    /* Form success */
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 3rem 1rem
+    }
+
+    .form-success.show {
+      display: block
+    }
+
+    .fs-icon {
+      font-size: 3.5rem;
+      margin-bottom: 1rem
+    }
+
+    .fs-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.6rem;
+      font-weight: 300;
+      color: #fff;
+      margin-bottom: .7rem
+    }
+
+    .fs-body {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, .58);
+      line-height: 1.8
+    }
+
+    .fs-contact {
+      margin-top: .8rem;
+      font-size: .92rem;
+      color: var(--glt)
+    }
+
+    /* Footer bar */
+    .footer-bar {
+      background: var(--navy);
+      border-top: 1px solid rgba(255, 255, 255, .1);
+      padding: 1.8rem 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem
+    }
+
+    @media(max-width:700px) {
+      .footer-bar {
+        padding: 1.5rem 1.4rem;
+        flex-direction: column;
+        align-items: flex-start
+      }
+    }
+
+    .fb-brand {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      color: rgba(255, 255, 255, .78);
+      letter-spacing: .08em;
+      text-transform: uppercase
+    }
+
+    .fb-legal {
+      font-size: .72rem;
+      color: rgba(255, 255, 255, .3);
+      line-height: 1.7;
+      text-align: center;
+      max-width: 480px
+    }
+
+    .fb-links {
+      display: flex;
+      gap: 1.4rem
+    }
+
+    .fb-links a {
+      font-size: .65rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, .35);
+      transition: color .2s
+    }
+
+    .fb-links a:hover {
+      color: rgba(255, 255, 255, .82)
+    }
+
+    /* ══════════════════════════════════════════════════════════════════════════
+   GENERIC SECTION HEADER PATTERN
+   ══════════════════════════════════════════════════════════════════════════ */
+    .sec-header {
+      margin-bottom: 3rem
+    }
+
+    .sec-label-row {
+      display: flex;
+      align-items: center;
+      gap: .8rem;
+      margin-bottom: .9rem
+    }
+
+    .sec-label-row span {
+      font-size: .75rem;
+      letter-spacing: .28em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: var(--blue)
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ════════════════════════════════════════════════════════════════════════
+     FLOATING ACTION BUTTONS
+     ════════════════════════════════════════════════════════════════════════ -->
+  <div class="fab-group" aria-label="Quick contact">
+    <!-- WhatsApp -->
+    <a href="https://wa.me/919910587006" target="_blank" rel="noopener noreferrer" class="fab fab-wa"
+      aria-label="Chat on WhatsApp">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.117 1.522 5.845L0 24l6.335-1.502A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z" />
+      </svg>
+      WhatsApp
+    </a>
+    <!-- Book Site Visit -->
+    <button class="fab fab-visit" onclick="scrollTo('vip-form')" aria-label="Book a site visit">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"
+        style="fill:none">
+        <rect x="3" y="4" width="18" height="18" rx="2" />
+        <line x1="16" y1="2" x2="16" y2="6" />
+        <line x1="8" y1="2" x2="8" y2="6" />
+        <line x1="3" y1="10" x2="21" y2="10" />
+      </svg>
+      Book Site Visit
+    </button>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════════
+     NAV
+     ════════════════════════════════════════════════════════════════════════ -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">
+      <span class="nav-logo-name">Rising Nexus Infra</span>
+      <span class="nav-logo-tag">Exclusive Strategic Partner</span>
+    </a>
+    <div class="nav-mid">
+      <div class="nav-mid-lbl">Project</div>
+      <div class="nav-mid-name">Harison Group Residences · Barog, H.P.</div>
+    </div>
+    <button class="nav-btn" onclick="scrollTo('vip-form')">Request Quotation</button>
+  </nav>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════════
+     SECTION 1 — HERO
+     ════════════════════════════════════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+
+    <!--
+    DEVELOPER NOTE: .hero-img background-image uses an Unsplash placeholder.
+    Replace with your official building photo:
+      background-image: url('assets/harison-barog-hero.jpg');
+    Visual description: "A majestic 6-floor modern luxury residential building
+    seamlessly integrated into a misty pine-wood forest in the Barog mountains, H.P."
+  -->
+    <div class="hero-img" id="heroBg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-mist"></div>
+
+    <!-- Content -->
+    <div class="wrap" style="position:relative;z-index:10;padding-top:2rem;padding-bottom:5rem;text-align:center">
+      <div style="max-width:860px;margin:0 auto">
+
+        <!-- Soft launch pill -->
+        <div class="h1" style="margin-bottom:1.3rem">
+          <span class="hbadge hbadge-soft">
+            <span class="hbadge-icon" style="background:rgba(255,255,255,.85)">✦</span>
+            Soft Launch Stage — Blocks 2 &amp; 3 Now Open
+          </span>
+        </div>
+
+        <!-- Price badge — ONLY price mention on page -->
+        <div class="h1" style="margin-bottom:1.3rem">
+          <span class="hbadge hbadge-price">Starting from ₹81 Lakh*</span>
+        </div>
+
+        <!-- Main headline -->
+        <h1 class="serif t-hero h2" style="color:#fff;margin-bottom:1.2rem;letter-spacing:-.01em">
+          Breathe<span
+            style="color:var(--glt);font-size:.55em;vertical-align:middle;letter-spacing:-.1em;opacity:.8">...</span><br>
+          Live<span
+            style="color:var(--glt);font-size:.55em;vertical-align:middle;letter-spacing:-.1em;opacity:.8">...</span><br>
+          <em style="color:var(--glt)">Invest<span
+              style="font-size:.55em;vertical-align:middle;letter-spacing:-.1em;opacity:.9">...</span></em>
+        </h1>
+
+        <!-- Sub-headline -->
+        <p class="t-xl h3" style="color:rgba(255,255,255,.72);max-width:600px;margin:0 auto 2rem">
+          Premium 1-BHK Luxury Residences by Harison Group<br>
+          <span style="font-size:.92rem;color:rgba(255,255,255,.42)">Barog, Himachal Pradesh</span>
+        </p>
+
+        <!-- Approval badges -->
+        <div class="h4" style="display:flex;flex-wrap:wrap;justify-content:center;gap:.65rem;margin-bottom:2.2rem">
+          <span class="hbadge"><span class="hbadge-icon">S</span>SBI Approved</span>
+          <span class="hbadge"><span class="hbadge-icon">H</span>HDFC Approved</span>
+          <span class="hbadge"><span class="hbadge-icon">✓</span>Direct Registry · Non-Himachalis</span>
+          <span class="hbadge"><span class="hbadge-icon">R</span>RERA Registered</span>
+        </div>
+
+        <!-- CTAs -->
+        <div class="h5" style="display:flex;justify-content:center;gap:1rem;flex-wrap:wrap">
+          <button class="btn-gold" onclick="scrollTo('vip-form')">Request Official Quotation</button>
+          <button class="btn-ghost" onclick="scrollTo('inventory')">Explore Layouts</button>
+        </div>
+
+        <!-- RERA micro -->
+        <p class="t-micro h5" style="color:rgba(255,255,255,.25);margin-top:1.8rem">
+          RERA: HPRERASOL 2024119/P · Possession: March 2028 · Exclusively by Rising Nexus Infra
+        </p>
+
+      </div>
+    </div>
+
+    <!-- Scroll cue -->
+    <div class="scroll-cue">
+      <div class="scroll-line"></div>
+      <span class="t-micro" style="color:rgba(255,255,255,.3)">Scroll</span>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════════
+     STATS STRIP
+     ════════════════════════════════════════════════════════════════════════ -->
+  <div class="strip">
+    <div class="strip-cell">
+      <div class="strip-n">₹81L</div>
+      <div class="strip-l">Starting Price*</div>
+    </div>
+    <div class="strip-cell">
+      <div class="strip-n">998</div>
+      <div class="strip-l">Max Sq.Ft. — Block 3</div>
+    </div>
+    <div class="strip-cell">
+      <div class="strip-n">Mar '28</div>
+      <div class="strip-l">Possession</div>
+    </div>
+    <div class="strip-cell">
+      <div class="strip-n">AQI 32</div>
+      <div class="strip-l">Barog Valley — Excellent</div>
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════════
+     SECTION 2 — AQI SLIDER
+     ════════════════════════════════════════════════════════════════════════ -->
+  <section class="aqi-sec sec" id="aqi">
+    <div class="wrap">
+
+      <div class="sec-header fade-up" style="text-align:center">
+        <div class="sec-label-row" style="justify-content:center">
+          <span class="accent-bar"></span>
+          <span class="t-label" style="color:var(--blue)">Air Quality Index</span>
+          <span class="accent-bar"></span>
+        </div>
+        <h2 class="serif t-h1 navy">Your Lungs Deserve <em style="color:var(--gold)">Better.</em></h2>
+        <p class="t-xl" style="color:var(--txt2);max-width:600px;margin:1rem auto 0">
+          Escape hazardous smog and secure a generational asset just 5.5 hours from the capital. Drag the slider.
+        </p>
+      </div>
+
+      <!-- The slider -->
+      <div class="aqi-wrap fade-up" id="aqiWrap">
+
+        <!-- RIGHT behind: Barog valley -->
+        <!--
+        DEVELOPER NOTE: Replace URL with high-res Barog pine forest photo.
+        Current: Unsplash – "lush green pine forest, clear blue mountain sky"
+      -->
+        <div class="aqi-right"></div>
+
+        <!-- LEFT on top: Delhi smog (clipped by JS) -->
+        <!--
+        DEVELOPER NOTE: Replace URL with smoggy Delhi NCR cityscape photo.
+        Current: Unsplash – "grey smog over dense urban cityscape"
+      -->
+        <div class="aqi-left" id="aqiLeft"></div>
+        <div class="aqi-left-haze" id="aqiHaze" style="position:absolute;inset:0;pointer-events:none;z-index:3"></div>
+
+        <!-- Info cards -->
+        <div class="aqi-card aqi-left-card" style="z-index:4">
+          <span class="aqi-num aqi-bad">380+</span>
+          <span class="aqi-place">Delhi NCR</span>
+          <span class="aqi-status" style="color:rgba(255,95,95,.9)">AQI: 380+ · Hazardous ⚠</span>
+        </div>
+        <div class="aqi-card aqi-right-card">
+          <span class="aqi-num aqi-good">32</span>
+          <span class="aqi-place">Barog Valley</span>
+          <span class="aqi-status" style="color:rgba(74,222,128,.9)">AQI: 32 · Excellent ✦</span>
+        </div>
+
+        <!-- Draggable divider -->
+        <div class="aqi-div" id="aqiDiv">
+          <div class="aqi-handle">⇔</div>
+        </div>
+
+        <!-- Hint text -->
+        <div class="aqi-hint" id="aqiHint">← Drag to Compare →</div>
+
+      </div>
+
+      <p class="t-xl fade-up" style="color:var(--txt2);max-width:660px;margin:2rem auto 0;text-align:center">
+        <strong>AQI 32 vs 380+</strong> — the difference is not just comfort, it's longevity.
+        Pine-scented air at 1,600 m above sea level, starting at just <strong>₹81 Lakh*</strong>.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════════
+     SECTION 3 — PROXIMITY MAP WIDGET
+     ════════════════════════════════════════════════════════════════════════ -->
+  <section class="map-sec sec" id="connectivity">
+    <div class="wrap">
+
+      <div class="sec-header fade-up">
+        <div class="sec-label-row">
+          <span class="accent-bar"></span>
+          <span class="t-label" style="color:var(--blue)">Location &amp; Connectivity</span>
+        </div>
+        <h2 class="serif t-h1 navy">Perfectly Isolated.<br><em style="color:var(--gold)">Perfectly Connected.</em></h2>
+        <p class="t-xl" style="color:var(--txt2);max-width:560px;margin-top:.8rem">
+          Click any destination in the sidebar to instantly see its road distance from the project entry point.
+        </p>
+      </div>
+
+      <!-- Map layout -->
+      <div class="map-layout fade-up">
+
+        <!-- ── SIDEBAR ── -->
+        <div class="map-sidebar" id="mapSidebar">
+          <div class="map-sb-header">
+            <div class="map-sb-title">Proximity Explorer</div>
+            <div class="map-sb-sub">Anchor: Project Entry / Site Office</div>
+          </div>
+
+          <!-- Major Hubs -->
+          <div class="map-sb-group">
+            <span class="map-sb-glabel">🚗 Major Hubs</span>
+            <button class="loc-btn" data-name="Delhi NCR" data-km="290"
+              data-route="https://maps.google.com/maps?saddr=Barog+Site+Office+HP&daddr=Delhi+NCR">
+              <span class="loc-btn-icon">🏙️</span>
+              <span class="loc-btn-text"><span class="loc-btn-name">Delhi NCR</span><span class="loc-btn-dist">290 km ·
+                  Road</span></span>
+            </button>
+            <button class="loc-btn" data-name="Chandigarh Airport" data-km="65"
+              data-route="https://maps.google.com/maps?saddr=Barog+HP&daddr=Chandigarh+International+Airport">
+              <span class="loc-btn-icon">✈️</span>
+              <span class="loc-btn-text"><span class="loc-btn-name">Chandigarh Airport</span><span
+                  class="loc-btn-dist">65 km · Road</span></span>
+            </button>
+            <button class="loc-btn" data-name="Shimla" data-km="55"
+              data-route="https://maps.google.com/maps?saddr=Barog+HP&daddr=Shimla+HP">
+              <span class="loc-btn-icon">🏔️</span>
+              <span class="loc-btn-text"><span class="loc-btn-name">Shimla</span><span class="loc-btn-dist">55 km ·
+                  Road</span></span>
+            </button>
+            <button class="loc-btn" data-name="Dehradun" data-km="170"
+              data-route="https://maps.google.com/maps?saddr=Barog+HP&daddr=Dehradun+Uttarakhand">
+              <span class="loc-btn-icon">🌿</span>
+              <span class="loc-btn-text"><span class="loc-btn-name">Dehradun</span><span class="loc-btn-dist">170 km ·
+                  Road</span></span>
+            </button>
+          </div>
+
+          <!-- Education -->
+          <div class="map-sb-group">
+            <span class="map-sb-glabel">🏫 Education</span>
+            <button class="loc-btn" data-name="Army Public School, Dagshai" data-km="3.5"
+              data-route="https://maps.google.com/maps?saddr=Barog+HP&daddr=Army+Public+School+Dagshai+HP">
+              <span class="loc-btn-icon">🎓</span>
+              <span class="loc-btn-text"><span class="loc-btn-name">Army Public School, Dagshai</span><span
+                  class="loc-btn-dist">3.5 km</span></span>
+            </button>
+          </div>
+
+          <!-- Healthcare -->
+          <div class="map-sb-group">
+            <span class="map-sb-glabel">🏥 Healthcare</span>
+            <button class="loc-btn" data-name="Bansal Orthopaedic Centre" data-km="9"
+              data-route="https://maps.google.com/maps?saddr=Barog+HP&daddr=Bansal+Orthopaedic+Solan+HP">
+              <span class="loc-btn-icon">🦴</span>
+              <span class="loc-btn-text"><span class="loc-btn-name">Bansal Orthopaedic Centre</span><span
+                  class="loc-btn-dist">9 km</span></span>
+            </button>
+            <button class="loc-btn" data-name="Maharishi Markandeshwar Hospital" data-km="14"
+              data-route="https://maps.google.com/maps?saddr=Barog+HP&daddr=Maharishi+Markandeshwar+Hospital+HP">
+              <span class="loc-btn-icon">🏥</span>
+              <span class="loc-btn-text"><span class="loc-btn-name">Maharishi Markandeshwar Hosp.</span><span
+                  class="loc-btn-dist">14 km</span></span>
+            </button>
+          </div>
+
+          <!-- Leisure & Essentials -->
+          <div class="map-sb-group">
+            <span class="map-sb-glabel">🛍️ Leisure &amp; Essentials</span>
+            <button class="loc-btn" data-name="Vivanta Mall, Solan" data-km="14"
+              data-route="https://maps.google.com/maps?saddr=Barog+HP&daddr=Vivanta+Mall+Solan+HP">
+              <span class="loc-btn-icon">🛒</span>
+              <span class="loc-btn-text"><span class="loc-btn-name">Vivanta Mall, Solan</span><span
+                  class="loc-btn-dist">14 km</span></span>
+            </button>
+            <button class="loc-btn" data-name="Dharampur Haveli Restaurant" data-km="6"
+              data-route="https://maps.google.com/maps?saddr=Barog+HP&daddr=Dharampur+Haveli+HP">
+              <span class="loc-btn-icon">🍽️</span>
+              <span class="loc-btn-text"><span class="loc-btn-name">Dharampur Haveli Restaurant</span><span
+                  class="loc-btn-dist">6 km</span></span>
+            </button>
+            <button class="loc-btn" data-name="McDonald's, Jabli" data-km="11"
+              data-route="https://maps.google.com/maps?saddr=Barog+HP&daddr=McDonalds+Jabli+HP">
+              <span class="loc-btn-icon">🍔</span>
+              <span class="loc-btn-text"><span class="loc-btn-name">McDonald's, Jabli</span><span
+                  class="loc-btn-dist">11 km</span></span>
+            </button>
+            <button class="loc-btn" data-name="Lord of the Drinks, Jabli" data-km="11"
+              data-route="https://maps.google.com/maps?saddr=Barog+HP&daddr=Lord+of+the+Drinks+Jabli+HP">
+              <span class="loc-btn-icon">🍸</span>
+              <span class="loc-btn-text"><span class="loc-btn-name">Lord of the Drinks, Jabli</span><span
+                  class="loc-btn-dist">11 km</span></span>
+            </button>
+          </div>
+
+        </div><!-- /sidebar -->
+
+        <!-- ── MAP + TOAST ── -->
+        <div class="map-right" id="mapRight">
+
+          <!-- Distance toast (hidden until a button is clicked) -->
+          <div class="dist-toast" id="distToast">
+            <button class="toast-close" id="toastClose" aria-label="Close">✕</button>
+            <span class="toast-from">Distance from Project Entry / Site Office</span>
+            <div class="toast-name serif" id="toastName">—</div>
+            <div class="toast-dist">Road Distance: <strong id="toastKm">—</strong> km</div>
+            <a class="toast-route" id="toastRoute" href="#" target="_blank" rel="noopener noreferrer">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+              </svg>
+              View Route on Google Maps
+            </a>
+          </div>
+
+          <!--
+          DEVELOPER NOTE:
+          The iframe below uses the Harison Group Site Office map link provided.
+          If Google Maps blocks embedding from this short link, replace src with a
+          standard Google Maps Embed API URL for the same coordinates.
+          Format: https://maps.google.com/maps?q=LAT,LNG&z=15&output=embed
+        -->
+          <iframe
+            src="https://maps.google.com/maps?q=Barog,+Himachal+Pradesh+173217,+India&t=&z=14&ie=UTF8&iwloc=&output=embed"
+            title="Project Location — Harison Group Residences, Barog, H.P." loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" allowfullscreen>
+          </iframe>
+
+          <!-- Map anchor label -->
+          <div
+            style="padding:.75rem 1.2rem;background:var(--navy);border-top:1px solid rgba(255,255,255,.1);display:flex;align-items:center;gap:.6rem">
+            <span
+              style="width:9px;height:9px;border-radius:50%;background:#4ade80;flex-shrink:0;box-shadow:0 0 6px rgba(74,222,128,.6)"></span>
+            <span
+              style="font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600;color:rgba(255,255,255,.75)">Anchor:
+              Project Entry / Site Office · Barog, H.P.</span>
+          </div>
+
+        </div><!-- /map-right -->
+
+      </div><!-- /map-layout -->
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════════
+     SECTION 4 — FLOOR PLAN VIEWER
+     ════════════════════════════════════════════════════════════════════════ -->
+  <section class="inv-sec sec" id="inventory">
+    <div class="wrap">
+
+      <div class="sec-header fade-up" style="text-align:center">
+        <div class="sec-label-row" style="justify-content:center">
+          <span class="accent-bar"></span>
+          <span class="t-label" style="color:var(--blue)">Inventory &amp; Floor Plans</span>
+          <span class="accent-bar"></span>
+        </div>
+        <h2 class="serif t-h1 navy">Choose Your <em style="color:var(--gold)">Residence</em></h2>
+        <p class="t-xl" style="color:var(--muted);max-width:520px;margin:.8rem auto 0">
+          Blocks 2 &amp; 3 open for immediate booking. Block 1 launches after Block 2 sells out.
+        </p>
+      </div>
+
+      <!-- TABS -->
+      <div class="plan-tabs fade-up">
+        <!-- Block 3 -->
+        <div class="p-tab active" id="tab-b3" onclick="switchTab('b3')" role="tab" aria-selected="true" tabindex="0">
+          <div class="pt-lbl">Block 3</div>
+          <div class="pt-name serif">998 Sq.Ft.</div>
+          <div class="pt-grade">Super Premium · Open</div>
+        </div>
+        <!-- Block 2 -->
+        <div class="p-tab" id="tab-b2" onclick="switchTab('b2')" role="tab" aria-selected="false" tabindex="0">
+          <div class="pt-lbl">Block 2</div>
+          <div class="pt-name serif">772 Sq.Ft.</div>
+          <div class="pt-grade">Premium · Open</div>
+        </div>
+        <!-- Block 1 — LOCKED -->
+        <div class="p-tab locked" id="tab-b1" onclick="switchTab('b1')" role="tab" aria-selected="false" tabindex="0"
+          aria-label="Block 1 — Coming Soon">
+          <div class="pt-badge">COMING SOON</div>
+          <div class="pt-lbl" style="color:var(--muted)">Block 1</div>
+          <div class="pt-name serif" style="color:var(--muted)">752 Sq.Ft.</div>
+          <div class="pt-grade" style="color:var(--muted)">Standard · Reserved</div>
+        </div>
+      </div>
+
+      <!-- PANEL: Block 3 -->
+      <div class="plan-panel active" id="panel-b3">
+        <div class="plan-img-box fade-up">
+          <!--
+          DEVELOPER NOTE: Replace src with your Block 3 floor plan image.
+          e.g. <img src="./assets/block3-plan.jpg" alt="Block 3 — 998 Sq.Ft. Super Premium Floor Plan"/>
+          Unsplash placeholder represents an architectural floor plan aesthetic.
+        -->
+          <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=700&q=70"
+            alt="[REPLACE] Block 3 — 998 Sq.Ft. Super Premium floor plan placeholder. Swap with official layout." />
+          <div
+            style="padding:.7rem 1.1rem;background:var(--s2);border-top:1px solid var(--bdr);font-size:.78rem;color:var(--muted)">
+            ⚠ Placeholder — replace <code>src</code> with your official Block 3 layout screenshot.
+          </div>
+        </div>
+        <div class="fade-up">
+          <div class="plan-detail-header">
+            <span class="t-micro muted">Block 3</span>
+            <h3 class="serif t-h2 navy" style="margin:.3rem 0">Super Premium · 998 Sq.Ft.</h3>
+            <span class="accent-bar" style="margin-top:.6rem"></span>
+          </div>
+          <div class="plan-spec-grid">
+            <div class="spec-box">
+              <div class="spec-lbl">Unit Size</div>
+              <div class="spec-val">998 Sq.Ft.</div>
+            </div>
+            <div class="spec-box">
+              <div class="spec-lbl">Configuration</div>
+              <div class="spec-val">1 BHK Luxury</div>
+            </div>
+            <div class="spec-box">
+              <div class="spec-lbl">Grade</div>
+              <div class="spec-val gold">Super Premium</div>
+            </div>
+            <div class="spec-box">
+              <div class="spec-lbl">Possession</div>
+              <div class="spec-val">March 2028</div>
+            </div>
+            <div class="spec-box">
+              <div class="spec-lbl">Approval</div>
+              <div class="spec-val" style="color:var(--green)">SBI &amp; HDFC</div>
+            </div>
+            <div class="spec-box">
+              <div class="spec-lbl">Status</div>
+              <div class="spec-val" style="color:var(--green)">Open for Booking</div>
+            </div>
+          </div>
+          <ul class="feature-list">
+            <li>Mountain-view private balcony</li>
+            <li>Premium modular kitchen</li>
+            <li>Master bedroom with ensuite bath</li>
+            <li>High-grade vitrified tile flooring</li>
+            <li>Covered dedicated car parking</li>
+            <li>High-speed passenger elevator</li>
+            <li>24×7 CCTV security</li>
+            <li>100% power backup</li>
+            <li>Landscaped common gardens</li>
+          </ul>
+          <div class="plan-cta-row">
+            <button class="btn-navy" onclick="scrollTo('vip-form')">Book Block 3</button>
+            <button class="btn-outline-navy"
+              onclick="alert('Blueprint will be emailed to you. Submit the enquiry form below.')">Download
+              Blueprint</button>
+          </div>
+          <p class="plan-note">* Possession March 2028. Subject to availability. T&amp;C apply.</p>
+        </div>
+      </div>
+
+      <!-- PANEL: Block 2 -->
+      <div class="plan-panel" id="panel-b2">
+        <div class="plan-img-box fade-up">
+          <!--
+          DEVELOPER NOTE: Replace src with your Block 2 floor plan image.
+          e.g. <img src="./assets/block2-plan.jpg" alt="Block 2 — 772 Sq.Ft. Premium Floor Plan"/>
+        -->
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=700&q=70"
+            alt="[REPLACE] Block 2 — 772 Sq.Ft. Premium floor plan placeholder. Swap with official layout." />
+          <div
+            style="padding:.7rem 1.1rem;background:var(--s2);border-top:1px solid var(--bdr);font-size:.78rem;color:var(--muted)">
+            ⚠ Placeholder — replace <code>src</code> with your official Block 2 layout screenshot.
+          </div>
+        </div>
+        <div class="fade-up">
+          <div class="plan-detail-header">
+            <span class="t-micro muted">Block 2</span>
+            <h3 class="serif t-h2 navy" style="margin:.3rem 0">Premium · 772 Sq.Ft.</h3>
+            <span class="accent-bar" style="margin-top:.6rem"></span>
+          </div>
+          <div class="plan-spec-grid">
+            <div class="spec-box">
+              <div class="spec-lbl">Unit Size</div>
+              <div class="spec-val">772 Sq.Ft.</div>
+            </div>
+            <div class="spec-box">
+              <div class="spec-lbl">Configuration</div>
+              <div class="spec-val">1 BHK Luxury</div>
+            </div>
+            <div class="spec-box">
+              <div class="spec-lbl">Grade</div>
+              <div class="spec-val gold">Premium</div>
+            </div>
+            <div class="spec-box">
+              <div class="spec-lbl">Possession</div>
+              <div class="spec-val">March 2028</div>
+            </div>
+            <div class="spec-box">
+              <div class="spec-lbl">Approval</div>
+              <div class="spec-val" style="color:var(--green)">SBI &amp; HDFC</div>
+            </div>
+            <div class="spec-box">
+              <div class="spec-lbl">Status</div>
+              <div class="spec-val" style="color:var(--green)">Open for Booking</div>
+            </div>
+          </div>
+          <ul class="feature-list">
+            <li>Valley-facing private balcony</li>
+            <li>Modular kitchen with premium fittings</li>
+            <li>Spacious bedroom with attached bath</li>
+            <li>Vitrified tile flooring throughout</li>
+            <li>Covered car parking space</li>
+            <li>24×7 security &amp; power backup</li>
+            <li>Communal landscaped garden</li>
+            <li>High-speed elevator access</li>
+          </ul>
+          <div class="plan-cta-row">
+            <button class="btn-navy" onclick="scrollTo('vip-form')">Book Block 2</button>
+            <button class="btn-outline-navy"
+              onclick="alert('Blueprint will be emailed to you. Submit the enquiry form below.')">Download
+              Blueprint</button>
+          </div>
+          <p class="plan-note">* Possession March 2028. Subject to availability. T&amp;C apply.</p>
+        </div>
+      </div>
+
+      <!-- PANEL: Block 1 — LOCKED / COMING SOON -->
+      <div class="plan-panel" id="panel-b1">
+        <div class="plan-img-box fade-up">
+          <!-- Blurred placeholder image behind the locked overlay -->
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&q=30"
+            alt="Block 1 — layout hidden until launch"
+            style="filter:blur(8px) grayscale(50%) brightness(.55);min-height:360px;object-fit:cover" />
+          <!-- LOCKED OVERLAY — bold Coming Soon, non-transparent badge -->
+          <div class="plan-locked">
+            <div class="plan-locked-word">COMING SOON</div>
+            <div class="plan-locked-sub">Launches after Block 2 sells out</div>
+            <p class="plan-locked-note">Register your interest below and our team will notify you the moment Block 1
+              opens.</p>
+            <button class="btn-navy" onclick="scrollTo('vip-form')">Register Interest</button>
+          </div>
+        </div>
+        <!-- Greyed-out details (pointer-events off, for visual reference only) -->
+        <div style="opacity:.35;pointer-events:none;user-select:none" class="fade-up">
+          <div class="plan-detail-header">
+            <span class="t-micro muted">Block 1</span>
+            <h3 class="serif t-h2" style="color:var(--muted);margin:.3rem 0">Standard · 752 Sq.Ft.</h3>
+          </div>
+          <div class="plan-spec-grid">
+            <div class="spec-box">
+              <div class="spec-lbl">Unit Size</div>
+              <div class="spec-val">752 Sq.Ft.</div>
+            </div>
+            <div class="spec-box">
+              <div class="spec-lbl">Status</div>
+              <div class="spec-val">Details Locked</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════════
+     SECTION 5 — STRATEGIC PARTNER BANNER
+     ════════════════════════════════════════════════════════════════════════ -->
+  <div class="partner" id="partnership">
+    <div class="partner-inner fade-up">
+
+      <!-- RNI Logo placeholder -->
+      <!--
+      DEVELOPER NOTE: Replace the .rni-logo div with:
+      <img src="rni-logo-navy.svg" alt="Rising Nexus Infra" style="height:54px;margin-bottom:1.8rem"/>
+    -->
+      <div class="rni-logo">
+        <span class="rni-logo-name">Rising Nexus Infra</span>
+        <span class="rni-logo-sub">Infrastructure · Investment · Innovation</span>
+      </div>
+
+      <div class="gold-bar" style="margin-bottom:1.8rem"></div>
+
+      <h2 class="serif t-h1 navy" style="margin-bottom:1rem">
+        Rising Nexus Infra:<br>The Exclusive Strategic Partner.
+      </h2>
+      <p class="t-xl navy" style="opacity:.75;max-width:660px;margin:0 auto 1.4rem">
+        RNI is the <strong>sole authorised marketing, sales, and collection partner</strong>
+        for Phase 1 of Harison Group, Barog — every inquiry and transaction is handled
+        exclusively through our team.
+      </p>
+
+      <p class="t-lg" style="color:rgba(13,27,62,.62);margin-bottom:1.3rem">
+        Official developer details:
+        <a href="https://barogvalley.com/" target="_blank" rel="noopener noreferrer"
+          style="color:var(--navy);font-weight:700;text-decoration:underline">barogvalley.com ↗</a>
+      </p>
+
+      <div class="trust-chips">
+        <span class="chip">✓ RERA Registered</span>
+        <span class="chip">✓ SBI Approved</span>
+        <span class="chip">✓ HDFC Approved</span>
+        <span class="chip">✓ Direct Registry — Non-Himachalis</span>
+        <span class="chip">✓ Soft Launch Phase</span>
+      </div>
+
+      <div class="rera-text">
+        Project RERA Registration No: <strong>HPRERASOL 2024119/P</strong> | Valid upto: 09/12/2029<br />
+        Marketed exclusively by Rising Nexus Infra | Corporate Office: Noida, U.P.<br />
+        Starting from ₹81 Lakh*. All prices indicative, subject to revision. T&amp;C Apply.
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════════
+     SECTION 6 — VIP CONCIERGE FOOTER (Lead Capture)
+     ════════════════════════════════════════════════════════════════════════ -->
+  <section class="footer-sec sec" id="vip-form">
+    <div class="wrap">
+      <div class="footer-grid">
+
+        <!-- ── INFO COL ── -->
+        <div>
+          <div class="ft-lbl">
+            <span class="t-label" style="color:var(--glt)">VIP Concierge</span>
+          </div>
+          <h2 class="serif t-h1 white" style="margin-bottom:.8rem">
+            Reserve Your<br><em style="color:var(--glt)">Mountain Legacy.</em>
+          </h2>
+          <p class="t-xl" style="color:rgba(255,255,255,.52)">
+            Our team will contact you within 24 hours with an official
+            quotation and available inventory — tailored to your investment goals.
+          </p>
+
+          <!-- Direct action buttons -->
+          <div class="ft-actions">
+            <a href="https://wa.me/919910587006" target="_blank" rel="noopener noreferrer" class="ft-wa"
+              aria-label="Chat on WhatsApp">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.117 1.522 5.845L0 24l6.335-1.502A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z" />
+              </svg>
+              Chat on WhatsApp
+            </a>
+            <a href="tel:+919910587006" class="ft-call" aria-label="Call for allocation">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.07 1.2 2 2 0 012.06 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91A16 16 0 0016.08 17.9l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+              </svg>
+              Call for Allocation
+            </a>
+          </div>
+
+          <ul class="ft-contact">
+            <li><span class="fti">📞</span>
+              <div><span class="ftl">Strategic Partner</span><a href="tel:+919910587006" class="ftv">+91 99105 87006</a>
+              </div>
+            </li>
+            <li><span class="fti">✉️</span>
+              <div><span class="ftl">Sales Enquiries</span><a href="mailto:sales@risingnexusinfra.com"
+                  class="ftv">sales@risingnexusinfra.com</a></div>
+            </li>
+            <li><span class="fti">🌐</span>
+              <div><span class="ftl">Website</span><a href="https://www.risingnexusinfra.com" target="_blank"
+                  class="ftv">www.risingnexusinfra.com</a></div>
+            </li>
+            <li><span class="fti">🏢</span>
+              <div><span class="ftl">Corporate Office</span><span class="ftv">B-743, Tower B, IThum, Sector 62, Noida,
+                  U.P.</span></div>
+            </li>
+          </ul>
+
+          <div class="quick-box">
+            <div class="qb-lbl">Project Quick Facts</div>
+            <div class="qb-grid">
+              <span class="qb-item">📍 Barog, Dist. Solan, H.P.</span>
+              <span class="qb-item">🏗 Developer: Harison Group</span>
+              <span class="qb-item">📐 Sizes: 752–998 Sq.Ft.</span>
+              <span class="qb-item">💰 From ₹81 Lakhs*</span>
+              <span class="qb-item">🏦 SBI &amp; HDFC Approved</span>
+              <span class="qb-item">📅 Possession: Mar 2028</span>
+              <span class="qb-item">📋 RERA: HPRERASOL 2024119/P</span>
+              <span class="qb-item">🌿 AQI 32 — Excellent</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── FORM COL ── -->
+        <div>
+          <form class="vip-form" id="vipForm" onsubmit="handleSubmit(event)" novalidate>
+
+            <div>
+              <label for="f-name">Full Name *</label>
+              <input type="text" id="f-name" name="name" class="vip-input" placeholder="Your full name" required />
+            </div>
+
+            <div>
+              <label for="f-wa">WhatsApp Number *</label>
+              <input type="tel" id="f-wa" name="whatsapp" class="vip-input" placeholder="+91 XXXXX XXXXX" required />
+            </div>
+
+            <div>
+              <label for="f-email">Email Address</label>
+              <input type="email" id="f-email" name="email" class="vip-input" placeholder="your@email.com" />
+            </div>
+
+            <div>
+              <label for="f-interest">Interested In *</label>
+              <select id="f-interest" name="interest" class="vip-select" required>
+                <option value="">Select your interest…</option>
+                <option value="b3">Block 3 — 998 Sq.Ft. (Super Premium)</option>
+                <option value="b2">Block 2 — 772 Sq.Ft. (Premium)</option>
+                <option value="b1-notify">Block 1 — Notify Me When Launched</option>
+                <option value="price">Official Quotation &amp; Payment Plan</option>
+                <option value="visit">Site Visit Request</option>
+                <option value="loan">Home Loan Assistance (SBI / HDFC)</option>
+                <option value="invest">Investment Advisory</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="f-msg">Message (Optional)</label>
+              <textarea id="f-msg" name="message" class="vip-textarea"
+                placeholder="Any questions, preferred visit dates, or specific requirements…"></textarea>
+            </div>
+
+            <button type="submit" class="vip-submit">Request Official Quotation →</button>
+            <p class="vip-disclaimer">100% confidential. We will only contact you about Harison Group Residences, Barog.
+            </p>
+
+          </form>
+
+          <!-- Success state -->
+          <div class="form-success" id="formSuccess">
+            <div class="fs-icon">🏔</div>
+            <h3 class="fs-title serif">Thank You.</h3>
+            <p class="fs-body">Your VIP enquiry has been received. Our concierge team will contact you within 24 hours
+              with the official quotation and available inventory for Harison Group Residences, Barog.</p>
+            <div class="fs-contact">+91 99105 87006 · sales@risingnexusinfra.com</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════════
+     FOOTER BAR
+     ════════════════════════════════════════════════════════════════════════ -->
+  <footer class="footer-bar">
+    <div class="fb-brand">Rising Nexus Infra</div>
+    <div class="fb-legal">
+      Starting from ₹81 Lakh*. Possession: March 2028. Marketed exclusively by Rising Nexus Infra, Noida.<br />
+      RERA: HPRERASOL 2024119/P. All prices indicative, subject to revision. T&amp;C Apply.<br />
+      © 2025 Rising Nexus Infra. All Rights Reserved.
+    </div>
+    <div class="fb-links">
+      <a href="index.html">Main Site</a>
+      <a href="index.html#projects">All Projects</a>
+      <a href="https://barogvalley.com/" target="_blank" rel="noopener noreferrer">Developer</a>
+    </div>
+  </footer>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════════
+     JAVASCRIPT
+     ════════════════════════════════════════════════════════════════════════ -->
+  <script>
+    'use strict';
+
+    /* ── Smooth scroll helper ─────────────────────────────────────────────── */
+    function scrollTo(id) {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    /* ── Parallax hero ────────────────────────────────────────────────────── */
+    const heroBg = document.getElementById('heroBg');
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          if (heroBg) heroBg.style.transform = `translateY(${window.scrollY * 0.34}px)`;
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
+
+    /* ── Scroll reveal ────────────────────────────────────────────────────── */
+    const revealObs = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); }),
+      { threshold: 0.07 }
+    );
+    document.querySelectorAll('.fade-up').forEach(el => revealObs.observe(el));
+
+    /* ── AQI Before/After Slider ─────────────────────────────────────────── */
+    (function () {
+      const wrap = document.getElementById('aqiWrap');
+      const left = document.getElementById('aqiLeft');
+      const haze = document.getElementById('aqiHaze');
+      const div = document.getElementById('aqiDiv');
+      const hint = document.getElementById('aqiHint');
+      if (!wrap || !left || !div) return;
+
+      let dragging = false;
+      let pct = 50;
+
+      function apply(p) {
+        pct = Math.max(3, Math.min(97, p));
+        div.style.left = pct + '%';
+        left.style.clipPath = `inset(0 ${100 - pct}% 0 0)`;
+        if (haze) haze.style.clipPath = `inset(0 ${100 - pct}% 0 0)`;
+      }
+
+      function pctFromX(clientX) {
+        const r = wrap.getBoundingClientRect();
+        return ((clientX - r.left) / r.width) * 100;
+      }
+
+      // Mouse
+      wrap.addEventListener('mousedown', e => { dragging = true; apply(pctFromX(e.clientX)); if (hint) hint.style.opacity = '0'; });
+      window.addEventListener('mousemove', e => { if (dragging) apply(pctFromX(e.clientX)); });
+      window.addEventListener('mouseup', () => { dragging = false; });
+
+      // Touch
+      wrap.addEventListener('touchstart', e => {
+        dragging = true;
+        apply(pctFromX(e.touches[0].clientX));
+        if (hint) hint.style.opacity = '0';
+        e.preventDefault();
+      }, { passive: false });
+      window.addEventListener('touchmove', e => { if (dragging) apply(pctFromX(e.touches[0].clientX)); }, { passive: true });
+      window.addEventListener('touchend', () => { dragging = false; });
+
+      apply(50);
+
+      // Auto-hide hint
+      setTimeout(() => { if (hint) hint.style.opacity = '0'; }, 4000);
+    })();
+
+    /* ── Proximity map sidebar ────────────────────────────────────────────── */
+    (function () {
+      const toast = document.getElementById('distToast');
+      const toastName = document.getElementById('toastName');
+      const toastKm = document.getElementById('toastKm');
+      const toastRoute = document.getElementById('toastRoute');
+      const toastClose = document.getElementById('toastClose');
+      const buttons = document.querySelectorAll('.loc-btn');
+
+      function showToast(name, km, routeUrl) {
+        toastName.textContent = name;
+        toastKm.textContent = km;
+        toastRoute.href = routeUrl;
+        toast.classList.add('show');
+      }
+
+      function hideToast() {
+        toast.classList.remove('show');
+        buttons.forEach(b => b.classList.remove('active'));
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const name = btn.dataset.name;
+          const km = btn.dataset.km;
+          const route = btn.dataset.route;
+
+          // Toggle: clicking the active button hides the toast
+          if (btn.classList.contains('active')) {
+            hideToast();
+            return;
+          }
+
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          showToast(name, km, route);
+        });
+      });
+
+      if (toastClose) toastClose.addEventListener('click', hideToast);
+    })();
+
+    /* ── Floor plan tab switcher ─────────────────────────────────────────── */
+    function switchTab(id) {
+      const keys = ['b3', 'b2', 'b1'];
+      keys.forEach(k => {
+        const tab = document.getElementById('tab-' + k);
+        const panel = document.getElementById('panel-' + k);
+        if (!tab || !panel) return;
+
+        const isTarget = (k === id);
+        panel.classList.toggle('active', isTarget);
+        panel.style.display = isTarget ? '' : 'none';
+
+        tab.classList.toggle('active', isTarget && k !== 'b1');
+        tab.setAttribute('aria-selected', isTarget ? 'true' : 'false');
+      });
+    }
+
+    // Keyboard navigation on tabs
+    document.querySelectorAll('.p-tab').forEach(tab => {
+      tab.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          tab.click();
+        }
+      });
+    });
+
+    /* ── Form submission ──────────────────────────────────────────────────── */
+    function handleSubmit(e) {
+      e.preventDefault();
+      const form = document.getElementById('vipForm');
+      const success = document.getElementById('formSuccess');
+      const name = document.getElementById('f-name').value.trim();
+      const wa = document.getElementById('f-wa').value.trim();
+      const interest = document.getElementById('f-interest').value;
+
+      if (!name) { alert('Please enter your name.'); return; }
+      if (!wa) { alert('Please enter your WhatsApp number.'); return; }
+      if (!interest) { alert('Please select your area of interest.'); return; }
+
+      /*
+        DEVELOPER NOTE: Add your actual form submission here, for example:
+        ──────────────────────────────────────────────────────────────────
+        fetch('/api/enquiry', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, wa, interest,
+            email: document.getElementById('f-email').value,
+            message: document.getElementById('f-msg').value })
+        }).then(() => showSuccess());
+        ──────────────────────────────────────────────────────────────────
+      */
+
+      form.style.display = 'none';
+      success.classList.add('show');
+      success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  </script>
+
+</body>
+
+</html>
