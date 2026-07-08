@@ -6,7 +6,7 @@
   <link rel="canonical" href="https://risingnexusinfra.com/harison-barog" />
   <title>Harison Group Residences · Barog, H.P. | Rising Nexus Infra</title>
   <meta name="description"
-    content="Premium 1-BHK Residences by Harison Group in Barog, H.P. Starting from ₹81 Lakh. Exclusively by Rising Nexus Infra. RERA: HPRERASOL 2024119/P" />
+    content="Premium 1-BHK Residences by Harison Group in Barog, H.P. Starting from ₹88 Lakh. Exclusively by Rising Nexus Infra. RERA: HPRERASOL 2024119/P" />
 
 </head>
 
@@ -40,24 +40,12 @@
     <div class="relative z-10 max-w-[1240px] mx-auto px-6 pt-8 pb-20 text-center w-full">
       <div class="max-w-[860px] mx-auto">
 
-        <!-- Soft launch pill -->
-        <div class="h1 mb-[1.3rem]">
-          <span
-            class="inline-flex items-center gap-2 bg-white/10 border border-white/[.22] backdrop-blur-[6px] px-[1.1rem] py-[.48rem] text-[.75rem] tracking-[.14em] uppercase font-semibold text-white/[.92]"
-            style="background:linear-gradient(135deg,rgba(176,136,64,.75),rgba(139,105,20,.75));border-color:rgba(232,201,122,.45)">
-            <span
-              class="w-[22px] h-[22px] rounded-full flex items-center justify-center text-[.75rem] font-bold text-navy flex-shrink-0"
-              style="background:rgba(255,255,255,.85)">✦</span>
-            Soft Launch Stage — Blocks 2 &amp; 3 Now Open
-          </span>
-        </div>
-
         <!-- Price badge -->
         <div class="h1 mb-[1.3rem]">
           <span
             class="inline-flex items-center gap-2 font-sans text-[1.3rem] font-medium tracking-[.04em] text-glt px-[1.4rem] py-[.5rem]"
             style="background:rgba(156, 118, 48, 0.86);border:1px solid rgba(232,201,122,.4)">
-            Starting from ₹81 Lakh*
+            Starting from ₹88 Lakh*
           </span>
         </div>
 
@@ -121,7 +109,7 @@
 
         <!-- RERA micro -->
         <p class="h5 text-[.67rem] tracking-[.2em] uppercase text-white/[.25] mt-[1.8rem]">
-          RERA: HPRERASOL 2024119/P · Possession: March 2028 · Exclusively by Rising Nexus Infra
+          RERA: HPRERASOL 2024119/P · Possession: March 2029 · Exclusively by Rising Nexus Infra
         </p>
       </div>
     </div>
@@ -139,7 +127,7 @@
   ════════════════════════════════════════════════════════════════════════════ -->
   <div class="bg-navy grid grid-cols-2 md:grid-cols-4">
     <div class="px-8 py-[1.6rem] text-center border-r border-white/[.08]">
-      <div class="font-sans text-[2.4rem] font-light text-white/80 leading-none mb-[.3rem]">₹81L</div>
+      <div class="font-sans text-[2.4rem] font-light text-white/80 leading-none mb-[.3rem]">₹88L</div>
       <div class="text-[.68rem] tracking-[.18em] uppercase text-white/50">Starting Price*</div>
     </div>
     <div class="px-8 py-[1.6rem] text-center border-r border-white/[.08] border-b md:border-b-0">
@@ -147,7 +135,7 @@
       <div class="text-[.68rem] tracking-[.18em] uppercase text-white/50">Max Sq.Ft. — Block 3</div>
     </div>
     <div class="px-8 py-[1.6rem] text-center border-r border-white/[.08]">
-      <div class="font-sans text-[2.4rem] font-light text-white/80 leading-none mb-[.3rem]">Mar '28</div>
+      <div class="font-sans text-[2.4rem] font-light text-white/80 leading-none mb-[.3rem]">Mar '29</div>
       <div class="text-[.68rem] tracking-[.18em] uppercase text-white/50">Possession</div>
     </div>
     <div class="px-8 py-[1.6rem] text-center">
@@ -218,7 +206,7 @@
 
       <p class="fade-up text-rtxt2 max-w-[660px] mx-auto mt-8 text-center" style="font-size:1.25rem;line-height:1.8">
         <strong>AQI 32 vs 380+</strong> — the difference is not just comfort, it's longevity.
-        Pine-scented air at 1,600 m above sea level, starting at just <strong>₹81 Lakh*</strong>.
+        Pine-scented air at 1,800 m above sea level, starting at just <strong>₹88 Lakh*</strong>.
       </p>
     </div>
   </section>
@@ -475,16 +463,12 @@
           <div class="font-sans text-[1.45rem] font-normal leading-[1.2] mb-[.3rem] text-navy hover:rote">772 Sq.Ft.</div>
           <div class="text-[.82rem] font-semibold text-gold">Premium · Open</div>
         </div>
-        <!-- Block 1 — Locked -->
+        <!-- Block 2 -->
         <div id="tab-b1" onclick="switchTab('b1')" role="tab" aria-selected="false" tabindex="0"
-          aria-label="Block 1 — Coming Soon"
-          class="p-tab locked relative p-6 text-left cursor-not-allowed opacity-60 border-t-[3px] border-t-transparent bg-rsrf">
-          <span
-            class="absolute top-[.6rem] right-[.7rem] text-[.58rem] tracking-[.16em] uppercase font-bold px-[.65rem] py-[.24rem] bg-rs2 text-rmuted border border-rbds">COMING
-            SOON</span>
+          class="p-tab p-6 text-left cursor-pointer border-r border-rbdr border-t-[3px] border-t-transparent bg-rsrf transition-all duration-200">
           <div class="text-[.65rem] tracking-[.22em] uppercase mb-[.3rem] text-rmuted">Block 1</div>
-          <div class="font-sans text-[1.45rem] font-normal leading-[1.2] mb-[.3rem] text-rmuted">752 Sq.Ft.</div>
-          <div class="text-[.82rem] font-semibold text-rmuted">Standard · Reserved</div>
+          <div class="font-sans text-[1.45rem] font-normal leading-[1.2] mb-[.3rem] text-navy hover:rote">752 Sq.Ft.</div>
+          <div class="text-[.82rem] font-semibold text-gold">Standard · Reserved</div>
         </div>
       </div>
 
@@ -521,7 +505,7 @@
             </div>
             <div class="bg-rsrf border border-rbdr p-[1rem_1.2rem]">
               <div class="text-[.58rem] tracking-[.2em] uppercase text-rmuted mb-[.3rem]">Possession</div>
-              <div class="text-[1rem] font-semibold text-navy">March 2028</div>
+              <div class="text-[1rem] font-semibold text-navy">March 2029</div>
             </div>
             <div class="bg-rsrf border border-rbdr p-[1rem_1.2rem]">
               <div class="text-[.58rem] tracking-[.2em] uppercase text-rmuted mb-[.3rem]">Approval</div>
@@ -567,7 +551,7 @@
               class="inline-block px-8 py-4 border-[1.5px] border-rbds text-rtxt2 bg-rsrf text-[.78rem] tracking-[.17em] uppercase font-medium cursor-pointer hover:bg-rs2 hover:border-navy transition-colors duration-200">Download
               Blueprint</button>
           </div>
-          <p class="text-[.78rem] text-rmuted mt-[.8rem] leading-[1.6]">* Possession March 2028. Subject to
+          <p class="text-[.78rem] text-rmuted mt-[.8rem] leading-[1.6]">* Possession March 2029. Subject to
             availability. T&amp;C apply.</p>
         </div>
       </div>
@@ -603,7 +587,7 @@
             </div>
             <div class="bg-rsrf border border-rbdr p-[1rem_1.2rem]">
               <div class="text-[.58rem] tracking-[.2em] uppercase text-rmuted mb-[.3rem]">Possession</div>
-              <div class="text-[1rem] font-semibold text-navy">March 2028</div>
+              <div class="text-[1rem] font-semibold text-navy">March 2029</div>
             </div>
             <div class="bg-rsrf border border-rbdr p-[1rem_1.2rem]">
               <div class="text-[.58rem] tracking-[.2em] uppercase text-rmuted mb-[.3rem]">Approval</div>
@@ -648,7 +632,7 @@
               class="inline-block px-8 py-4 border-[1.5px] border-rbds text-rtxt2 bg-rsrf text-[.78rem] tracking-[.17em] uppercase font-medium cursor-pointer hover:bg-rs2 hover:border-navy transition-colors duration-200">Download
               Blueprint</button>
           </div>
-          <p class="text-[.78rem] text-rmuted mt-[.8rem] leading-[1.6]">* Possession March 2028. Subject to
+          <p class="text-[.78rem] text-rmuted mt-[.8rem] leading-[1.6]">* Possession March 2029. Subject to
             availability. T&amp;C apply.</p>
         </div>
       </div>
@@ -737,15 +721,12 @@
         <span
           class="inline-flex items-center gap-[.35rem] px-4 py-[.44rem] bg-navy/10 border border-navy/20 text-[.72rem] tracking-[.12em] uppercase font-semibold text-navy">✓
           Direct Registry — Non-Himachalis</span>
-        <span
-          class="inline-flex items-center gap-[.35rem] px-4 py-[.44rem] bg-navy/10 border border-navy/20 text-[.72rem] tracking-[.12em] uppercase font-semibold text-navy">✓
-          Soft Launch Phase</span>
       </div>
 
       <div class="text-[.78rem] text-navy/50 leading-[1.75] mt-[1.3rem]">
         Project RERA Registration No: <strong>HPRERASOL 2024119/P</strong> | Valid upto: 09/12/2029<br />
         Marketed exclusively by Rising Nexus Infra | Corporate Office: Noida, U.P.<br />
-        Starting from ₹81 Lakh*. All prices indicative, subject to revision. T&amp;C Apply.
+        Starting from ₹88 Lakh*. All prices indicative, subject to revision. T&amp;C Apply.
       </div>
     </div>
   </div>
@@ -821,9 +802,9 @@
               <span class="text-[.88rem] text-white/50">📍 Barog, Dist. Solan, H.P.</span>
               <span class="text-[.88rem] text-white/50">🏗 Developer: Harison Group</span>
               <span class="text-[.88rem] text-white/50">📐 Sizes: 752–998 Sq.Ft.</span>
-              <span class="text-[.88rem] text-white/50">💰 From ₹81 Lakhs*</span>
+              <span class="text-[.88rem] text-white/50">💰 From ₹88 Lakhs*</span>
               <span class="text-[.88rem] text-white/50">🏦 SBI &amp; HDFC Approved</span>
-              <span class="text-[.88rem] text-white/50">📅 Possession: Mar 2028</span>
+              <span class="text-[.88rem] text-white/50">📅 Possession: Mar 2029</span>
               <span class="text-[.88rem] text-white/50">📋 RERA: HPRERASOL 2024119/P</span>
               <span class="text-[.88rem] text-white/50">🌿 AQI 32 — Excellent</span>
             </div>
