@@ -144,10 +144,93 @@
     </div>
   </div>
 
+  <!-- ══════════════════════════════════════════════════════════ ABOUT ══ -->
+  <section id="about" class="bg-white py-[5rem] px-5 md:px-16">
+    <div class="max-w-[1240px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-[6rem] items-center">
+
+      <!-- Left: Text -->
+      <div class="about-text">
+        <!-- Section label -->
+        <div class="flex items-center gap-3 mb-4">
+          <span class="sec-label-line"></span>
+          <span class="text-[.65rem] tracking-[.35em] uppercase text-rblue font-semibold">PROJECT OVERVIEW</span>
+        </div>
+        <h2 class="font-sans font-light leading-[1.08] text-navy mb-5"
+          style="font-size:clamp(2.4rem,4vw,3.6rem)">
+          A Gated Altitude<br><em class="not-italic text-gold">Sanctuary</em>
+        </h2>
+        <div class="w-14 h-[2px] accent-rule mb-7"></div>
+
+        <div class="space-y-5 text-[1.02rem] leading-[1.95] text-rtxt2">
+          <p>Perched gracefully at an elite elevation of 1,560 meters, <span class="font-semibold">Harison Builders
+              introduces a thoughtfully master-planned hill township designed to
+              redene premium mountain living.</span></p>
+          <p>Every road, residence, and viewpoint has been carefully aligned with the <span class="font-semibold">natural
+              pine-covered landscape of Barog</span>, offering breathtaking valley views and a
+            peaceful lifestyle.</p>
+          <p>Managed through a controlled multi-phase development, the township
+            preserves the natural environment while delivering a luxurious residential
+            experience.</p>
+          <!-- Subtle co-investment note -->
+        </div>
+      </div>
+
+      <!-- Right: Stats grid -->
+      <div class="grid grid-cols-2 md:grid-cols-2 gap-6">
+        <div
+          class="svc-card bg-rs2 p-5 md:p-3 relative overflow-hidden fade-up border">
+          <div class="svc-bar absolute bottom-0 left-0 right-0 h-[2px]"></div>
+          <div
+            class="absolute top-5 right-7 font-serif text-[4.5rem] font-light leading-[1] text-navy/[.05] select-none">
+            01</div>
+          <div class="text-[1.9rem] mb-5">🛣️</div>
+          <h3 class="font-sans text-[1.2rem] font-normal text-navy leading-[1.2] mb-4 font-semibold">Direct Connectivity with NH-5 </h3>
+        </div>
+        <div
+          class="svc-card bg-rs2 p-5 md:p-3 relative overflow-hidden fade-up border">
+          <div class="svc-bar absolute bottom-0 left-0 right-0 h-[2px]"></div>
+          <div
+            class="absolute top-5 right-7 font-serif text-[4.5rem] font-light leading-[1] text-navy/[.05] select-none">
+            02</div>
+          <div class="text-[1.9rem] mb-5">❄️</div>
+          <h3 class="font-sans text-[1.2rem] font-normal text-navy leading-[1.2] mb-4 font-semibold">Beautiful Snowfall Zone</h3>
+        </div>
+        <div
+          class="svc-card bg-rs2 p-5 md:p-3 relative overflow-hidden fade-up border">
+          <div class="svc-bar absolute bottom-0 left-0 right-0 h-[2px]"></div>
+          <div
+            class="absolute top-5 right-7 font-serif text-[4.5rem] font-light leading-[1] text-navy/[.05] select-none">
+            03</div>
+          <div class="text-[1.9rem] mb-5">🌲</div>
+          <h3 class="font-sans text-[1.2rem] font-normal text-navy leading-[1.2] mb-4 font-semibold">Pine Forest Ecosystem</h3>
+        </div>
+        <div
+          class="svc-card bg-rs2 p-5 md:p-3 relative overflow-hidden fade-up border">
+          <div class="svc-bar absolute bottom-0 left-0 right-0 h-[2px]"></div>
+          <div
+            class="absolute top-5 right-7 font-serif text-[4.5rem] font-light leading-[1] text-navy/[.05] select-none">
+            04</div>
+          <div class="text-[1.9rem] mb-5">🏔️</div>
+          <h3 class="font-sans text-[1.2rem] font-normal text-navy leading-[1.2] mb-4 font-semibold">Himalayan Valley Views</h3>
+        </div>
+        <div
+          class="col-span-2 svc-card bg-rs2 p-5 md:p-3 relative overflow-hidden fade-up border">
+          <div class="svc-bar absolute bottom-0 left-0 right-0 h-[2px]"></div>
+          <div
+            class="absolute top-5 right-7 font-serif text-[4.5rem] font-light leading-[1] text-navy/[.05] select-none">
+            05</div>
+          <div class="text-[1.9rem] mb-5">🚗</div>
+          <h3 class="font-sans text-[1.2rem] font-normal text-navy leading-[1.2] mb-4 font-semibold">Connected with Old Shimla Road (Kumarhatti Barog Solan Road)</h3>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
   <!-- ════════════════════════════════════════════════════════════════════════
      SECTION 2 — AQI SLIDER
   ════════════════════════════════════════════════════════════════════════════ -->
-  <section class="bg-rbg py-28 px-16 max-md:py-18 max-md:px-[1.4rem]" id="aqi">
+  <section class="bg-rs2 py-20 px-16 max-md:py-18 max-md:px-[1.4rem]" id="aqi">
     <div class="max-w-[1240px] mx-auto">
 
       <div class="fade-up text-center mb-12">
@@ -211,6 +294,71 @@
     </div>
   </section>
 
+  <!-- ══════════════════════════════════════════════════════════ PROJECTS ══ -->
+  <section id="projects" class="bg-yellow-50 py-[5rem] px-5 md:px-16">
+    <div class="max-w-[1240px] mx-auto">
+
+      <!-- Header -->
+      <div class="mb-8">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="sec-label-line"></span>
+          <span class="text-[.65rem] tracking-[.35em] uppercase text-rblue font-semibold">Advantage</span>
+        </div>
+        <h2 class="font-sans font-light leading-[1.08] text-navy" style="font-size:clamp(2.4rem,4vw,3.6rem)">
+          The Harison Engineering <em class="not-italic text-goldlt">Advantage</em>
+        </h2>
+      </div>
+
+      <!-- Projects grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
+
+        <div class="col-span-1 proj-card bg-white border border-rbdr overflow-hidden cursor-pointer fade-up"
+          @click="window.location='dholera'">
+          <div class="relative h-[200px] overflow-hidden"
+            style="background:url('assets/images/projects/barog-advantege-1.png') no-repeat center / cover;">
+            <div class="geo-grid"></div>
+            <span
+              class="absolute top-4 left-4 z-10 text-[.57rem] tracking-[.18em] uppercase bg-white/85 text-navy border border-rbdr px-3 py-[5px]">Harison Barog</span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-sans text-[1.6rem] font-normal text-navy mb-3">Zone VI Structural Safety</h3>
+            <p class="text-[.93rem] leading-[1.85] text-rtxt2 mb-4 hidden lg:block">A landmark development
+              Reinforced foundations engineered beyond regional standards for enhanced structural strength and long-term peace of mind.</p>
+          </div>
+        </div>
+
+        <div class="col-span-1 proj-card bg-white border border-rbdr overflow-hidden cursor-pointer fade-up"
+          @click="window.location='harison-barog'">
+          <div class="relative h-[200px] overflow-hidden"
+            style="background:url('assets/images/projects/barog-advantege-2.png') no-repeat center / cover;">
+            <div class="geo-grid"></div>
+            <span
+              class="absolute top-4 left-4 z-10 text-[.57rem] tracking-[.18em] uppercase bg-white/85 text-navy border border-rbdr px-3 py-[5px]">Harison Barog</span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-sans text-[1.6rem] font-normal text-navy mb-3">Micro Wind Turbine Grid</h3>
+            <p class="text-[.93rem] leading-[1.85] text-rtxt2 mb-4 hidden lg:block">Localized green energy systems designed to support uninterrupted electrical power during extreme weather conditions.</p>
+          </div>
+        </div>
+
+        <div class="col-span-1 proj-card bg-white border border-rbdr overflow-hidden cursor-pointer fade-up"
+          @click="window.location='harison-barog'">
+          <div class="relative h-[200px] overflow-hidden"
+            style="background:url('assets/images/projects/barog-advantege-3.png') no-repeat center / cover;">
+            <div class="geo-grid"></div>
+            <span
+              class="absolute top-4 left-4 z-10 text-[.57rem] tracking-[.18em] uppercase bg-white/85 text-navy border border-rbdr px-3 py-[5px]">Harison Barog</span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-sans text-[1.6rem] font-normal text-navy mb-3">Automated Digital Security</h3>
+            <p class="text-[.93rem] leading-[1.85] text-rtxt2 mb-4 hidden lg:block">Smart township management with visitor approvals, digital access, and real-time monitoring directly from your smartphone.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- ════════════════════════════════════════════════════════════════════════
      SECTION 3 — PROXIMITY MAP
   ════════════════════════════════════════════════════════════════════════════ -->
@@ -245,7 +393,7 @@
           <!-- Major Hubs -->
           <div class="px-6 pt-[.7rem] pb-[.4rem]">
             <span
-              class="block text-[.62rem] tracking-[.24em] uppercase font-semibold text-glt/[.65] pb-[.5rem] border-b border-white/[.08] mb-[.3rem]">🚗
+              class="block text-[.62rem] tracking-[.24em] uppercase font-semibold text-glt/[.65] pb-[.5rem] border-b border-white/[.08] text-white/80 mb-[.3rem]">🚗
               Major Hubs</span>
             <button
               class="loc-btn w-full flex items-center gap-[.75rem] px-2 py-[.68rem] bg-transparent border-none border-b border-white/[.06] text-left text-white/[.72] transition-all duration-200 hover:bg-gold/[.12] hover:pl-[.9rem] hover:text-white"
@@ -283,7 +431,7 @@
           <!-- Education -->
           <div class="px-6 pt-[.7rem] pb-[.4rem]">
             <span
-              class="block text-[.62rem] tracking-[.24em] uppercase font-semibold text-glt/[.65] pb-[.5rem] border-b border-white/[.08] mb-[.3rem]">🏫
+              class="block text-[.62rem] tracking-[.24em] uppercase font-semibold text-glt/[.65] pb-[.5rem] border-b border-white/[.08] text-white/80 mb-[.3rem]">🏫
               Education</span>
             <button
               class="loc-btn w-full flex items-center gap-[.75rem] px-2 py-[.68rem] bg-transparent border-none border-b border-white/[.06] text-left text-white/[.72] transition-all duration-200 hover:bg-gold/[.12] hover:pl-[.9rem] hover:text-white"
@@ -298,7 +446,7 @@
           <!-- Healthcare -->
           <div class="px-6 pt-[.7rem] pb-[.4rem]">
             <span
-              class="block text-[.62rem] tracking-[.24em] uppercase font-semibold text-glt/[.65] pb-[.5rem] border-b border-white/[.08] mb-[.3rem]">🏥
+              class="block text-[.62rem] tracking-[.24em] uppercase font-semibold text-glt/[.65] pb-[.5rem] border-b border-white/[.08] text-white/80 mb-[.3rem]">🏥
               Healthcare</span>
             <button
               class="loc-btn w-full flex items-center gap-[.75rem] px-2 py-[.68rem] bg-transparent border-none border-b border-white/[.06] text-left text-white/[.72] transition-all duration-200 hover:bg-gold/[.12] hover:pl-[.9rem] hover:text-white"
@@ -322,7 +470,7 @@
           <!-- Leisure -->
           <div class="px-6 pt-[.7rem] pb-[.4rem]">
             <span
-              class="block text-[.62rem] tracking-[.24em] uppercase font-semibold text-glt/[.65] pb-[.5rem] border-b border-white/[.08] mb-[.3rem]">🛍️
+              class="block text-[.62rem] tracking-[.24em] uppercase font-semibold text-glt/[.65] pb-[.5rem] border-b border-white/[.08] text-white/80 mb-[.3rem]">🛍️
               Leisure &amp; Essentials</span>
             <button
               class="loc-btn w-full flex items-center gap-[.75rem] px-2 py-[.68rem] bg-transparent border-none border-b border-white/[.06] text-left text-white/[.72] transition-all duration-200 hover:bg-gold/[.12] hover:pl-[.9rem] hover:text-white"
@@ -674,6 +822,75 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════ PROJECTS ══ -->
+  <section id="projects" class="bg-yellow-50 py-[5rem] px-5 md:px-16">
+    <div class="max-w-[1240px] mx-auto">
+
+      <!-- Header -->
+      <div class="mb-8">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="sec-label-line"></span>
+          <span class="text-[.65rem] tracking-[.35em] uppercase text-rblue font-semibold">EARTH-BORN AMENITIES</span>
+        </div>
+        <h2 class="font-sans font-light leading-[1.08] text-navy" style="font-size:clamp(2.4rem,4vw,3.6rem)">
+          Amenities Inspired by <em class="not-italic text-goldlt">Nature</em>
+        </h2>
+      </div>
+
+      <!-- Projects grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
+
+        <div class="col-span-1 md:col-span-1 grid grid-cols-1 md:grid-cols-1 proj-card bg-white border border-rbdr cursor-pointer"
+          @click="window.location='dubai'">
+          <div class="relative overflow-hidden min-h-[200px]"
+            style="background:url('assets/images/projects/amenities-1.png') no-repeat center / cover;">
+            <!-- <img src="assets/images/projects/dubai-image.jpg" alt="" class="w-100 p-0 m-0"> -->
+            <div class="geo-grid"></div>
+            <span
+              class="absolute top-4 left-4 z-10 text-[.57rem] tracking-[.18em] uppercase bg-white/85 text-navy border border-rbdr px-3 py-[5px]">Real
+              Estate • Dubai, UAE</span>
+          </div>
+          <div class="p-9 flex flex-col justify-center">
+            <h3 class="font-sans text-[1.65rem] font-normal text-navy mb-3">Protected Canopy Track</h3>
+            <p class="text-[.94rem] leading-[1.85] text-rtxt2 mb-4 hidden lg:block">Granite walking trail
+              sheltered under a beautifully designed canopy for comfortable all-weather strolls.</p>
+          </div>
+        </div>
+
+        <div class="col-span-1 proj-card bg-white border border-rbdr overflow-hidden cursor-pointer fade-up"
+          @click="window.location='dholera'">
+          <div class="relative h-[200px] overflow-hidden"
+            style="background:url('assets/images/projects/amenities-2.png') no-repeat center / cover;">
+            <div class="geo-grid"></div>
+            <span
+              class="absolute top-4 left-4 z-10 text-[.57rem] tracking-[.18em] uppercase bg-white/85 text-navy border border-rbdr px-3 py-[5px]">Real
+              Estate • India</span>
+          </div>
+          <div class="p-8">
+            <h3 class="font-sans text-[1.6rem] font-normal text-navy mb-3">Sunken Stone Bonfire Pit</h3>
+            <p class="text-[.93rem] leading-[1.85] text-rtxt2 mb-4 hidden lg:block">A premium outdoor gathering space crafted for memorable evenings beneath the stars.</p>
+          </div>
+        </div>
+
+        <div class="col-span-1 proj-card bg-white border border-rbdr overflow-hidden cursor-pointer fade-up"
+          @click="window.location='harison-barog'">
+          <div class="relative h-[200px] overflow-hidden"
+            style="background:url('assets/images/projects/amenities-3.png') no-repeat center / cover;">
+            <div class="geo-grid"></div>
+            <span
+              class="absolute top-4 left-4 z-10 text-[.57rem] tracking-[.18em] uppercase bg-white/85 text-navy border border-rbdr px-3 py-[5px]">Real
+              Estate • India</span>
+          </div>
+          <div class="p-8">
+            <h3 class="font-sans text-[1.6rem] font-normal text-navy mb-3">Bespoke Timber Gazebos</h3>
+            <p class="text-[.93rem] leading-[1.85] text-rtxt2 mb-4 hidden lg:block">Elevated wooden viewing decks offering uninterrupted panoramic valley views.</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>

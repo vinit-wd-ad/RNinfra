@@ -345,13 +345,13 @@ body {
   box-shadow: 0 6px 24px rgba(13, 27, 62, 0.08);
 }
 
-.infra-card {
+.infra-card, .svc-card {
   transition:
     transform 0.3s,
     box-shadow 0.3s,
     border-color 0.3s;
 }
-.infra-card:hover {
+.infra-card:hover, .svc-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 36px rgba(13, 27, 62, 0.09);
   border-color: #c5cce0;
