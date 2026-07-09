@@ -444,7 +444,7 @@
                 <div class="col-span-1 proj-card bg-white border border-rbdr overflow-hidden cursor-pointer fade-up"
                     @click="window.location='harison-barog'">
                     <div class="relative h-[200px] overflow-hidden"
-                        style="background:url('assets/images/projects/barog.jpg') no-repeat center / cover;">
+                        style="background:url('assets/images/projects/barog1.jpg') no-repeat center / cover;">
                         <div class="geo-grid"></div>
                         <span
                             class="absolute top-4 left-4 z-10 text-[.57rem] tracking-[.18em] uppercase bg-white/85 text-navy border border-rbdr px-3 py-[5px]">Real

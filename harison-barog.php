@@ -23,7 +23,7 @@
   ════════════════════════════════════════════════════════════════════════════ -->
   <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-[74px]" id="hero">
 
-    <div class="hero-img" style="background-image: url(assets/images/projects/barog-banner.jpg);"></div>
+    <div class="hero-img" style="background-image: url(assets/images/projects/barog-banner1.png);"></div>
 
     <!-- Overlays -->
     <div class="absolute inset-0 pointer-events-none"
@@ -167,7 +167,7 @@
       <!-- AQI Slider -->
       <div class="aqi-wrap fade-up relative overflow-hidden h-[480px] border border-rbdr" id="aqiWrap">
         <!-- Right: Barog -->
-        <div class="aqi-right absolute inset-0" style="background: url(assets/images/projects/barog-travel.jpg) no-repeat center / cover ;"></div>
+        <div class="aqi-right absolute inset-0" style="background: url(assets/images/projects/barog-banner2.png) no-repeat center / cover ;"></div>
         <!-- Left: Delhi (clipped) -->
         <div class="aqi-left aqi-left-bg absolute inset-0" id="aqiLeft"></div>
         <!-- Haze -->
@@ -475,11 +475,17 @@
       <!-- PANEL: Block 3 -->
       <div class="plan-panel active grid-cols-1 md:grid-cols-[1.1fr_1fr] gap-10 items-start" id="panel-b3">
         <div class="relative border border-rbdr bg-rsrf overflow-hidden fade-up">
-          <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=700&q=70"
+          <img src="assets/images/projects/Block-3_Apartment.png"
             alt="Block 3 — 998 Sq.Ft. Super Premium floor plan placeholder"
-            class="w-full block min-h-[340px] object-cover" />
-          <div class="px-[1.1rem] py-[.7rem] bg-rs2 border-t border-rbdr text-[.78rem] text-rmuted">
-            ⚠ Placeholder — replace <code>src</code> with your official Block 3 layout screenshot.
+            class="w-full block object-cover" />
+          <div class="px-[1.1rem] py-[.7rem] bg-rs2 border-t border-rbdr text-[.78rem] text-rmuted text-center">
+            Block 3 Apartment
+          </div>
+          <img src="assets/images/projects/block-3-club-1a.png"
+            alt="Block 3 — 998 Sq.Ft. Super Premium floor plan placeholder"
+            class="w-full block object-cover" />
+          <div class="px-[1.1rem] py-[.7rem] bg-rs2 border-t border-rbdr text-[.78rem] text-rmuted text-center">
+            Block 3 Clup & Apartment
           </div>
         </div>
         <div class="fade-up">
@@ -559,10 +565,10 @@
       <!-- PANEL: Block 2 -->
       <div class="plan-panel grid-cols-1 md:grid-cols-[1.1fr_1fr] gap-10 items-start" id="panel-b2">
         <div class="relative border border-rbdr bg-rsrf overflow-hidden fade-up">
-          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=700&q=70"
-            alt="Block 2 — 772 Sq.Ft. Premium floor plan placeholder" class="w-full block min-h-[340px] object-cover" />
-          <div class="px-[1.1rem] py-[.7rem] bg-rs2 border-t border-rbdr text-[.78rem] text-rmuted">
-            ⚠ Placeholder — replace <code>src</code> with your official Block 2 layout screenshot.
+          <img src="assets/images/projects/Block-2.png"
+            alt="Block 2 — 772 Sq.Ft. Premium floor plan placeholder" class="w-full block object-cover" />
+          <div class="px-[1.1rem] py-[.7rem] bg-rs2 border-t border-rbdr text-[.78rem] text-rmuted text-center">
+            Block 2
           </div>
         </div>
         <div class="fade-up">
@@ -640,25 +646,21 @@
       <!-- PANEL: Block 1 — Locked -->
       <div class="plan-panel grid-cols-1 md:grid-cols-[1.1fr_1fr] gap-10 items-start" id="panel-b1">
         <div class="relative border border-rbdr bg-rsrf overflow-hidden fade-up">
-          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&q=30"
-            alt="Block 1 — layout hidden until launch" class="w-full block object-cover min-h-[360px]"
-            style="filter:blur(8px) grayscale(50%) brightness(.55)" />
-          <div class="absolute inset-0 z-10 flex flex-col items-center justify-center gap-4 text-center px-8"
-            style="background:rgba(13,27,62,.96)">
-            <div class="plan-locked-word">COMING SOON</div>
-            <div class="text-[1rem] text-white/[.65] tracking-[.08em] uppercase font-medium">Launches after Block 2
-              sells out</div>
-            <p class="text-[.9rem] text-white/[.45] max-w-[240px] leading-[1.65]">Register your interest below and our
-              team will notify you the moment Block 1 opens.</p>
-            <button onclick="scrollTo('vip-form')"
-              class="inline-block px-[2.4rem] py-4 bg-navy text-white text-[.78rem] tracking-[.17em] uppercase font-semibold border-none cursor-pointer hover:bg-rblue transition-colors duration-200">Register
-              Interest</button>
+          <img src="assets/images/projects/block-1.png"
+            alt="Block 2 — 772 Sq.Ft. Premium floor plan placeholder" class="w-full block object-cover" />
+          <div class="px-[1.1rem] py-[.7rem] bg-rs2 border-t border-rbdr text-[.78rem] text-rmuted text-center">
+            Block 1
           </div>
+          <!-- <img src="assets/images/projects/block-1a.png"
+            alt="Block 2 — 772 Sq.Ft. Premium floor plan placeholder" class="w-full block max-h-[200px] object-cover" />
+          <div class="px-[1.1rem] py-[.7rem] bg-rs2 border-t border-rbdr text-[.78rem] text-rmuted text-center">
+            Block 1
+          </div> -->
         </div>
         <div class="opacity-35 pointer-events-none select-none fade-up">
           <div class="mb-6">
             <span class="text-[.67rem] tracking-[.2em] uppercase text-rmuted">Block 1</span>
-            <h3 class="font-serif text-rmuted mt-[.3rem]"
+            <h3 class="font-serif mt-[.3rem]"
               style="font-size:clamp(2.1rem,3.8vw,3.2rem);font-weight:300;line-height:1.1">Standard · 752 Sq.Ft.</h3>
           </div>
           <div class="grid grid-cols-2 gap-[.8rem]">
