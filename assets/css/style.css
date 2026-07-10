@@ -345,13 +345,15 @@ body {
   box-shadow: 0 6px 24px rgba(13, 27, 62, 0.08);
 }
 
-.infra-card, .svc-card {
+.infra-card,
+.svc-card {
   transition:
     transform 0.3s,
     box-shadow 0.3s,
     border-color 0.3s;
 }
-.infra-card:hover, .svc-card:hover {
+.infra-card:hover,
+.svc-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 36px rgba(13, 27, 62, 0.09);
   border-color: #c5cce0;
@@ -495,7 +497,7 @@ body {
 .vip-select:focus,
 .vip-textarea:focus {
   border-color: rgba(232, 201, 122, 0.55);
-  background:  rgb(27 40 73)
+  background: rgb(27 40 73);
 }
 
 /* ============================================================
@@ -799,4 +801,56 @@ body {
   font-weight: 400;
   display: block;
   margin-bottom: 0.3rem;
+}
+
+.bento {
+  display: grid;
+  grid-template-columns: 1.08fr 0.95fr 1.08fr;
+  grid-template-rows: 0.9fr 1fr 0.85fr;
+  grid-template-areas:
+    "a b b"
+    "a c d"
+    "e f d";
+  gap: 14px;
+  height: 640px;
+}
+
+.area-a {
+  grid-area: a;
+}
+
+.area-b {
+  grid-area: b;
+}
+
+.area-c {
+  grid-area: c;
+}
+
+.area-d {
+  grid-area: d;
+}
+
+.area-e {
+  grid-area: e;
+}
+
+.area-f {
+  grid-area: f;
+}
+
+/* Mobile: stack into 2 columns, drop the areas, let it flow naturally */
+@media (max-width: 767px) {
+  .bento {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 160px);
+    grid-template-areas:
+      "a b"
+      "a b"
+      "c d"
+      "c d"
+      "e f"
+      "e f";
+    height: auto;
+  }
 }

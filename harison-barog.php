@@ -635,6 +635,12 @@
           <div class="px-[1.1rem] py-[.7rem] bg-rs2 border-t border-rbdr text-[.78rem] text-rmuted text-center">
             Block 3 Clup & Apartment
           </div>
+          <img src="assets/images/projects/block-3-view.png"
+            alt="Block 3 — 998 Sq.Ft. Super Premium floor plan placeholder"
+            class="w-full block object-cover" />
+          <div class="px-[1.1rem] py-[.7rem] bg-rs2 border-t border-rbdr text-[.78rem] text-rmuted text-center">
+            Block 3 Clup & Apartment
+          </div>
         </div>
         <div class="fade-up">
           <div class="mb-6">
@@ -714,6 +720,11 @@
       <div class="plan-panel grid-cols-1 md:grid-cols-[1.1fr_1fr] gap-10 items-start" id="panel-b2">
         <div class="relative border border-rbdr bg-rsrf overflow-hidden fade-up">
           <img src="assets/images/projects/Block-2.png"
+            alt="Block 2 — 772 Sq.Ft. Premium floor plan placeholder" class="w-full block object-cover" />
+          <div class="px-[1.1rem] py-[.7rem] bg-rs2 border-t border-rbdr text-[.78rem] text-rmuted text-center">
+            Block 2
+          </div>
+          <img src="assets/images/projects/Block-2-view.png"
             alt="Block 2 — 772 Sq.Ft. Premium floor plan placeholder" class="w-full block object-cover" />
           <div class="px-[1.1rem] py-[.7rem] bg-rs2 border-t border-rbdr text-[.78rem] text-rmuted text-center">
             Block 2
@@ -799,11 +810,11 @@
           <div class="px-[1.1rem] py-[.7rem] bg-rs2 border-t border-rbdr text-[.78rem] text-rmuted text-center">
             Block 1
           </div>
-          <!-- <img src="assets/images/projects/block-1a.png"
+          <img src="assets/images/projects/block-1-view.png"
             alt="Block 2 — 772 Sq.Ft. Premium floor plan placeholder" class="w-full block max-h-[200px] object-cover" />
           <div class="px-[1.1rem] py-[.7rem] bg-rs2 border-t border-rbdr text-[.78rem] text-rmuted text-center">
             Block 1
-          </div> -->
+          </div>
         </div>
         <div class="opacity-35 pointer-events-none select-none fade-up">
           <div class="mb-6">
@@ -891,6 +902,184 @@
           </div>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-rs2 py-[5rem] px-5 md:px-16">
+    <div class="max-w-[1240px] mx-auto">
+      <!-- Header -->
+      <div class="mb-8 fade-up">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="sec-label-line"></span>
+          <span class="text-[.65rem] tracking-[.35em] uppercase text-rblue font-semibold">KEY FEATURES</span>
+        </div>
+        <h2 class="font-sans font-light leading-[1.08] text-navy" style="font-size:clamp(2.4rem,4vw,3.6rem)">
+          A luxurious Township <em class="not-italic text-goldlt">Featuring</em>
+        </h2>
+      </div>
+
+      <div class="bento max-w-6xl mx-auto fade-up">
+
+        <figure class="area-a group relative rounded-xl overflow-hidden">
+          <img src="assets/images/projects/running.png" alt="Mountain river valley"
+            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0"></div>
+          <figcaption class="absolute bottom-0 left-3 right-3 z-10 border border-rbdr bg-white/85 px-3 mb-2">
+            <h2 class="text-navy text-lg sm:text-xl font-semibold drop-shadow">Fitness Studios</h2>
+          </figcaption>
+        </figure>
+
+        <figure class="area-b group relative rounded-xl overflow-hidden">
+          <img src="assets/images/projects/spa.png" alt="Forest lake"
+            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0"></div>
+          <figcaption class="absolute bottom-0 left-3 right-3 z-10 border border-rbdr bg-white/85 px-3 mb-2">
+            <h2 class="text-navy text-lg sm:text-xl font-semibold drop-shadow">Wellness Spas</h2>
+          </figcaption>
+        </figure>
+
+        <figure class="area-c group relative rounded-xl overflow-hidden">
+          <img src="assets/images/projects/fitness-studios.jpeg" alt="Desert dunes"
+            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0"></div>
+          <figcaption class="absolute bottom-0 left-3 right-3 z-10 border border-rbdr bg-white/85 px-3 mb-2">
+            <h2 class="text-navy text-lg sm:text-xl font-semibold drop-shadow">Private Event Areas</h2>
+          </figcaption>
+        </figure>
+
+        <figure class="area-d group relative rounded-xl overflow-hidden">
+          <img src="assets/images/projects/kids-play.jpeg" alt="Ocean cliff"
+            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0"></div>
+          <figcaption class="absolute bottom-0 left-3 right-3 z-10 border border-rbdr bg-white/85 px-3 mb-2">
+            <h2 class="text-navy text-lg sm:text-xl font-semibold drop-shadow">Kids Play Area</h2>
+          </figcaption>
+        </figure>
+
+        <figure class="area-e group relative rounded-xl overflow-hidden">
+          <img src="assets/images/projects/commercial-shops.jpeg" alt="Autumn path"
+            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0"></div>
+          <figcaption class="absolute bottom-0 left-3 right-3 z-10 border border-rbdr bg-white/85 px-3 mb-2">
+            <h2 class="text-navy text-lg sm:text-xl font-semibold drop-shadow">Commercial Shops</h2>
+          </figcaption>
+        </figure>
+
+        <figure class="area-f group relative rounded-xl overflow-hidden">
+          <img src="assets/images/projects/locally-inspired-cuisine.jpeg" alt="City skyline"
+            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0"></div>
+          <figcaption class="absolute bottom-0 left-3 right-3 z-10 border border-rbdr bg-white/85 px-3 mb-2">
+            <h2 class="text-navy text-lg sm:text-xl font-semibold drop-shadow">Locally Inspired Cuisine</h2>
+          </figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ Attractions ══ -->
+  <section id="dubaisouth" class="bg-[#f8f4ee] py-20 md:py-24 px-6 md:px-14">
+    <div class="max-w-[1240px] mx-auto">
+
+      <!-- Main Grid Content -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+
+        <!-- Left Column: Key Facts (Dark Card) -->
+        <div class="bg-navy p-8 md:p-10 border border-gold/20 d1 fade-up">
+          <h3 class="font-serif font-normal text-gold text-[2.2rem] mb-6">
+            Natue Experience
+          </h3>
+
+          <div class="flex flex-col gap-6 md:gap-8">
+            <!-- Fact 1 -->
+            <div class="flex gap-4 items-start">
+              <div class="text-gold text-[1.5rem] shrink-0 leading-tight">⇒</div>
+              <div>
+                <div class="text-white font-serif text-gold text-[1.6rem] leading-none mb-1">Choor Chandni Peak</div>
+                <div class="text-gold text-[1.1rem] leading-relaxed font-normal">5 km | 20 min</div>
+              </div>
+            </div>
+            <!-- Fact 1 -->
+            <div class="flex gap-4 items-start">
+              <div class="text-gold text-[1.5rem] shrink-0 leading-tight">⇒</div>
+              <div>
+                <div class="text-white font-serif text-gold text-[1.6rem] leading-none mb-1">Dagshai View Point</div>
+                <div class="text-gold text-[1.1rem] leading-relaxed font-normal">4 km | 10 min</div>
+              </div>
+            </div>
+            <!-- Fact 1 -->
+            <div class="flex gap-4 items-start">
+              <div class="text-gold text-[1.5rem] shrink-0 leading-tight">⇒</div>
+              <div>
+                <div class="text-white font-serif text-gold text-[1.6rem] leading-none mb-1">Jaroll Shiva Temple</div>
+                <div class="text-gold text-[1.1rem] leading-relaxed font-normal">7 km | 15 min</div>
+              </div>
+            </div>
+            <!-- Fact 1 -->
+            <div class="flex gap-4 items-start">
+              <div class="text-gold text-[1.5rem] shrink-0 leading-tight">⇒</div>
+              <div>
+                <div class="text-white font-serif text-gold text-[1.6rem] leading-none mb-1">Barog Forest Trails</div>
+                <div class="text-gold text-[1.1rem] leading-relaxed font-normal">2 km | 5 min</div>
+              </div>
+            </div>
+            <!-- Fact 1 -->
+            <div class="flex gap-4 items-start">
+              <div class="text-gold text-[1.5rem] shrink-0 leading-tight">⇒</div>
+              <div>
+                <div class="text-white font-serif text-gold text-[1.6rem] leading-none mb-1">Karol Tibba Trek</div>
+                <div class="text-gold text-[1.1rem] leading-relaxed font-normal">11 km | 22 min</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right Column: Stats & CTA -->
+        <div class="flex flex-col gap-5 d2 fade-up">
+          <h3 class="font-serif font-normal text-[2.2rem] mb-2">
+            Nearby Attractions
+          </h3>
+          <!-- Stat Box 1 -->
+          <div class="bg-white border border-gold/18 p-6 border-l-4 border-l-gold shadow-sm">
+            <div class="font-serif text-gold text-[1.5rem] leading-none">
+              Barog Tunnel (UNESCO Heritage)
+            </div>
+            <div class="text-navy/70 text-[1.2rem] tracking-[0.15em] uppercase mt-1 font-normal">
+              3 km | 6 min
+            </div>
+          </div>
+          <!-- Stat Box 1 -->
+          <div class="bg-white border border-gold/18 p-6 border-l-4 border-l-gold shadow-sm">
+            <div class="font-serif text-gold text-[1.5rem] leading-none">
+              Toy Train Heritage Route
+            </div>
+            <div class="text-navy/70 text-[1.2rem] tracking-[0.15em] uppercase mt-1 font-normal">
+              4 km | 8 min
+            </div>
+          </div>
+          <!-- Stat Box 1 -->
+          <div class="bg-white border border-gold/18 p-6 border-l-4 border-l-gold shadow-sm">
+            <div class="font-serif text-gold text-[1.5rem] leading-none">
+              Grave of Colonel Barog
+            </div>
+            <div class="text-navy/70 text-[1.2rem] tracking-[0.15em] uppercase mt-1 font-normal">
+              3 km | 6 min
+            </div>
+          </div>
+          <!-- Stat Box 1 -->
+          <div class="bg-white border border-gold/18 p-6 border-l-4 border-l-gold shadow-sm">
+            <div class="font-serif text-gold text-[1.5rem] leading-none">
+              Dolarji Bon Monastery
+            </div>
+            <div class="text-navy/70 text-[1.2rem] tracking-[0.15em] uppercase mt-1 font-normal">
+              9 km | 18 min
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
   </section>
