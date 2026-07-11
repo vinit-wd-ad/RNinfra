@@ -713,11 +713,14 @@
     </script>
   </section>
 
+  <!-- ==============   Slider    ================= -->
   <section class="bg-white py-16 px-16 max-md:py-18 max-md:px-[1.4rem]">
-    <div id="slider" class="swiper mySwiper">
-      <div class="swiper-wrapper" id="sliderWrapper"></div>
+    <div class="max-w-[1240px] mx-auto">
+      <div id="slider" class="swiper mySwiper">
+        <div class="swiper-wrapper" id="sliderWrapper"></div>
 
-      <div class="swiper-pagination"></div>
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
   </section>
 
