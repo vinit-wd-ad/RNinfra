@@ -1107,7 +1107,8 @@
       <div class="gold-bar block w-[100px] h-[2px] mx-auto mb-[1.8rem]"></div>
 
       <h2 class="font-serif text-navy mb-4" style="font-size:clamp(2.8rem,5vw,4.4rem);font-weight:300;line-height:1.06">
-        Rising Nexus Infra:<br>The Exclusive Strategic Partner.
+        The Exclusive Strategic <br>
+        Rising Nexus Infra<br> Partner.
       </h2>
       <p class="text-navy/[.75] max-w-[660px] mx-auto mb-[1.4rem]" style="font-size:1.1rem;line-height:1.85">
         RNI is the <strong>sole authorised marketing, sales, and collection partner</strong>
