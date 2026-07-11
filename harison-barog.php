@@ -1196,18 +1196,18 @@
           <ul class="list-none mt-[1.4rem]">
             <li class="flex items-start gap-[.8rem] py-[.8rem] border-b border-white/[.07] text-[.97rem]">
               <span class="text-[1.1rem] flex-shrink-0 mt-[.08rem]">📞</span>
-              <div><span class="block text-[.6rem] tracking-[.2em] uppercase text-glt mb-[.15rem]">Strategic
+              <div><span class="block text-[.6rem] tracking-[.2em] uppercase text-gold mb-[.15rem]">Strategic
                   Partner</span><a href="tel:+919910587006" class="text-white/[.72]">+91 99105 87006</a></div>
             </li>
             <li class="flex items-start gap-[.8rem] py-[.8rem] border-b border-white/[.07] text-[.97rem]">
               <span class="text-[1.1rem] flex-shrink-0 mt-[.08rem]">✉️</span>
-              <div><span class="block text-[.6rem] tracking-[.2em] uppercase text-glt mb-[.15rem]">Sales
+              <div><span class="block text-[.6rem] tracking-[.2em] uppercase text-gold mb-[.15rem]">Sales
                   Enquiries</span><a href="mailto:sales@risingnexusinfra.com"
                   class="text-white/[.72]">sales@risingnexusinfra.com</a></div>
             </li>
             <li class="flex items-start gap-[.8rem] py-[.8rem] text-[.97rem]">
               <span class="text-[1.1rem] flex-shrink-0 mt-[.08rem]">🏢</span>
-              <div><span class="block text-[.6rem] tracking-[.2em] uppercase text-glt mb-[.15rem]">Corporate
+              <div><span class="block text-[.6rem] tracking-[.2em] uppercase text-gold mb-[.15rem]">Corporate
                   Office</span><span class="text-white/[.72]">B-743, Tower B, IThum, Sector 62, Noida, U.P.</span></div>
             </li>
           </ul>
