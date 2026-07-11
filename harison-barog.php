@@ -250,9 +250,6 @@
             style="background:url('assets/images/projects/amenities-1.png') no-repeat center / cover;">
             <!-- <img src="assets/images/projects/dubai-image.jpg" alt="" class="w-100 p-0 m-0"> -->
             <div class="geo-grid"></div>
-            <span
-              class="absolute top-4 left-4 z-10 text-[.57rem] tracking-[.18em] uppercase bg-white/85 text-navy border border-rbdr px-3 py-[5px]">Real
-              Estate • India</span>
           </div>
           <div class="p-9 flex flex-col justify-center">
             <h3 class="font-sans text-[1.65rem] font-normal text-navy mb-3">Protected Canopy Track</h3>
@@ -266,9 +263,6 @@
           <div class="relative h-[200px] overflow-hidden"
             style="background:url('assets/images/projects/amenities-2.png') no-repeat center / cover;">
             <div class="geo-grid"></div>
-            <span
-              class="absolute top-4 left-4 z-10 text-[.57rem] tracking-[.18em] uppercase bg-white/85 text-navy border border-rbdr px-3 py-[5px]">Real
-              Estate • India</span>
           </div>
           <div class="p-8">
             <h3 class="font-sans text-[1.6rem] font-normal text-navy mb-3">Sunken Stone Bonfire Pit</h3>
@@ -281,9 +275,6 @@
           <div class="relative h-[200px] overflow-hidden"
             style="background:url('assets/images/projects/amenities-3.png') no-repeat center / cover;">
             <div class="geo-grid"></div>
-            <span
-              class="absolute top-4 left-4 z-10 text-[.57rem] tracking-[.18em] uppercase bg-white/85 text-navy border border-rbdr px-3 py-[5px]">Real
-              Estate • India</span>
           </div>
           <div class="p-8">
             <h3 class="font-sans text-[1.6rem] font-normal text-navy mb-3">Bespoke Timber Gazebos</h3>
@@ -456,8 +447,6 @@
           <div class="relative h-[200px] overflow-hidden"
             style="background:url('assets/images/projects/barog-advantege-1.png') no-repeat center / cover;">
             <div class="geo-grid"></div>
-            <span
-              class="absolute top-4 left-4 z-10 text-[.57rem] tracking-[.18em] uppercase bg-white/85 text-navy border border-rbdr px-3 py-[5px]">Harison Barog</span>
           </div>
           <div class="p-6">
             <h3 class="font-sans text-[1.6rem] font-normal text-navy mb-3">Zone VI Structural Safety</h3>
@@ -471,8 +460,6 @@
           <div class="relative h-[200px] overflow-hidden"
             style="background:url('assets/images/projects/barog-advantege-2.png') no-repeat center / cover;">
             <div class="geo-grid"></div>
-            <span
-              class="absolute top-4 left-4 z-10 text-[.57rem] tracking-[.18em] uppercase bg-white/85 text-navy border border-rbdr px-3 py-[5px]">Harison Barog</span>
           </div>
           <div class="p-6">
             <h3 class="font-sans text-[1.6rem] font-normal text-navy mb-3">Micro Wind Turbine Grid</h3>
@@ -485,8 +472,6 @@
           <div class="relative h-[200px] overflow-hidden"
             style="background:url('assets/images/projects/barog-advantege-3.png') no-repeat center / cover;">
             <div class="geo-grid"></div>
-            <span
-              class="absolute top-4 left-4 z-10 text-[.57rem] tracking-[.18em] uppercase bg-white/85 text-navy border border-rbdr px-3 py-[5px]">Harison Barog</span>
           </div>
           <div class="p-6">
             <h3 class="font-sans text-[1.6rem] font-normal text-navy mb-3">Automated Digital Security</h3>
