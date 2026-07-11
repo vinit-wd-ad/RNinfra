@@ -1214,7 +1214,7 @@
 
           <!-- Quick facts -->
           <div class="border border-white/10 p-[1.4rem] mt-[1.4rem]">
-            <div class="text-[.6rem] tracking-[.2em] uppercase text-glt/60 mb-[.8rem]">Project Quick Facts</div>
+            <div class="text-[.6rem] tracking-[.2em] uppercase text-gold mb-[.8rem]">Project Quick Facts</div>
             <div class="grid grid-cols-2 gap-[.4rem]">
               <span class="text-[.88rem] text-white/50">📍 Barog, Dist. Solan, H.P.</span>
               <span class="text-[.88rem] text-white/50">🏗 Developer: Harison Group</span>
