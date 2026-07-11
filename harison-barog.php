@@ -501,7 +501,7 @@
   <!-- ════════════════════════════════════════════════════════════════════════
      SECTION 3 — PROXIMITY MAP
   ════════════════════════════════════════════════════════════════════════════ -->
-  <section class="bg-rsrf py-28 px-16 max-md:py-18 max-md:px-[1.4rem]" id="connectivity">
+  <section class="bg-rs2 py-28 px-16 max-md:py-18 max-md:px-[1.4rem]" id="connectivity">
     <div class="max-w-[1240px] mx-auto">
 
       <div class="fade-up mb-12">
@@ -713,7 +713,7 @@
     </script>
   </section>
 
-  <section class="py-16 px-16 max-md:py-18 max-md:px-[1.4rem]">
+  <section class="bg-white py-16 px-16 max-md:py-18 max-md:px-[1.4rem]">
     <div id="slider" class="swiper mySwiper">
       <div class="swiper-wrapper" id="sliderWrapper"></div>
 
