@@ -815,6 +815,12 @@ body {
   height: 640px;
 }
 
+.bento figcaption {
+  background-color: rgba(0, 0, 0, 0.083);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+}
+
 .area-a {
   grid-area: a;
 }

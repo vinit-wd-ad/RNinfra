@@ -52,17 +52,16 @@
         <!-- Main headline -->
         <h1 class="h2 font-serif text-white mb-[1.2rem]"
           style="font-size:clamp(4rem,10vw,8rem);font-weight:300;line-height:1.0;letter-spacing:-.01em">
-          Breathe<span class="text-glt opacity-80"
-            style="font-size:.55em;vertical-align:middle;letter-spacing:-.1em">...</span><br>
-          Live<span class="text-glt opacity-80"
+          Breathe Live<span class="text-glt opacity-80"
             style="font-size:.55em;vertical-align:middle;letter-spacing:-.1em">...</span><br>
           <em class="text-glt">Invest<span class="opacity-90"
               style="font-size:.55em;vertical-align:middle;letter-spacing:-.1em">...</span></em>
         </h1>
 
         <!-- Sub-headline -->
+        <h2 class="font-serif text-[3rem] text-white">Premium 1-BHK Luxury </h2>
         <p class="h3 text-white/[.72] max-w-[600px] mx-auto mb-8" style="font-size:1.25rem;line-height:1.8">
-          Premium 1-BHK Luxury Residences by Harison Group<br>
+          Residences by Harison Group<br>
           <span class="text-[.92rem] text-white/[.42]">Barog, Himachal Pradesh</span>
         </p>
 
@@ -184,7 +183,7 @@
             class="absolute top-5 right-7 font-serif text-[4.5rem] font-light leading-[1] text-navy/[.05] select-none">
             01</div>
           <div class="text-[1.9rem] mb-5">🛣️</div>
-          <h3 class="font-sans text-[1.2rem] font-normal text-navy leading-[1.2] mb-4 font-semibold">Direct Connectivity with NH-5 </h3>
+          <h3 class="font-sans text-[1.4rem] font-normal text-navy leading-[1.2] mb-4 font-semibold">Direct Connectivity with NH-5 </h3>
         </div>
         <div
           class="svc-card bg-rs2 p-5 md:p-3 relative overflow-hidden fade-up border">
@@ -193,7 +192,7 @@
             class="absolute top-5 right-7 font-serif text-[4.5rem] font-light leading-[1] text-navy/[.05] select-none">
             02</div>
           <div class="text-[1.9rem] mb-5">❄️</div>
-          <h3 class="font-sans text-[1.2rem] font-normal text-navy leading-[1.2] mb-4 font-semibold">Beautiful Snowfall Zone</h3>
+          <h3 class="font-sans text-[1.4rem] font-normal text-navy leading-[1.2] mb-4 font-semibold">Beautiful Snowfall Zone</h3>
         </div>
         <div
           class="svc-card bg-rs2 p-5 md:p-3 relative overflow-hidden fade-up border">
@@ -202,7 +201,7 @@
             class="absolute top-5 right-7 font-serif text-[4.5rem] font-light leading-[1] text-navy/[.05] select-none">
             03</div>
           <div class="text-[1.9rem] mb-5">🌲</div>
-          <h3 class="font-sans text-[1.2rem] font-normal text-navy leading-[1.2] mb-4 font-semibold">Pine Forest Ecosystem</h3>
+          <h3 class="font-sans text-[1.4rem] font-normal text-navy leading-[1.2] mb-4 font-semibold">Pine Forest Ecosystem</h3>
         </div>
         <div
           class="svc-card bg-rs2 p-5 md:p-3 relative overflow-hidden fade-up border">
@@ -211,7 +210,7 @@
             class="absolute top-5 right-7 font-serif text-[4.5rem] font-light leading-[1] text-navy/[.05] select-none">
             04</div>
           <div class="text-[1.9rem] mb-5">🏔️</div>
-          <h3 class="font-sans text-[1.2rem] font-normal text-navy leading-[1.2] mb-4 font-semibold">Himalayan Valley Views</h3>
+          <h3 class="font-sans text-[1.4rem] font-normal text-navy leading-[1.2] mb-4 font-semibold">Himalayan Valley Views</h3>
         </div>
         <div
           class="col-span-2 svc-card bg-rs2 p-5 md:p-3 relative overflow-hidden fade-up border">
@@ -220,10 +219,79 @@
             class="absolute top-5 right-7 font-serif text-[4.5rem] font-light leading-[1] text-navy/[.05] select-none">
             05</div>
           <div class="text-[1.9rem] mb-5">🚗</div>
-          <h3 class="font-sans text-[1.2rem] font-normal text-navy leading-[1.2] mb-4 font-semibold">Connected with Old Shimla Road (Kumarhatti Barog Solan Road)</h3>
+          <h3 class="font-sans text-[1.4rem] font-normal text-navy leading-[1.2] mb-4 font-semibold">Connected with Old Shimla Road <br>(Kumarhatti Barog Solan Road)</h3>
         </div>
       </div>
 
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════ PROJECTS ══ -->
+  <section id="projects" class="bg-yellow-50 py-[5rem] px-5 md:px-16">
+    <div class="max-w-[1240px] mx-auto">
+
+      <!-- Header -->
+      <div class="mb-8">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="sec-label-line"></span>
+          <span class="text-[.65rem] tracking-[.35em] uppercase text-rblue font-semibold">EARTH-BORN AMENITIES</span>
+        </div>
+        <h2 class="font-sans font-light leading-[1.08] text-navy" style="font-size:clamp(2.4rem,4vw,3.6rem)">
+          Amenities Inspired by <em class="not-italic text-goldlt">Nature</em>
+        </h2>
+      </div>
+
+      <!-- Projects grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
+
+        <div class="col-span-1 md:col-span-1 grid grid-cols-1 md:grid-cols-1 proj-card bg-white border border-rbdr cursor-pointer"
+          @click="window.location='dubai'">
+          <div class="relative overflow-hidden min-h-[200px]"
+            style="background:url('assets/images/projects/amenities-1.png') no-repeat center / cover;">
+            <!-- <img src="assets/images/projects/dubai-image.jpg" alt="" class="w-100 p-0 m-0"> -->
+            <div class="geo-grid"></div>
+            <span
+              class="absolute top-4 left-4 z-10 text-[.57rem] tracking-[.18em] uppercase bg-white/85 text-navy border border-rbdr px-3 py-[5px]">Real
+              Estate • India</span>
+          </div>
+          <div class="p-9 flex flex-col justify-center">
+            <h3 class="font-sans text-[1.65rem] font-normal text-navy mb-3">Protected Canopy Track</h3>
+            <p class="text-[.94rem] leading-[1.85] text-rtxt2 mb-4 hidden lg:block">Granite walking trail
+              sheltered under a beautifully designed canopy for comfortable all-weather strolls.</p>
+          </div>
+        </div>
+
+        <div class="col-span-1 proj-card bg-white border border-rbdr overflow-hidden cursor-pointer fade-up"
+          @click="window.location='dholera'">
+          <div class="relative h-[200px] overflow-hidden"
+            style="background:url('assets/images/projects/amenities-2.png') no-repeat center / cover;">
+            <div class="geo-grid"></div>
+            <span
+              class="absolute top-4 left-4 z-10 text-[.57rem] tracking-[.18em] uppercase bg-white/85 text-navy border border-rbdr px-3 py-[5px]">Real
+              Estate • India</span>
+          </div>
+          <div class="p-8">
+            <h3 class="font-sans text-[1.6rem] font-normal text-navy mb-3">Sunken Stone Bonfire Pit</h3>
+            <p class="text-[.93rem] leading-[1.85] text-rtxt2 mb-4 hidden lg:block">A premium outdoor gathering space crafted for memorable evenings beneath the stars.</p>
+          </div>
+        </div>
+
+        <div class="col-span-1 proj-card bg-white border border-rbdr overflow-hidden cursor-pointer fade-up"
+          @click="window.location='harison-barog'">
+          <div class="relative h-[200px] overflow-hidden"
+            style="background:url('assets/images/projects/amenities-3.png') no-repeat center / cover;">
+            <div class="geo-grid"></div>
+            <span
+              class="absolute top-4 left-4 z-10 text-[.57rem] tracking-[.18em] uppercase bg-white/85 text-navy border border-rbdr px-3 py-[5px]">Real
+              Estate • India</span>
+          </div>
+          <div class="p-8">
+            <h3 class="font-sans text-[1.6rem] font-normal text-navy mb-3">Bespoke Timber Gazebos</h3>
+            <p class="text-[.93rem] leading-[1.85] text-rtxt2 mb-4 hidden lg:block">Elevated wooden viewing decks offering uninterrupted panoramic valley views.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
@@ -259,18 +327,16 @@
         </div>
 
         <!-- AQI Info cards -->
-        <div class="absolute z-[5] bottom-8 left-8 p-[.8rem_1.2rem] backdrop-blur-[8px] border border-white/[.15]"
-          style="background:rgba(13,27,62,.82)">
-          <span class="font-serif text-[2.2rem] font-medium leading-none block mb-[.2rem] text-[#ff5f5f]">380+</span>
-          <span class="text-[.98rem] font-semibold text-white block mb-[.1rem]">Delhi NCR</span>
-          <span class="text-[.72rem] tracking-[.1em] uppercase text-[rgba(255,95,95,.9)]">AQI: 380+ · Hazardous ⚠</span>
+        <div class="absolute z-[5] bottom-8 left-8 p-[.8rem_1.2rem] backdrop-blur-[8px] border border-white/[.15]">
+          <!-- <span class="font-serif text-[2.2rem] font-medium leading-none block mb-[.2rem] text-[#ff5f5f]">380+</span> -->
+          <span class="text-[2.2rem] tracking-[.1em] uppercase text-[#ff5f5f]">AQI: 380+ <br>Hazardous <span class="">⚠</span></span>
+          <span class="text-[1.2rem] font-semibold text-white block mb-[.1rem]">Delhi NCR</span>
         </div>
         <div
-          class="absolute z-[5] bottom-8 right-8 p-[.8rem_1.2rem] backdrop-blur-[8px] border border-white/[.15] text-right"
-          style="background:rgba(13,27,62,.82)">
-          <span class="font-serif text-[2.2rem] font-medium leading-none block mb-[.2rem] text-[#4ade80]">32</span>
-          <span class="text-[.98rem] font-semibold text-white block mb-[.1rem]">Barog Valley</span>
-          <span class="text-[.72rem] tracking-[.1em] uppercase text-[rgba(74,222,128,.9)]">AQI: 32 · Excellent ✦</span>
+          class="absolute z-[5] bottom-8 right-8 p-[.8rem_1.2rem] backdrop-blur-[8px] border border-white/[.15] text-right">
+          <!-- <span class="font-serif text-[2.2rem] font-medium leading-none block mb-[.2rem] text-[#4ade80]">32</span> -->
+          <span class="text-[2.2rem] tracking-[.1em] uppercase text-[rgba(74,222,128,.9)]">AQI: 32 <br>Excellent ✦</span>
+          <span class="text-[1.2rem] font-semibold text-white block mb-[.1rem]">Barog Valley</span>
         </div>
 
         <!-- Divider -->
@@ -289,8 +355,81 @@
 
       <p class="fade-up text-rtxt2 max-w-[660px] mx-auto mt-8 text-center" style="font-size:1.25rem;line-height:1.8">
         <strong>AQI 32 vs 380+</strong> — the difference is not just comfort, it's longevity.
-        Pine-scented air at 1,800 m above sea level, starting at just <strong>₹88 Lakh*</strong>.
+        <br>Pine-scented air at 1,800 m above sea level, <br> <span class="font-serif text-[2.5rem] text-gold">starting at just <strong>₹88 Lakh*</strong>.</span>
       </p>
+    </div>
+  </section>
+
+  <section class="bg-white py-[5rem] px-5 md:px-16">
+    <div class="max-w-[1240px] mx-auto">
+      <!-- Header -->
+      <div class="mb-8 fade-up">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="sec-label-line"></span>
+          <span class="text-[.65rem] tracking-[.35em] uppercase text-rblue font-semibold">KEY FEATURES</span>
+        </div>
+        <h2 class="font-sans font-light leading-[1.08] text-navy" style="font-size:clamp(2.4rem,4vw,3.6rem)">
+          A luxurious Township <em class="not-italic text-goldlt">Featuring</em>
+        </h2>
+      </div>
+
+      <div class="bento max-w-6xl mx-auto fade-up">
+
+        <figure class="area-a group relative rounded-xl overflow-hidden">
+          <img src="assets/images/projects/running.png" alt="Mountain river valley"
+            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0"></div>
+          <figcaption class="absolute bottom-0 left-3 right-3 z-10 mb-2 px-2">
+            <h2 class="text-white text-[2rem] sm:text-xl font-semibold drop-shadow">Fitness Studios</h2>
+          </figcaption>
+        </figure>
+
+        <figure class="area-b group relative rounded-xl overflow-hidden">
+          <img src="assets/images/projects/spa.png" alt="Forest lake"
+            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0"></div>
+          <figcaption class="absolute bottom-0 left-3 right-3 z-10 px-3 mb-2">
+            <h2 class="text-white text-[2rem] sm:text-xl font-semibold drop-shadow">Wellness Spas</h2>
+          </figcaption>
+        </figure>
+
+        <figure class="area-c group relative rounded-xl overflow-hidden">
+          <img src="assets/images/projects/fitness-studios.jpeg" alt="Desert dunes"
+            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0"></div>
+          <figcaption class="absolute bottom-0 left-3 right-3 z-10 px-3 mb-2">
+            <h2 class="text-white text-[2rem] sm:text-xl font-semibold drop-shadow">Private Event Areas</h2>
+          </figcaption>
+        </figure>
+
+        <figure class="area-d group relative rounded-xl overflow-hidden">
+          <img src="assets/images/projects/kids-play.jpeg" alt="Ocean cliff"
+            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0"></div>
+          <figcaption class="absolute bottom-0 left-3 right-3 z-10 px-3 mb-2">
+            <h2 class="text-white text-[2rem] sm:text-xl font-semibold drop-shadow">Kids Play Area</h2>
+          </figcaption>
+        </figure>
+
+        <figure class="area-e group relative rounded-xl overflow-hidden">
+          <img src="assets/images/projects/commercial-shops.jpeg" alt="Autumn path"
+            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0"></div>
+          <figcaption class="absolute bottom-0 left-3 right-3 z-10 px-3 mb-2">
+            <h2 class="text-white text-[2rem] sm:text-xl font-semibold drop-shadow">Commercial Shops</h2>
+          </figcaption>
+        </figure>
+
+        <figure class="area-f group relative rounded-xl overflow-hidden">
+          <img src="assets/images/projects/locally-inspired-cuisine.jpeg" alt="City skyline"
+            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0"></div>
+          <figcaption class="absolute bottom-0 left-3 right-3 z-10 px-3 mb-2">
+            <h2 class="text-white text-[2rem] sm:text-xl font-semibold drop-shadow">Inspired Cuisine</h2>
+          </figcaption>
+        </figure>
+
+      </div>
     </div>
   </section>
 
@@ -574,6 +713,14 @@
     </script>
   </section>
 
+  <section class="py-16 px-16 max-md:py-18 max-md:px-[1.4rem]">
+    <div id="slider" class="swiper mySwiper">
+      <div class="swiper-wrapper" id="sliderWrapper"></div>
+
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
   <!-- ════════════════════════════════════════════════════════════════════════
      SECTION 4 — FLOOR PLAN VIEWER
   ════════════════════════════════════════════════════════════════════════════ -->
@@ -833,148 +980,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════════════════════════════════════════════════════ PROJECTS ══ -->
-  <section id="projects" class="bg-yellow-50 py-[5rem] px-5 md:px-16">
-    <div class="max-w-[1240px] mx-auto">
-
-      <!-- Header -->
-      <div class="mb-8">
-        <div class="flex items-center gap-3 mb-4">
-          <span class="sec-label-line"></span>
-          <span class="text-[.65rem] tracking-[.35em] uppercase text-rblue font-semibold">EARTH-BORN AMENITIES</span>
-        </div>
-        <h2 class="font-sans font-light leading-[1.08] text-navy" style="font-size:clamp(2.4rem,4vw,3.6rem)">
-          Amenities Inspired by <em class="not-italic text-goldlt">Nature</em>
-        </h2>
-      </div>
-
-      <!-- Projects grid -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
-
-        <div class="col-span-1 md:col-span-1 grid grid-cols-1 md:grid-cols-1 proj-card bg-white border border-rbdr cursor-pointer"
-          @click="window.location='dubai'">
-          <div class="relative overflow-hidden min-h-[200px]"
-            style="background:url('assets/images/projects/amenities-1.png') no-repeat center / cover;">
-            <!-- <img src="assets/images/projects/dubai-image.jpg" alt="" class="w-100 p-0 m-0"> -->
-            <div class="geo-grid"></div>
-            <span
-              class="absolute top-4 left-4 z-10 text-[.57rem] tracking-[.18em] uppercase bg-white/85 text-navy border border-rbdr px-3 py-[5px]">Real
-              Estate • Dubai, UAE</span>
-          </div>
-          <div class="p-9 flex flex-col justify-center">
-            <h3 class="font-sans text-[1.65rem] font-normal text-navy mb-3">Protected Canopy Track</h3>
-            <p class="text-[.94rem] leading-[1.85] text-rtxt2 mb-4 hidden lg:block">Granite walking trail
-              sheltered under a beautifully designed canopy for comfortable all-weather strolls.</p>
-          </div>
-        </div>
-
-        <div class="col-span-1 proj-card bg-white border border-rbdr overflow-hidden cursor-pointer fade-up"
-          @click="window.location='dholera'">
-          <div class="relative h-[200px] overflow-hidden"
-            style="background:url('assets/images/projects/amenities-2.png') no-repeat center / cover;">
-            <div class="geo-grid"></div>
-            <span
-              class="absolute top-4 left-4 z-10 text-[.57rem] tracking-[.18em] uppercase bg-white/85 text-navy border border-rbdr px-3 py-[5px]">Real
-              Estate • India</span>
-          </div>
-          <div class="p-8">
-            <h3 class="font-sans text-[1.6rem] font-normal text-navy mb-3">Sunken Stone Bonfire Pit</h3>
-            <p class="text-[.93rem] leading-[1.85] text-rtxt2 mb-4 hidden lg:block">A premium outdoor gathering space crafted for memorable evenings beneath the stars.</p>
-          </div>
-        </div>
-
-        <div class="col-span-1 proj-card bg-white border border-rbdr overflow-hidden cursor-pointer fade-up"
-          @click="window.location='harison-barog'">
-          <div class="relative h-[200px] overflow-hidden"
-            style="background:url('assets/images/projects/amenities-3.png') no-repeat center / cover;">
-            <div class="geo-grid"></div>
-            <span
-              class="absolute top-4 left-4 z-10 text-[.57rem] tracking-[.18em] uppercase bg-white/85 text-navy border border-rbdr px-3 py-[5px]">Real
-              Estate • India</span>
-          </div>
-          <div class="p-8">
-            <h3 class="font-sans text-[1.6rem] font-normal text-navy mb-3">Bespoke Timber Gazebos</h3>
-            <p class="text-[.93rem] leading-[1.85] text-rtxt2 mb-4 hidden lg:block">Elevated wooden viewing decks offering uninterrupted panoramic valley views.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="bg-rs2 py-[5rem] px-5 md:px-16">
-    <div class="max-w-[1240px] mx-auto">
-      <!-- Header -->
-      <div class="mb-8 fade-up">
-        <div class="flex items-center gap-3 mb-4">
-          <span class="sec-label-line"></span>
-          <span class="text-[.65rem] tracking-[.35em] uppercase text-rblue font-semibold">KEY FEATURES</span>
-        </div>
-        <h2 class="font-sans font-light leading-[1.08] text-navy" style="font-size:clamp(2.4rem,4vw,3.6rem)">
-          A luxurious Township <em class="not-italic text-goldlt">Featuring</em>
-        </h2>
-      </div>
-
-      <div class="bento max-w-6xl mx-auto fade-up">
-
-        <figure class="area-a group relative rounded-xl overflow-hidden">
-          <img src="assets/images/projects/running.png" alt="Mountain river valley"
-            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0"></div>
-          <figcaption class="absolute bottom-0 left-3 right-3 z-10 border border-rbdr bg-white/85 px-3 mb-2">
-            <h2 class="text-navy text-lg sm:text-xl font-semibold drop-shadow">Fitness Studios</h2>
-          </figcaption>
-        </figure>
-
-        <figure class="area-b group relative rounded-xl overflow-hidden">
-          <img src="assets/images/projects/spa.png" alt="Forest lake"
-            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0"></div>
-          <figcaption class="absolute bottom-0 left-3 right-3 z-10 border border-rbdr bg-white/85 px-3 mb-2">
-            <h2 class="text-navy text-lg sm:text-xl font-semibold drop-shadow">Wellness Spas</h2>
-          </figcaption>
-        </figure>
-
-        <figure class="area-c group relative rounded-xl overflow-hidden">
-          <img src="assets/images/projects/fitness-studios.jpeg" alt="Desert dunes"
-            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0"></div>
-          <figcaption class="absolute bottom-0 left-3 right-3 z-10 border border-rbdr bg-white/85 px-3 mb-2">
-            <h2 class="text-navy text-lg sm:text-xl font-semibold drop-shadow">Private Event Areas</h2>
-          </figcaption>
-        </figure>
-
-        <figure class="area-d group relative rounded-xl overflow-hidden">
-          <img src="assets/images/projects/kids-play.jpeg" alt="Ocean cliff"
-            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0"></div>
-          <figcaption class="absolute bottom-0 left-3 right-3 z-10 border border-rbdr bg-white/85 px-3 mb-2">
-            <h2 class="text-navy text-lg sm:text-xl font-semibold drop-shadow">Kids Play Area</h2>
-          </figcaption>
-        </figure>
-
-        <figure class="area-e group relative rounded-xl overflow-hidden">
-          <img src="assets/images/projects/commercial-shops.jpeg" alt="Autumn path"
-            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0"></div>
-          <figcaption class="absolute bottom-0 left-3 right-3 z-10 border border-rbdr bg-white/85 px-3 mb-2">
-            <h2 class="text-navy text-lg sm:text-xl font-semibold drop-shadow">Commercial Shops</h2>
-          </figcaption>
-        </figure>
-
-        <figure class="area-f group relative rounded-xl overflow-hidden">
-          <img src="assets/images/projects/locally-inspired-cuisine.jpeg" alt="City skyline"
-            class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0"></div>
-          <figcaption class="absolute bottom-0 left-3 right-3 z-10 border border-rbdr bg-white/85 px-3 mb-2">
-            <h2 class="text-navy text-lg sm:text-xl font-semibold drop-shadow">Locally Inspired Cuisine</h2>
-          </figcaption>
-        </figure>
-
       </div>
     </div>
   </section>
@@ -1293,6 +1298,82 @@
   ════════════════════════════════════════════════════════════════════════════ -->
   <script src="assets/js/home.js"></script>
   <script src="assets/js/harison-barog.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const sliderData = [{
+        image: "assets/images/projects/slider-block-2.png",
+        title: "Block 2",
+        description: ""
+      },
+      {
+        image: "assets/images/projects/slider-balcony-view-1-snow.png",
+        title: "Balcony View 1 Snow",
+        description: ""
+      },
+      {
+        image: "assets/images/projects/slider-block-3-interior-2-snow.png",
+        title: "Block 3 Interior 2 Snow",
+        description: ""
+      },
+      {
+        image: "assets/images/projects/slider-entry-gate.png",
+        title: "Entery Gate",
+        description: ""
+      },
+      {
+        image: "assets/images/projects/slider-gazebo.png",
+        title: "Gazebo",
+        description: ""
+      },
+      {
+        image: "assets/images/projects/slider-internal-rd-snow.png",
+        title: "Internal Road Snow",
+        description: ""
+      },
+      {
+        image: "assets/images/projects/slider-micro-wind.png",
+        title: "Micro Wind",
+        description: ""
+      },
+      {
+        image: "assets/images/projects/slider-sunken-bonfire-pit.png",
+        title: "Sunken Bonfire Pit",
+        description: ""
+      },
+    ];
+    const wrapper = document.getElementById("sliderWrapper");
+
+    sliderData.forEach(item => {
+      wrapper.innerHTML += `
+        <div class="swiper-slide">
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <img src="${item.image}" alt="${item.title}"
+                class="w-full h-52 object-cover">
+
+            <div class="p-0 text-center">
+              <h3 class="text-[1.5rem] font-bold mb-2">${item.title}</h3>
+              <p class="text-gray-600">${item.description}</p>
+            </div>
+          </div>
+        </div>
+        `;
+    });
+    new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: true,
+
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        }
+      }
+    });
+  </script>
 
 </body>
 
