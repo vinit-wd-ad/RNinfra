@@ -163,7 +163,7 @@
         <div class="space-y-5 text-[1.02rem] leading-[1.95] text-rtxt2">
           <p>Perched gracefully at an elite elevation of 1,560 meters, <span class="font-semibold">Harison Builders
               introduces a thoughtfully master-planned hill township designed to
-              redene premium mountain living.</span></p>
+              redefine premium mountain living.</span></p>
           <p>Every road, residence, and viewpoint has been carefully aligned with the <span class="font-semibold">natural
               pine-covered landscape of Barog</span>, offering breathtaking valley views and a
             peaceful lifestyle.</p>
@@ -768,13 +768,13 @@
             alt="Block 3 — 998 Sq.Ft. Super Premium floor plan placeholder"
             class="w-full block object-cover" />
           <div class="px-[1.1rem] py-[.7rem] bg-rs2 border-t border-rbdr text-[.78rem] text-rmuted text-center">
-            Block 3 Clup & Apartment
+            Block 3 Club & Apartment
           </div>
           <img src="assets/images/projects/block-3-view.png"
             alt="Block 3 — 998 Sq.Ft. Super Premium floor plan placeholder"
             class="w-full block object-cover" />
           <div class="px-[1.1rem] py-[.7rem] bg-rs2 border-t border-rbdr text-[.78rem] text-rmuted text-center">
-            Block 3 Clup & Apartment
+            Block 3 Club & Apartment
           </div>
         </div>
         <div class="fade-up">
@@ -982,7 +982,7 @@
         <!-- Left Column: Key Facts (Dark Card) -->
         <div class="bg-navy p-8 md:p-10 border border-gold/20 d1 fade-up">
           <h3 class="font-serif font-normal text-gold text-[2.2rem] mb-6">
-            Natue Experience
+            Nature Experience
           </h3>
 
           <div class="flex flex-col gap-6 md:gap-8">
