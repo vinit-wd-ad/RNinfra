@@ -23,7 +23,7 @@
   ════════════════════════════════════════════════════════════════════════════ -->
   <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-[74px]" id="hero">
 
-    <div class="hero-img" style="background-image: url(assets/images/projects/barog-banner1.png);"></div>
+    <div class="hero-img" style="background-image: url(assets/images/about/all-blocks-view.png);"></div>
 
     <!-- Overlays -->
     <div class="absolute inset-0 pointer-events-none"
@@ -42,11 +42,11 @@
 
         <!-- Price badge -->
         <div class="h1 mb-[1.3rem]">
-          <span
+          <!-- <span
             class="inline-flex items-center gap-2 font-sans text-[1.3rem] font-medium tracking-[.04em] text-glt px-[1.4rem] py-[.5rem]"
             style="background:rgba(156, 118, 48, 0.86);border:1px solid rgba(232,201,122,.4)">
             Starting from ₹88 Lakh*
-          </span>
+          </span> -->
         </div>
 
         <!-- Main headline -->
@@ -124,11 +124,11 @@
   <!-- ════════════════════════════════════════════════════════════════════════
      STATS STRIP
   ════════════════════════════════════════════════════════════════════════════ -->
-  <div class="bg-navy grid grid-cols-2 md:grid-cols-4">
-    <div class="px-8 py-[1.6rem] text-center border-r border-white/[.08]">
+  <div class="bg-navy grid grid-cols-1 md:grid-cols-3">
+    <!-- <div class="px-8 py-[1.6rem] text-center border-r border-white/[.08]">
       <div class="font-sans text-[2.4rem] font-light text-white/80 leading-none mb-[.3rem]">₹88L</div>
       <div class="text-[.68rem] tracking-[.18em] uppercase text-white/50">Starting Price*</div>
-    </div>
+    </div> -->
     <div class="px-8 py-[1.6rem] text-center border-r border-white/[.08] border-b md:border-b-0">
       <div class="font-sans text-[2.4rem] font-light text-white/80 leading-none mb-[.3rem]">998</div>
       <div class="text-[.68rem] tracking-[.18em] uppercase text-white/50">Max Sq.Ft. — Block 3</div>
@@ -346,7 +346,8 @@
 
       <p class="fade-up text-rtxt2 max-w-[660px] mx-auto mt-8 text-center" style="font-size:1.25rem;line-height:1.8">
         <strong>AQI 32 vs 380+</strong> — the difference is not just comfort, it's longevity.
-        <br>Pine-scented air at 1,800 m above sea level, <br> <span class="font-serif text-[2.5rem] text-gold">starting at just <strong>₹88 Lakh*</strong>.</span>
+        <br>Pine-scented air at 1,800 m above sea level, <br> 
+        <!-- <span class="font-serif text-[2.5rem] text-gold">starting at just <strong>₹88 Lakh*</strong>.</span> -->
       </p>
     </div>
   </section>
@@ -1128,7 +1129,8 @@
       <div class="text-[.78rem] text-navy/50 leading-[1.75] mt-[1.3rem]">
         Project RERA Registration No: <strong>HPRERASOL 2024119/P</strong> | Valid upto: 09/12/2029<br />
         Marketed exclusively by Rising Nexus Infra | Corporate Office: Noida, U.P.<br />
-        Starting from ₹88 Lakh*. All prices indicative, subject to revision. T&amp;C Apply.
+        <!-- Starting from ₹88 Lakh*.  -->
+        All prices indicative, subject to revision. T&amp;C Apply.
       </div>
     </div>
   </div>
@@ -1204,7 +1206,7 @@
               <span class="text-[.88rem] text-white/50">📍 Barog, Dist. Solan, H.P.</span>
               <span class="text-[.88rem] text-white/50">🏗 Developer: Harison Group</span>
               <span class="text-[.88rem] text-white/50">📐 Sizes: 752–998 Sq.Ft.</span>
-              <span class="text-[.88rem] text-white/50">💰 From ₹88 Lakhs*</span>
+              <!-- <span class="text-[.88rem] text-white/50">💰 From ₹88 Lakhs*</span> -->
               <span class="text-[.88rem] text-white/50">🏦 SBI &amp; HDFC Approved</span>
               <span class="text-[.88rem] text-white/50">📅 Possession: Mar 2029</span>
               <span class="text-[.88rem] text-white/50">📋 RERA: HPRERASOL 2024119/P</span>
@@ -1295,6 +1297,26 @@
         description: ""
       },
       {
+        image: "assets/images/about/all-blocks-view.png",
+        title: "All Blocks View",
+        description: ""
+      },
+      {
+        image: "assets/images/about/block2-side1.PNG",
+        title: "Block 2 Side View",
+        description: ""
+      },
+      {
+        image: "assets/images/about/block2-balcony-snow-view.png",
+        title: "Block 2 Balcony Snow",
+        description: ""
+      },
+      {
+        image: "assets/images/about/block1-3-clubhouse-view.png",
+        title: "Block 1 & 3 Cloubhouse",
+        description: ""
+      },
+      {
         image: "assets/images/projects/slider-balcony-view-1-snow.png",
         title: "Balcony View 1 Snow",
         description: ""
@@ -1335,23 +1357,31 @@
     sliderData.forEach(item => {
       wrapper.innerHTML += `
         <div class="swiper-slide">
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-            <img src="${item.image}" alt="${item.title}"
-                class="w-full h-52 object-cover">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
 
-            <div class="p-0 text-center">
-              <h3 class="text-[1.5rem] font-bold mb-2">${item.title}</h3>
-              <p class="text-gray-600">${item.description}</p>
+                <div style="width: 100%; height: 300px; overflow: hidden;">
+                    <img src="${item.image}"
+                         alt="${item.title}"
+                         style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                </div>
+
+                <div class="p-3 text-center">
+                    <h3 class="text-[1.5rem] font-bold mb-2">${item.title}</h3>
+                    <p class="text-gray-600">${item.description}</p>
+                </div>
+
             </div>
-          </div>
         </div>
-        `;
+    `;
     });
     new Swiper(".mySwiper", {
       slidesPerView: 1,
       spaceBetween: 20,
       loop: true,
-      autoplay: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+      },
 
       breakpoints: {
         640: {
